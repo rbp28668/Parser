@@ -1,0 +1,385 @@
+File TEST10.PAS
+
+New Code Segment
+ ( itest ) := ( 1 )
+
+BYTE 1
+NOP
+ADDR 2D93:0024
+ST
+HALT
+>NOP 1 -  1
+>ST 1 764608548 - 
+>HALT - 
+New Code Segment
+ ( itest1 ) := ( not ( 3 ) )
+
+BYTE 3
+NOT
+ADDR 2D93:0044
+ST
+HALT
+>NOT 3 -  -4
+>ST -4 764608580 - 
+>HALT - 
+New Code Segment
+ ( itest2 ) := ( ( 3 ) * ( 4 ) )
+
+BYTE 3
+NOP
+BYTE 4
+MULT
+ADDR 2D93:0065
+ST
+HALT
+>NOP 3 -  3
+>MULT 3 4 -  12
+>ST 12 764608613 - 
+>HALT - 
+New Code Segment
+ ( itest3 ) := ( ( 10 ) div ( 3 ) )
+
+BYTE 10
+NOP
+BYTE 3
+DIV
+ADDR 2D93:0086
+ST
+HALT
+>NOP 10 -  10
+>DIV 10 3 -  3
+>ST 3 764608646 - 
+>HALT - 
+New Code Segment
+ ( itest4 ) := ( ( 10 ) mod ( 3 ) )
+
+BYTE 10
+NOP
+BYTE 3
+MOD
+ADDR 2D93:00A7
+ST
+HALT
+>NOP 10 -  10
+>MOD 10 3 -  1
+>ST 1 764608679 - 
+>HALT - 
+New Code Segment
+ ( itest5 ) := ( ( 5 ) and ( 3 ) )
+
+BYTE 5
+NOP
+BYTE 3
+AND
+ADDR 2D93:00C8
+ST
+HALT
+>NOP 5 -  5
+>AND 5 3 -  1
+>ST 1 764608712 - 
+>HALT - 
+New Code Segment
+ ( itest6 ) := ( ( 4 ) + ( 5 ) )
+
+BYTE 4
+NOP
+BYTE 5
+ADD
+ADDR 2D93:00E9
+ST
+HALT
+>NOP 4 -  4
+>ADD 4 5 -  9
+>ST 9 764608745 - 
+>HALT - 
+New Code Segment
+ ( itest7 ) := ( ( 7 ) - ( 5 ) )
+
+BYTE 7
+NOP
+BYTE 5
+SUB
+ADDR 2D93:010A
+ST
+HALT
+>NOP 7 -  7
+>SUB 7 5 -  2
+>ST 2 764608778 - 
+>HALT - 
+New Code Segment
+ ( itest8 ) := ( ( 3 ) or ( 8 ) )
+
+BYTE 3
+NOP
+BYTE 8
+OR
+ADDR 2D93:012B
+ST
+HALT
+>NOP 3 -  3
+>OR 3 8 -  11
+>ST 11 764608811 - 
+>HALT - 
+New Code Segment
+ ( itest9 ) := ( ( 1 ) + ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+ADD
+ADDR 2D93:014C
+ST
+HALT
+>NOP 1 -  1
+>ADD 1 2 -  3
+>ST 3 764608844 - 
+>HALT - 
+New Code Segment
+ ( itest10 ) := ( ( 3 ) * ( 4 ) )
+
+BYTE 3
+NOP
+BYTE 4
+MULT
+ADDR 2D93:016D
+ST
+HALT
+>NOP 3 -  3
+>MULT 3 4 -  12
+>ST 12 764608877 - 
+>HALT - 
+New Code Segment
+ ( itest11 ) := ( ( 1 ) + ( ( 2 ) * ( 4 ) ) )
+
+BYTE 1
+NOP
+BYTE 2
+NOP
+BYTE 4
+MULT
+ADD
+ADDR 2D93:018F
+ST
+HALT
+>NOP 1 -  1
+>NOP 1 2 -  1 2
+>MULT 1 2 4 -  1 8
+>ADD 1 8 -  9
+>ST 9 764608911 - 
+>HALT - 
+New Code Segment
+ ( itest12 ) := ( ( ( 5 ) * ( 6 ) ) + ( 7 ) )
+
+BYTE 5
+NOP
+BYTE 6
+MULT
+BYTE 7
+ADD
+ADDR 2D93:01B1
+ST
+HALT
+>NOP 5 -  5
+>MULT 5 6 -  30
+>ADD 30 7 -  37
+>ST 37 764608945 - 
+>HALT - 
+New Code Segment
+ ( itest13 ) := ( ( 10 ) div ( 2 ) )
+
+BYTE 10
+NOP
+BYTE 2
+DIV
+ADDR 2D93:01D3
+ST
+HALT
+>NOP 10 -  10
+>DIV 10 2 -  5
+>ST 5 764608979 - 
+>HALT - 
+New Code Segment
+ ( itest14 ) := ( ( 11 ) mod ( 2 ) )
+
+BYTE 11
+NOP
+BYTE 2
+MOD
+ADDR 2D93:01F5
+ST
+HALT
+>NOP 11 -  11
+>MOD 11 2 -  1
+>ST 1 764609013 - 
+>HALT - 
+New Code Segment
+ ( itest15 ) := ( ( ( 1 ) + ( 2 ) ) * ( 4 ) )
+
+BYTE 1
+NOP
+BYTE 2
+ADD
+BYTE 4
+MULT
+ADDR 2D93:0217
+ST
+HALT
+>NOP 1 -  1
+>ADD 1 2 -  3
+>MULT 3 4 -  12
+>ST 12 764609047 - 
+>HALT - 
+New Code Segment
+ ( itest16 ) := ( ( 5 ) * ( ( 6 ) + ( 7 ) ) )
+
+BYTE 5
+NOP
+BYTE 6
+NOP
+BYTE 7
+ADD
+MULT
+ADDR 2D93:0239
+ST
+HALT
+>NOP 5 -  5
+>NOP 5 6 -  5 6
+>ADD 5 6 7 -  5 13
+>MULT 5 13 -  65
+>ST 65 764609081 - 
+>HALT - 
+New Code Segment
+ ( itest17 ) := ( - ( 1 ) )
+
+BYTE 0
+NOP
+BYTE 1
+SUB
+ADDR 2D93:025B
+ST
+HALT
+>NOP 0 -  0
+>SUB 0 1 -  -1
+>ST -1 764609115 - 
+>HALT - 
+New Code Segment
+ ( itest18 ) := ( - ( ( 2 ) * ( 5 ) ) )
+
+BYTE 0
+NOP
+BYTE 2
+NOP
+BYTE 5
+MULT
+SUB
+ADDR 2D93:027D
+ST
+HALT
+>NOP 0 -  0
+>NOP 0 2 -  0 2
+>MULT 0 2 5 -  0 10
+>SUB 0 10 -  -10
+>ST -10 764609149 - 
+>HALT - 
+New Code Segment
+ ( itest19 ) := ( - ( ( 2 ) * ( - ( 5 ) ) ) )
+
+BYTE 0
+NOP
+BYTE 2
+NOP
+BYTE 0
+NOP
+BYTE 5
+SUB
+MULT
+SUB
+ADDR 2D93:029F
+ST
+HALT
+>NOP 0 -  0
+>NOP 0 2 -  0 2
+>NOP 0 2 0 -  0 2 0
+>SUB 0 2 0 5 -  0 2 -5
+>MULT 0 2 -5 -  0 -10
+>SUB 0 -10 -  10
+>ST 10 764609183 - 
+>HALT - 
+New Code Segment
+ ( itest20 ) := ( ( ( 1 ) + ( 2 ) ) + ( 3 ) )
+
+BYTE 1
+NOP
+BYTE 2
+ADD
+BYTE 3
+ADD
+ADDR 2D93:02C1
+ST
+HALT
+>NOP 1 -  1
+>ADD 1 2 -  3
+>ADD 3 3 -  6
+>ST 6 764609217 - 
+>HALT - 
+New Code Segment
+ ( itest21 ) := ( ( ( 7 ) - ( 2 ) ) - ( 1 ) )
+
+BYTE 7
+NOP
+BYTE 2
+SUB
+BYTE 1
+SUB
+ADDR 2D93:02E3
+ST
+HALT
+>NOP 7 -  7
+>SUB 7 2 -  5
+>SUB 5 1 -  4
+>ST 4 764609251 - 
+>HALT - 
+New Code Segment
+ ( itest22 ) := ( ( ( 20 ) div ( 2 ) ) div ( 3 ) )
+
+BYTE 20
+NOP
+BYTE 2
+DIV
+BYTE 3
+DIV
+ADDR 2D93:0305
+ST
+HALT
+>NOP 20 -  20
+>DIV 20 2 -  10
+>DIV 10 3 -  3
+>ST 3 764609285 - 
+>HALT - 
+End of File
+
+
+Global Identifiers:
+Global Variable: itest  Integer (1)
+Global Variable: itest1  Integer (-4)
+Global Variable: itest2  Integer (12)
+Global Variable: itest3  Integer (3)
+Global Variable: itest4  Integer (1)
+Global Variable: itest5  Integer (1)
+Global Variable: itest6  Integer (9)
+Global Variable: itest7  Integer (2)
+Global Variable: itest8  Integer (11)
+Global Variable: itest9  Integer (3)
+Global Variable: itest10  Integer (12)
+Global Variable: itest11  Integer (9)
+Global Variable: itest12  Integer (37)
+Global Variable: itest13  Integer (5)
+Global Variable: itest14  Integer (1)
+Global Variable: itest15  Integer (12)
+Global Variable: itest16  Integer (65)
+Global Variable: itest17  Integer (-1)
+Global Variable: itest18  Integer (-10)
+Global Variable: itest19  Integer (10)
+Global Variable: itest20  Integer (6)
+Global Variable: itest21  Integer (4)
+Global Variable: itest22  Integer (3)

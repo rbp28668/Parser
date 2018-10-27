@@ -1,0 +1,3268 @@
+Stack Allocation = 10240 bytes
+
+ TEST
+
+ Start     Length     Name                   Class
+ 0001:0000 00000H     INPUT_TEXT             CODE
+ 0001:0000 00000H     FILE_TEXT              CODE
+ 0001:0000 00000H     FIND_TEXT              CODE
+ 0001:0000 00000H     FRAME_TEXT             CODE
+ 0001:0000 00000H     MAIN_TEXT              CODE
+ 0001:0000 00000H     OUTPUT_TEXT            CODE
+ 0001:0000 00000H     BUFFER_TEXT            CODE
+ 0001:0000 00000H     PDRIVE_TEXT            CODE
+ 0001:0000 00000H     ERROR_TEXT             CODE
+ 0001:0000 00000H     STRING_TEXT            CODE
+ 0001:0000 00000H     AMBLE_TEXT             CODE
+ 0001:0000 00000H     APLIST_TEXT            CODE
+ 0001:0000 00000H     BLOCK_TEXT             CODE
+ 0001:0000 00000H     BUILTIN_TEXT           CODE
+ 0001:0000 00000H     CCALL_TEXT             CODE
+ 0001:0000 00000H     CONSTANT_TEXT          CODE
+ 0001:0000 00000H     ENUMS_TEXT             CODE
+ 0001:0000 00000H     EXPR_TEXT              CODE
+ 0001:0000 00000H     EXPRTYPE_TEXT          CODE
+ 0001:0000 00000H     FNDEC_TEXT             CODE
+ 0001:0000 00000H     FPLIST_TEXT            CODE
+ 0001:0000 00000H     GETTEXT_TEXT           CODE
+ 0001:0000 00000H     IDENT_TEXT             CODE
+ 0001:0000 00000H     IPROC_TEXT             CODE
+ 0001:0000 00000H     LEX_TEXT               CODE
+ 0001:0000 00000H     MUSTHAVE_TEXT          CODE
+ 0001:0000 00000H     MALLOC_TEXT            CODE
+ 0001:0000 00000H     PARSER_TEXT            CODE
+ 0001:0000 00000H     PLANT_TEXT             CODE
+ 0001:0000 00000H     PLANTEXP_TEXT          CODE
+ 0001:0000 00000H     PRINTF_TEXT            CODE
+ 0001:0000 00000H     PROCDEC_TEXT           CODE
+ 0001:0000 00000H     PSTRING_TEXT           CODE
+ 0001:0000 00000H     RECORD_TEXT            CODE
+ 0001:0000 00000H     SIMPSTAT_TEXT          CODE
+ 0001:0000 00000H     STATEMNT_TEXT          CODE
+ 0001:0000 00000H     TYPE_TEXT              CODE
+ 0001:0000 00000H     VARS_TEXT              CODE
+ 0001:0000 00000H     VERSION_TEXT           CODE
+ 0001:0000 05551H     _TEXT                  CODE
+ 0002:0000 0EDC3H     COMDAT_SEG1            CODE
+ 0003:0000 06481H     COMDAT_SEG2            CODE
+ 0004:0000 00010H     NULL                   BEGDATA
+ 0004:0010 04D6EH     _DATA                  DATA
+ 0004:4D7E 0000EH     CDATA                  DATA
+ 0004:4D8C 00000H     XIFB                   DATA
+ 0004:4D8C 00000H     XIF                    DATA
+ 0004:4D8C 00000H     XIFE                   DATA
+ 0004:4D8C 00000H     XIB                    DATA
+ 0004:4D8C 0000CH     XI                     DATA
+ 0004:4D98 00000H     XIE                    DATA
+ 0004:4D98 00000H     XPB                    DATA
+ 0004:4D98 00004H     XP                     DATA
+ 0004:4D9C 00000H     XPE                    DATA
+ 0004:4D9C 00000H     XCB                    DATA
+ 0004:4D9C 00000H     XC                     DATA
+ 0004:4D9C 00000H     XCE                    DATA
+ 0004:4D9C 00000H     XCFB                   DATA
+ 0004:4D9C 00000H     XCFCRT                 DATA
+ 0004:4D9C 00000H     XCF                    DATA
+ 0004:4D9C 00000H     XCFE                   DATA
+ 0004:4D9C 00000H     XIFCB                  DATA
+ 0004:4D9C 00000H     XIFU                   DATA
+ 0004:4D9C 00000H     XIFL                   DATA
+ 0004:4D9C 00000H     XIFM                   DATA
+ 0004:4D9C 00000H     XIFCE                  DATA
+ 0004:4D9C 00000H     DBDATA                 DATA
+ 0004:4D9C 000E4H     IOB                    DATA
+ 0004:4E80 00000H     IOBX                   DATA
+ 0004:4E80 0000CH     IOBE                   DATA
+ 0004:4E8C 000E4H     IOB2                   DATA
+ 0004:4F70 00000H     IOB2X                  DATA
+ 0004:4F70 0000CH     IOB2E                  DATA
+ 0004:4F7C 00028H     CONST                  CONST
+ 0004:4FA4 00008H     HDR                    MSG
+ 0004:4FAC 00416H     MSG                    MSG
+ 0004:53C2 00015H     PAD                    MSG
+ 0004:53D7 00001H     EPAD                   MSG
+ 0004:53D8 00590H     _BSS                   BSS
+ 0004:5968 00000H     XOB                    BSS
+ 0004:5968 00000H     XO                     BSS
+ 0004:5968 00000H     XOE                    BSS
+ 0004:5968 00000H     XOFB                   BSS
+ 0004:5968 00000H     XOF                    BSS
+ 0004:5968 00000H     XOFE                   BSS
+ 0004:5970 00008H     c_common               BSS
+
+ Origin   Group
+ 0004:0   DGROUP
+
+ Address   Export                  Alias
+
+ 0001:0706 ___ExportedStub         ___ExportedStub
+
+  Address         Publics by Name
+
+ 0001:3658       $i8_output
+ 0001:3919       $i8_tpwr10
+ 0000:0000  Imp  BEGINPAINT           (USER.39)
+ 0000:0000  Imp  BRINGWINDOWTOTOP     (USER.45)
+ 0000:0000  Imp  CHECKMENUITEM        (USER.154)
+ 0002:1FBE       CLOSEENUMPROC
+ 0000:0000  Imp  CREATEWINDOW         (USER.41)
+ 0000:0000  Imp  DEFFRAMEPROC         (USER.445)
+ 0000:0000  Imp  DEFMDICHILDPROC      (USER.447)
+ 0000:0000  Imp  DESTROYMENU          (USER.152)
+ 0000:0000  Imp  DISPATCHMESSAGE      (USER.114)
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0000:0000  Imp  DRAWMENUBAR          (USER.160)
+ 0000:0000  Imp  ENABLEMENUITEM       (USER.155)
+ 0000:0000  Imp  ENDPAINT             (USER.40)
+ 0000:0000  Imp  ENUMCHILDWINDOWS     (USER.55)
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0000  Imp  FINDTEXT             (COMMDLG.11)
+ 0000:0000  Imp  FINDWINDOW           (USER.50)
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0002:1A28       FRAMEWNDPROC
+ 0000:0000  Imp  FREEPROCINSTANCE     (KERNEL.52)
+ 0000:0000  Imp  GETDC                (USER.66)
+ 0000:0000  Imp  GETDIALOGBASEUNITS   (USER.243)
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  GETLASTACTIVEPOPUP   (USER.287)
+ 0000:0000  Imp  GETMENU              (USER.157)
+ 0000:0000  Imp  GETMESSAGE           (USER.108)
+ 0000:0000  Imp  GETMODULEFILENAME    (KERNEL.49)
+ 0000:0000  Imp  GETOPENFILENAME      (COMMDLG.1)
+ 0000:0000  Imp  GETPARENT            (USER.46)
+ 0000:0000  Imp  GETSAVEFILENAME      (COMMDLG.2)
+ 0000:0000  Imp  GETSTOCKOBJECT       (GDI.87)
+ 0000:0000  Imp  GETSUBMENU           (USER.159)
+ 0000:0000  Imp  GETTEXTMETRICS       (GDI.93)
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  GETWINDOW            (USER.262)
+ 0000:0000  Imp  GETWINDOWTEXTLENGTH  (USER.38)
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  GLOBALHANDLE         (KERNEL.21)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0000:0000  Imp  INITAPP              (USER.5)
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0002:0374       INPUTWNDPROC
+ 0000:0000  Imp  INVALIDATERECT       (USER.125)
+ 0000:0000  Imp  ISCLIPBOARDFORMATAVAILABLE (USER.193)
+ 0000:0000  Imp  ISWINDOW             (USER.47)
+ 0000:0000  Imp  LOADACCELERATORS     (USER.177)
+ 0000:0000  Imp  LOADCURSOR           (USER.173)
+ 0000:0000  Imp  LOADICON             (USER.174)
+ 0000:0000  Imp  LOADMENU             (USER.150)
+ 0000:0000  Imp  LOADSTRING           (USER.176)
+ 0000:0000  Imp  LOCALLOCK            (KERNEL.8)
+ 0000:0000  Imp  LOCALUNLOCK          (KERNEL.9)
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0000  Imp  LSTRLEN              (KERNEL.90)
+ 0000:0000  Imp  MAKEPROCINSTANCE     (KERNEL.51)
+ 0000:0000  Imp  MESSAGEBOX           (USER.1)
+ 0000:0000  Imp  MOVEWINDOW           (USER.56)
+ 0002:28D2       OUTPUTWNDPROC
+ 0000:0008  Abs  pAtomTable
+ 0000:0000  Imp  PEEKMESSAGE          (USER.109)
+ 0000:0006  Abs  pLocalHeap
+ 0000:0000  Imp  POSTMESSAGE          (USER.110)
+ 0000:0000  Imp  POSTQUITMESSAGE      (USER.6)
+ 0000:000E  Abs  pStackBot
+ 0000:000C  Abs  pStackMin
+ 0000:000A  Abs  pStackTop
+ 0000:0000  Imp  REGISTERCLASS        (USER.57)
+ 0000:0000  Imp  REGISTERWINDOWMESSAGE (USER.118)
+ 0000:0000  Imp  RELEASEDC            (USER.68)
+ 0000:0000  Imp  REPLACETEXT          (COMMDLG.12)
+ 0004:0004       rsrvptrs
+ 0000:0000  Imp  SCROLLWINDOW         (USER.61)
+ 0000:0000  Imp  SENDMESSAGE          (USER.111)
+ 0000:0000  Imp  SETFOCUS             (USER.22)
+ 0000:0000  Imp  SETSCROLLPOS         (USER.62)
+ 0000:0000  Imp  SETSCROLLRANGE       (USER.64)
+ 0000:0000  Imp  SETWINDOWTEXT        (USER.37)
+ 0000:0000  Imp  SHOWWINDOW           (USER.42)
+ 0000:0000  Imp  TEXTOUT              (GDI.33)
+ 0000:0000  Imp  TRANSLATEACCELERATOR (USER.178)
+ 0000:0000  Imp  TRANSLATEMDISYSACCEL (USER.451)
+ 0000:0000  Imp  TRANSLATEMESSAGE     (USER.113)
+ 0000:0000  Imp  UPDATEWINDOW         (USER.124)
+ 0000:0000  Imp  WAITEVENT            (KERNEL.30)
+ 0000:0000  Imp  WAITMESSAGE          (USER.112)
+ 0002:2164       WINMAIN
+ 0001:1F2A       _abort
+ 0001:4B50       _acos
+ 0002:213A       _AppAbout
+ 0002:207A       _AppError
+ 0002:2048       _AppInstance
+ 0002:258C       _AppIsPaused
+ 0002:243E       _AppMessagePump
+ 0002:2060       _AppName
+ 0002:2574       _AppPause
+ 0002:255C       _AppProcessing
+ 0002:20DA       _AppWarning
+ 0004:4732       _aseghi
+ 0004:4730       _aseglo
+ 0001:4B4A       _asin
+ 0001:4B55       _atan
+ 0001:4B5A       _atan2
+ 0001:1E02       _atof
+ 0004:156E       _BooleanTypeDecl
+ 0002:35D2       _BufferedLine
+ 0002:3326       _BufferLine
+ 0002:3634       _BufferLineCount
+ 0002:355E       _ClearBuffer
+ 0003:4ADC       _ConditionalStatement
+ 0001:4B30       _cos
+ 0002:1720       _CreateFrame
+ 0002:0264       _CreateInputWindow
+ 0002:280E       _CreateOutputWindow
+ 0002:329A       _DeleteOutputBuffer
+ 0004:53D8       _edata
+ 0004:5978       _end
+ 0004:4754       _errno
+ 0002:3A64       _ErrorFunction
+ 0001:01E7       _exit
+ 0001:4B0F       _exp
+ 0001:071A       _fclose
+ 0001:0D74       _fflush
+ 0001:2DFA       _fFYTOX
+ 0001:1446       _fgetc
+ 0001:1FAC       _fgets
+ 0002:0FFC       _FileInitialize
+ 0002:10E8       _FileOpenDlg
+ 0002:11D2       _FileRead
+ 0002:1134       _FileSaveDlg
+ 0002:12FC       _FileWrite
+ 0002:13B2       _FindFindDlg
+ 0002:14CA       _FindFindText
+ 0002:15A6       _FindNextText
+ 0002:143E       _FindReplaceDlg
+ 0002:15DE       _FindReplaceText
+ 0002:1634       _FindValidFind
+ 0001:0856       _fopen
+ 0002:1838       _FrameAttachMenu
+ 0002:19E8       _FrameClass
+ 0002:17F8       _FrameClientWindow
+ 0002:1A02       _FramePostMessage
+ 0002:18FC       _FrameRemoveMenu
+ 0001:0876       _fread
+ 0001:2034       _freopen
+ 0001:209C       _fseek
+ 0001:2120       _ftell
+ 0001:1446       _getc
+ 0001:142A       _getchar
+ 0002:165E       _InitFrame
+ 0002:0198       _InitInput
+ 0002:2742       _InitOutput
+ 0002:31DA       _InitOutputBuffer
+ 0002:0180       _InputExists
+ 0002:0000       _InputFunction
+ 0002:034E       _InputKillMenu
+ 0002:00D0       _InputRun
+ 0004:1558       _IntegerTypeDecl
+ 0000:0000  Imp  _LCLOSE              (KERNEL.81)
+ 0000:0000  Imp  _LCREAT              (KERNEL.83)
+ 0000:0000  Imp  _LLSEEK              (KERNEL.84)
+ 0001:4B04       _log
+ 0001:4B0A       _log10
+ 0000:0000  Imp  _LOPEN               (KERNEL.85)
+ 0000:0000  Imp  _LREAD               (KERNEL.82)
+ 0000:0000  Imp  _LWRITE              (KERNEL.86)
+ 0001:252A       _memcpy
+ 0001:2588       _memset
+ 0002:271A       _OutputExists
+ 0002:25A4       _OutputFunction
+ 0002:28AC       _OutputKillMenu
+ 0001:4AFE       _pow
+ 0002:4DE2       _PRSI_ActualParameterList
+ 0002:A4DE       _PRSI_AllocateGlobalStore
+ 0002:546A       _PRSI_Block
+ 0003:049E       _PRSI_BlockCreate
+ 0003:06B6       _PRSI_BlockFree
+ 0003:07EA       _PRSI_BlockFreeFrom
+ 0003:055A       _PRSI_BlockMalloc
+ 0003:076C       _PRSI_BlockMark
+ 0002:A0F0       _PRSI_CheckDuplicateIdentifier
+ 0003:54EC       _PRSI_CompoundStatement
+ 0002:643A       _PRSI_Constant
+ 0002:687A       _PRSI_ConstantDefinitionPart
+ 0002:A440       _PRSI_EndLocalScope
+ 0002:82DA       _PRSI_ExpressionType
+ 0002:7CC8       _PRSI_ExprIsLValue
+ 0002:9DE0       _PRSI_FindIdentifier
+ 0003:3850       _PRSI_FindRecordField
+ 0002:56BA       _PRSI_FirstPredefinedIdent
+ 0002:97C0       _PRSI_FormalParameterList
+ 0002:96D2       _PRSI_FormalParameterSection
+ 0002:6EF6       _PRSI_FreeExpression
+ 0002:8CDA       _PRSI_FunctionDeclaration
+ 0002:8B02       _PRSI_FunctionHeading
+ 0002:94FE       _PRSI_FunctionParameterSection
+ 0002:A4AC       _PRSI_GetLocalList
+ 0003:55B0       _PRSI_GetOrdinalBounds
+ 0002:9B44       _PRSI_GetText
+ 0002:6E48       _PRSI_InitError
+ 0002:B7BC       _PRSI_InitialiseICode
+ 0002:A294       _PRSI_InitialiseIdentifiers
+ 0002:A494       _PRSI_InLocalScope
+ 0002:7DCE       _PRSI_IsAssignmentCompatible
+ 0003:553C       _PRSI_IsOrdinalType
+ 0003:16EA       _PRSI_IsSimpleType
+ 0003:037A       _PRSI_LexFlushInput
+ 0002:EDAC       _PRSI_LexGetChar
+ 0002:ED38       _PRSI_LexGetDouble
+ 0002:ED92       _PRSI_LexGetIdentifier
+ 0002:ED5C       _PRSI_LexGetLong
+ 0002:ED78       _PRSI_LexGetString
+ 0002:E77E       _PRSI_LexGetToken
+ 0003:024C       _PRSI_LexIsAKeyword
+ 0002:E752       _PRSI_LexPushBackToken
+ 0003:02E6       _PRSI_LexShowInput
+ 0003:0000       _PRSI_LexTranslateToken
+ 0003:03D8       _PRSI_MustHave
+ 0002:6F86       _PRSI_NewExpr
+ 0002:9BC4       _PRSI_NewIdentifier
+ 0002:9D66       _PRSI_NewType
+ 0002:6B30       _PRSI_ParseEnumeratedType
+ 0002:7CAE       _PRSI_ParseExpression
+ 0003:3E8C       _PRSI_ParseRecordType
+ 0003:0E9C       _PRSI_Plant
+ 0003:115E       _PRSI_PlantAddr
+ 0003:0F76       _PRSI_PlantBranch
+ 0003:1B42       _PRSI_PlantCompoundVariable
+ 0003:145E       _PRSI_PlantCurrentSegment
+ 0003:24A0       _PRSI_PlantExpression
+ 0003:120E       _PRSI_PlantFloat
+ 0003:13B2       _PRSI_PlantGetSegment
+ 0003:14AE       _PRSI_PlantInitialise
+ 0003:11B4       _PRSI_PlantInteger
+ 0003:1388       _PRSI_PlantNewSegment
+ 0003:113A       _PRSI_PlantPosition
+ 0003:101E       _PRSI_PlantSetBranch
+ 0003:1428       _PRSI_PlantSetRunnable
+ 0003:1264       _PRSI_PlantString
+ 0003:151C       _PRSI_PlantTerminate
+ 0002:4792       _PRSI_PostAmble
+ 0002:45EA       _PRSI_PreAmble
+ 0003:3044       _PRSI_printf
+ 0003:3282       _PRSI_ProcedureDeclaration
+ 0003:30E4       _PRSI_ProcedureHeading
+ 0002:932A       _PRSI_ProcedureParameterSection
+ 0003:34BC       _PRSI_ReferenceString
+ 0003:52DC       _PRSI_RepetativeStatement
+ 0003:1668       _PRSI_RestoreCode
+ 0002:A598       _PRSI_RollBackTransaction
+ 0003:15C4       _PRSI_SaveCode
+ 0003:03A6       _PRSI_SetupLexAnalyser
+ 0002:5546       _PRSI_SetupPredefinedIdentifiers
+ 0003:415C       _PRSI_SimpleStatement
+ 0002:A396       _PRSI_StartLocalScope
+ 0002:A502       _PRSI_StartTransaction
+ 0003:3642       _PRSI_StrCmp
+ 0003:5358       _PRSI_StructuredStatement
+ 0002:B8AE       _PRSI_TerminateICode
+ 0002:A2C2       _PRSI_TerminateIdentifiers
+ 0003:5C06       _PRSI_Type
+ 0003:5EB4       _PRSI_TypeDefinitionPart
+ 0002:9066       _PRSI_ValueParameterSection
+ 0002:727E       _PRSI_Variable
+ 0003:6334       _PRSI_VariableDeclarationPart
+ 0002:91C8       _PRSI_VariableParameterSection
+ 0003:36CA       _PRS_CloneString
+ 0003:3328       _PRS_CreateString
+ 0003:341C       _PRS_CreateStringOfLength
+ 0003:3758       _PRS_DeleteString
+ 0002:6C2A       _PRS_Error
+ 0002:A61A       _PRS_Fence
+ 0002:A6DE       _PRS_Forget
+ 0002:E942       _PRS_FormatCommand
+ 0003:0B4A       _PRS_InitialiseInterpreter
+ 0002:ECFA       _PRS_InputFunction
+ 0002:E3A8       _PRS_LoadFile
+ 0002:D87C       _PRS_Parameters
+ 0003:09AE       _PRS_ParseUnit
+ 0002:D92C       _PRS_ReturnOrdinal
+ 0002:D980       _PRS_ReturnPtr
+ 0002:D8DC       _PRS_ReturnReal
+ 0002:D712       _PRS_RunVM
+ 0002:E8D4       _PRS_SendCommand
+ 0002:62F4       _PRS_SetCExtension
+ 0002:6E14       _PRS_SetErrorHandler
+ 0002:D83E       _PRS_SetFaultHandler
+ 0002:6240       _PRS_SetOutputFunction
+ 0003:352E       _PRS_SetString
+ 0002:B6A2       _PRS_ShowIdentifiers
+ 0002:D6BA       _PRS_StartVM
+ 0002:D81E       _PRS_StopVM
+ 0003:34E6       _PRS_StringContents
+ 0003:0B80       _PRS_TerminateInterpreter
+ 0002:D74C       _PRS_TickVM
+ 0003:6400       _PRS_Version
+ 0002:D7EC       _PRS_VMRunning
+ 0002:B5F0       _PRS_WhatIs
+ 0002:6274       _PRS_Write
+ 0004:1584       _RealTypeDecl
+ 0001:2942       _remove
+ 0002:398C       _SetupCFunctions
+ 0002:3A44       _SetupParserExtensions
+ 0002:45CA       _SetupStringExtensions
+ 0002:17AA       _ShowFrame
+ 0001:4B2A       _sin
+ 0001:313C       _Soft_fFCOS
+ 0001:3153       _Soft_fFSIN
+ 0001:3255       _Soft_fFTAN
+ 0001:22C6       _sprintf
+ 0001:4AF2       _sqrt
+ 0004:4724       _STKHQQ
+ 0001:1CC8       _strcat
+ 0001:2410       _strchr
+ 0001:1D58       _strcmp
+ 0001:1D1C       _strcpy
+ 0004:159A       _StringTypeDecl
+ 0001:1D82       _strlen
+ 0001:1DC6       _strncmp
+ 0001:1D9C       _strncpy
+ 0001:2442       _strrchr
+ 0001:24BE       _strstr
+ 0001:2634       _strtod
+ 0001:2774       _strtol
+ 0001:2768       _strtoul
+ 0001:4B35       _tan
+ 0001:2334       _vsprintf
+ 0004:4CEC       __80x87
+ 0004:47AA       __aaltstkovr
+ 0004:4738       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0004:4B00       __acsjmptab
+ 0000:D6D6  Abs  __aDBdoswp
+ 0004:47A6       __adbgmsg
+ 0000:D6D6  Abs  __aDBused
+ 0001:1F4C       __aFahdiff
+ 0001:030C       __aFchkstk
+ 0001:4B66       __aFCIacos
+ 0001:4B60       __aFCIasin
+ 0001:4B6B       __aFCIatan
+ 0001:4B70       __aFCIatan2
+ 0001:4B40       __aFCIcos
+ 0001:4B25       __aFCIexp
+ 0001:4B1A       __aFCIlog
+ 0001:4B20       __aFCIlog10
+ 0001:4B14       __aFCIpow
+ 0001:4B3A       __aFCIsin
+ 0001:4AF8       __aFCIsqrt
+ 0001:4B45       __aFCItan
+ 0001:4EE2       __aFeaddd
+ 0001:4E01       __aFeadds
+ 0001:4F46       __aFedivd
+ 0001:4F5F       __aFedivdr
+ 0001:4E65       __aFedivs
+ 0001:4E7E       __aFedivsr
+ 0001:4E97       __aFeldd
+ 0001:4F91       __aFeldl
+ 0001:4FAA       __aFeldq
+ 0001:4DB6       __aFelds
+ 0001:4F78       __aFeldw
+ 0001:4EFB       __aFemuld
+ 0001:4E1A       __aFemuls
+ 0001:4EC9       __aFestd
+ 0001:4EB0       __aFestdp
+ 0001:4DE8       __aFests
+ 0001:4DCF       __aFestsp
+ 0001:4F14       __aFesubd
+ 0001:4F2D       __aFesubdr
+ 0001:4E33       __aFesubs
+ 0001:4E4C       __aFesubsr
+ 0001:4BFC       __aFfadd
+ 0001:4CEE       __aFfaddd
+ 0001:4C96       __aFfchs
+ 0001:5178       __aFfcmp
+ 0001:51A7       __aFfcompp
+ 0001:4C54       __aFfdiv
+ 0001:4D46       __aFfdivd
+ 0001:4D5C       __aFfdivdr
+ 0001:4C6A       __aFfdivr
+ 0001:4C80       __aFfdup
+ 0001:4CAC       __aFfldd
+ 0001:4D88       __aFfldl
+ 0001:4D9E       __aFfldq
+ 0001:4D72       __aFfldw
+ 0001:4C12       __aFfmul
+ 0001:4D04       __aFfmuld
+ 0001:4CD8       __aFfstd
+ 0001:4CC2       __aFfstdp
+ 0001:4C28       __aFfsub
+ 0001:4D1A       __aFfsubd
+ 0001:4D30       __aFfsubdr
+ 0001:4C3E       __aFfsubr
+ 0001:51CC       __aFftol
+ 0001:298C       __aFldiv
+ 0001:2A26       __aFlmul
+ 0001:2A58       __aFlrem
+ 0001:2AF8       __aFlshl
+ 0001:4EE0       __aFsaddd
+ 0001:4DFF       __aFsadds
+ 0001:4F44       __aFsdivd
+ 0001:4F5D       __aFsdivdr
+ 0001:4E63       __aFsdivs
+ 0001:4E7C       __aFsdivsr
+ 0001:4E95       __aFsldd
+ 0001:4F8F       __aFsldl
+ 0001:4FA8       __aFsldq
+ 0001:4DB4       __aFslds
+ 0001:4F76       __aFsldw
+ 0001:4EF9       __aFsmuld
+ 0001:4E18       __aFsmuls
+ 0001:4EC7       __aFsstd
+ 0001:4EAE       __aFsstdp
+ 0001:4DE6       __aFssts
+ 0001:4DCD       __aFsstsp
+ 0001:4F12       __aFssubd
+ 0001:4F2B       __aFssubdr
+ 0001:4E31       __aFssubs
+ 0001:4E4A       __aFssubsr
+ 0001:2A26       __aFulmul
+ 0001:2B04       __aFulshr
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0000:0000  Imp  __AHSHIFT            (KERNEL.113)
+ 0004:4746       __aintdiv
+ 0004:4836       __amblksiz
+ 0001:05B4       __amsg_exit
+ 0001:02EC       __aNchkstk
+ 0004:4858       __asizeC
+ 0004:4859       __asizeD
+ 0004:4AE8       __asnjmptab
+ 0001:28A6       __assert
+ 0001:001A       __astart
+ 0004:4B30       __atn2jmptab
+ 0004:4B18       __atnjmptab
+ 0001:0204       __cexit
+ 0001:4A50       __cfltcvt
+ 0004:4838       __cfltcvt_tab
+ 0004:47CA       __cflush
+ 0001:460C       __cftoe
+ 0001:47D8       __cftof
+ 0001:4970       __cftog
+ 0004:47A3       __child
+ 0001:030C       __chkstk
+ 0001:0104       __cinit
+ 0001:05AA       __cintDIV
+ 0001:4FF1       __cintrindisp1
+ 0001:4FC1       __cintrindisp2
+ 0001:1476       __close
+ 0001:25D0       __cltoasub
+ 0004:472E       __cmdShow
+ 0001:23A0       __commit
+ 0004:4832       __commode
+ 0004:4AA0       __cosjmptab
+ 0004:4AD0       __cotanjmptab
+ 0004:49A2       __cpower
+ 0004:4763       __cpumode
+ 0001:44F8       __cropzeros
+ 0001:0285       __ctermsub
+ 0001:5037       __ctrandisp1
+ 0001:501D       __ctrandisp2
+ 0004:485A       __ctype
+ 0004:485A       __ctype_
+ 0001:1859       __cXENIXtoDOSmode
+ 0001:25DD       __cxtoa
+ 0001:0215       __c_exit
+ 0004:4764       __doserrno
+ 0001:0698       __dosret0
+ 0001:06B7       __dosretax
+ 0001:06A5       __dosreturn
+ 0001:2968       __dos_commit
+ 0001:4EE2       __eaddd
+ 0001:4E01       __eadds
+ 0004:53D8       __edata
+ 0001:4F46       __edivd
+ 0001:4F5F       __edivdr
+ 0001:4E65       __edivs
+ 0001:4E7E       __edivsr
+ 0001:4E97       __eldd
+ 0001:4F91       __eldl
+ 0001:4FAA       __eldq
+ 0001:4DB6       __elds
+ 0001:4F78       __eldw
+ 0001:4EFB       __emuld
+ 0001:4E1A       __emuls
+ 0004:5978       __end
+ 0001:09F6       __endstdio
+ 0004:479A       __environ
+ 0001:4EC9       __estd
+ 0001:4EB0       __estdp
+ 0001:4DE8       __ests
+ 0001:4DCF       __estsp
+ 0001:4F14       __esubd
+ 0001:4F2D       __esubdr
+ 0001:4E33       __esubs
+ 0001:4E4C       __esubsr
+ 0001:01F5       __exit
+ 0004:47A5       __exitflag
+ 0004:4A5E       __expjmptab
+ 0004:474A       __fac
+ 0001:4BFC       __fadd
+ 0001:4CEE       __faddd
+ 0001:45B4       __fassign
+ 0001:395C       __FASTLDADD
+ 0001:3AE3       __FASTLDMULT
+ 0001:4C96       __fchs
+ 0001:1F6C       __fcloseall
+ 0001:5178       __fcmp
+ 0001:51A7       __fcompp
+ 0001:4C54       __fdiv
+ 0001:4D46       __fdivd
+ 0001:4D5C       __fdivdr
+ 0001:4C6A       __fdivr
+ 0001:4C80       __fdup
+ 0001:3091       __fFATN2
+ 0001:2F78       __fFCOS
+ 0001:2E06       __fFEXP
+ 0001:2F2E       __ffexpm1
+ 0001:2EB3       __fFLN
+ 0001:5322       __ffree
+ 0001:2F88       __fFSIN
+ 0001:02C2       __FF_MSGBANNER
+ 0001:142A       __fgetchar
+ 0004:4D70       __fheap
+ 0001:0A0C       __filbuf
+ 0001:1CA7       __findlast
+ 0001:4CAC       __fldd
+ 0001:4D88       __fldl
+ 0001:4D9E       __fldq
+ 0001:4D72       __fldw
+ 0001:0AB6       __flsbuf
+ 0001:520A       __fltin
+ 0001:526E       __fltout
+ 0000:9876  Abs  __fltused
+ 0001:0DD0       __flush
+ 0001:0E50       __flushall
+ 0001:5343       __fmalloc
+ 0001:2C1A       __fmemmove
+ 0001:2B66       __fmemset
+ 0004:4830       __fmode
+ 0001:4C12       __fmul
+ 0001:4D04       __fmuld
+ 0001:4482       __forcdecpt
+ 0004:4D80       __fpinit
+ 0000:0000  Imp  __fpmath             (WIN87EM.1)
+ 0001:52C4       __fpsignal
+ 0000:9876  Abs  __fptaskdata
+ 0001:1E7C       __fptostr
+ 0001:02E6       __fptrap
+ 0001:0BB0       __freebuf
+ 0001:081C       __fsopen
+ 0001:4CD8       __fstd
+ 0001:4CC2       __fstdp
+ 0001:2B2A       __fstrcpy
+ 0001:2B10       __fstrlen
+ 0001:2BAE       __fstrstr
+ 0001:4C28       __fsub
+ 0001:4D1A       __fsubd
+ 0001:4D30       __fsubdr
+ 0001:4C3E       __fsubr
+ 0001:51CC       __ftol
+ 0001:0BE8       __getbuf
+ 0001:06F6       __GetDGROUP
+ 0001:13D6       __getstream
+ 0001:1BB0       __growseg
+ 0004:4728       __hInstance
+ 0004:4726       __hPrevInstance
+ 0004:4D60       __HUGE
+ 0001:1C41       __incseg
+ 0004:498E       __indefinite
+ 0004:49CC       __infinity
+ 0001:4B76       __Init80x87
+ 0001:53EA       __initseg
+ 0004:4D9C       __iob
+ 0004:4E8C       __iob2
+ 0004:4830       __iomode
+ 0001:1E60       __itoa
+ 0004:47CC       __lastiob
+ 0001:3F73       __LD12MULT
+ 0001:3E9E       __LD12MULTTENPOWER
+ 0001:541E       __linkseg
+ 0004:4A46       __lnjmptab
+ 0004:49D6       __logemax
+ 0004:4A2E       __logjmptab
+ 0004:472A       __lpszCmdLine
+ 0001:14AE       __lseek
+ 0004:4834       __lseekchk
+ 0001:40F8       __MANTOLD12
+ 0001:06C9       __maperror
+ 0001:52FC       __matherr
+ 0004:4D68       __matherr_flag
+ 0004:5970       __mbac
+ 0001:066A       __myalloc
+ 0001:54D0       __newseg
+ 0004:4766       __nfile
+ 0001:05F6       __NMSG_TEXT
+ 0001:062D       __NMSG_WRITE
+ 0001:00D1       __nomain
+ 0001:159A       __open
+ 0001:0C34       __openfile
+ 0004:4764       __oserr
+ 0004:476C       __osfile
+ 0004:475F       __osmajor
+ 0004:475E       __osminor
+ 0004:4762       __osmode
+ 0004:475E       __osver
+ 0004:4760       __osversion
+ 0001:0EE0       __output
+ 0004:479E       __pgmptr
+ 0004:4998       __piby2
+ 0004:4D6C       __pnhFarHeap
+ 0001:457C       __positive
+ 0004:475A       __psp
+ 0004:4758       __pspadr
+ 0001:531B       __QWINClose
+ 0001:531B       __QWINExit
+ 0001:531B       __QWINGetBuffSize
+ 0001:531B       __QWINGetFocus
+ 0001:531B       __QWINGetSize
+ 0001:531B       __QWINInit
+ 0001:531B       __QWINIsQWINin
+ 0001:531B       __QWINMenuClick
+ 0001:531B       __QWINOpen
+ 0001:531B       __QWINRead
+ 0001:531B       __QWINSetAboutString
+ 0001:531B       __QWINSetBuffSize
+ 0001:531B       __QWINSetFocus
+ 0001:531B       __QWINSetSize
+ 0001:531B       __QWINTerm
+ 0004:4D6A       __qwinused
+ 0001:531B       __QWINWrite
+ 0001:531B       __QWINYield
+ 0001:186A       __read
+ 0001:2DAC       __rtbignan
+ 0001:2DDB       __rtchsifneg
+ 0001:2DD2       __rtifprojnpop
+ 0001:2DB3       __rtifprojpop
+ 0001:2DBD       __rtindfnpop
+ 0001:2DBA       __rtindfpop
+ 0001:2F13       __rtinfnpop
+ 0001:2EA6       __rtinfnpopse
+ 0001:2F10       __rtinfpop
+ 0001:2EA3       __rtinfpopse
+ 0001:2D8F       __rtnospop
+ 0001:2D93       __rtnospopde
+ 0001:2DA5       __rtonenpop
+ 0001:2DA2       __rtonepop
+ 0001:3106       __rtpiby2
+ 0001:2D92       __rttosnpop
+ 0001:2DCB       __rttosnpopde
+ 0001:2D8C       __rttospop
+ 0001:2D89       __rttospopde
+ 0001:2D9B       __rtzeronpop
+ 0001:2D98       __rtzeropop
+ 0001:4EE0       __saddd
+ 0001:4DFF       __sadds
+ 0001:4F44       __sdivd
+ 0001:4F5D       __sdivdr
+ 0001:4E63       __sdivs
+ 0001:4E7C       __sdivsr
+ 0001:5454       __searchseg
+ 0001:0346       __setargv
+ 0001:04F0       __setenvp
+ 0004:4856       __sigintoff
+ 0004:4854       __sigintseg
+ 0004:4A88       __sinjmptab
+ 0000:0001  Abs  __sizec
+ 0000:0001  Abs  __sized
+ 0001:4E95       __sldd
+ 0001:4F8F       __sldl
+ 0001:4FA8       __sldq
+ 0001:4DB4       __slds
+ 0001:4F76       __sldw
+ 0001:4EF9       __smuld
+ 0001:4E18       __smuls
+ 0001:1582       __sopen
+ 0004:49B4       __sqrtjmptab
+ 0001:4EC7       __sstd
+ 0001:4EAE       __sstdp
+ 0001:4DE6       __ssts
+ 0001:4DCD       __sstsp
+ 0001:4F12       __ssubd
+ 0001:4F2B       __ssubdr
+ 0001:4E31       __ssubs
+ 0001:4E4A       __ssubsr
+ 0001:1B9C       __stackavail
+ 0001:41B2       __STRINGTOD
+ 0001:421A       __STRINGTOLD
+ 0001:2476       __strlwr
+ 0001:249A       __strupr
+ 0001:00D8       __stubmain
+ 0004:4AB8       __tanjmptab
+ 0001:2CE4       __trandisp1
+ 0001:2D26       __trandisp2
+ 0004:4756       __umaskval
+ 0001:2942       __unlink
+ 0001:531B       __wabout
+ 0001:5316       __wcexit
+ 0001:5316       __wcinit
+ 0001:531B       __wclose
+ 0004:4768       __wfile
+ 0001:0010       __wflags
+ 0001:531B       __wgetfocus
+ 0001:531B       __wgetscreenbuf
+ 0001:531B       __wgetsize
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0004:475D       __winmajor
+ 0004:475C       __winminor
+ 0004:475C       __winver
+ 0000:0000  Abs  __wiobused
+ 0001:531B       __wmenuclick
+ 0004:476A       __wnfile
+ 0001:531B       __wopen
+ 0001:531B       __wread
+ 0001:19E2       __write
+ 0001:28F4       __wrt2err
+ 0001:531B       __wsetfocus
+ 0001:531B       __wsetscreenbuf
+ 0001:531B       __wsetsize
+ 0004:4780       __wsfile
+ 0001:531B       __wterm
+ 0001:531B       __wwrite
+ 0004:49FE       __ytoxjmptab
+ 0004:4736       ___aDBrterr
+ 0004:4734       ___aDBswpflg
+ 0004:4794       ___argc
+ 0004:4796       ___argv
+ 0001:0706       ___ExportedStub
+
+  Address         Publics by Value
+
+ 0000:0000  Imp  GETSUBMENU           (USER.159)
+ 0000:0000  Imp  GETTEXTMETRICS       (GDI.93)
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0000:0000  Imp  ISWINDOW             (USER.47)
+ 0000:0000  Imp  GETMESSAGE           (USER.108)
+ 0000:0000  Imp  FINDTEXT             (COMMDLG.11)
+ 0000:0000  Imp  GETSAVEFILENAME      (COMMDLG.2)
+ 0000:0000  Imp  WAITEVENT            (KERNEL.30)
+ 0000:0000  Imp  TEXTOUT              (GDI.33)
+ 0000:0000  Imp  MESSAGEBOX           (USER.1)
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  __AHSHIFT            (KERNEL.113)
+ 0000:0000  Imp  LOADMENU             (USER.150)
+ 0000:0000  Imp  POSTQUITMESSAGE      (USER.6)
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  REGISTERWINDOWMESSAGE (USER.118)
+ 0000:0000  Imp  SETSCROLLPOS         (USER.62)
+ 0000:0000  Imp  GETLASTACTIVEPOPUP   (USER.287)
+ 0000:0000  Imp  DESTROYMENU          (USER.152)
+ 0000:0000  Imp  UPDATEWINDOW         (USER.124)
+ 0000:0000  Imp  GLOBALHANDLE         (KERNEL.21)
+ 0000:0000  Imp  DRAWMENUBAR          (USER.160)
+ 0000:0000  Imp  TRANSLATEACCELERATOR (USER.178)
+ 0000:0000  Imp  _LLSEEK              (KERNEL.84)
+ 0000:0000  Imp  DEFFRAMEPROC         (USER.445)
+ 0000:0000  Imp  RELEASEDC            (USER.68)
+ 0000:0000  Imp  REGISTERCLASS        (USER.57)
+ 0000:0000  Imp  LSTRLEN              (KERNEL.90)
+ 0000:0000  Imp  REPLACETEXT          (COMMDLG.12)
+ 0000:0000  Imp  SHOWWINDOW           (USER.42)
+ 0000:0000  Imp  GETWINDOWTEXTLENGTH  (USER.38)
+ 0000:0000  Imp  _LOPEN               (KERNEL.85)
+ 0000:0000  Imp  LOADICON             (USER.174)
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  GETDIALOGBASEUNITS   (USER.243)
+ 0000:0000  Imp  GETPARENT            (USER.46)
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0000:0000  Imp  ENDPAINT             (USER.40)
+ 0000:0000  Imp  SETFOCUS             (USER.22)
+ 0000:0000  Imp  GETMENU              (USER.157)
+ 0000:0000  Imp  GETDC                (USER.66)
+ 0000:0000  Imp  SCROLLWINDOW         (USER.61)
+ 0000:0000  Imp  _LCLOSE              (KERNEL.81)
+ 0000:0000  Imp  LOADACCELERATORS     (USER.177)
+ 0000:0000  Imp  INVALIDATERECT       (USER.125)
+ 0000:0000  Abs  __wiobused
+ 0000:0000  Imp  DEFMDICHILDPROC      (USER.447)
+ 0000:0000  Imp  DISPATCHMESSAGE      (USER.114)
+ 0000:0000  Imp  _LREAD               (KERNEL.82)
+ 0000:0000  Imp  LOADSTRING           (USER.176)
+ 0000:0000  Imp  FINDWINDOW           (USER.50)
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  _LWRITE              (KERNEL.86)
+ 0000:0000  Imp  LOCALLOCK            (KERNEL.8)
+ 0000:0000  Imp  ISCLIPBOARDFORMATAVAILABLE (USER.193)
+ 0000:0000  Imp  TRANSLATEMESSAGE     (USER.113)
+ 0000:0000  Imp  FREEPROCINSTANCE     (KERNEL.52)
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0000:0000  Imp  GETSTOCKOBJECT       (GDI.87)
+ 0000:0000  Imp  GETWINDOW            (USER.262)
+ 0000:0000  Imp  MAKEPROCINSTANCE     (KERNEL.51)
+ 0000:0000  Imp  SETSCROLLRANGE       (USER.64)
+ 0000:0000  Imp  INITAPP              (USER.5)
+ 0000:0000  Imp  WAITMESSAGE          (USER.112)
+ 0000:0000  Imp  TRANSLATEMDISYSACCEL (USER.451)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0000:0000  Imp  SETWINDOWTEXT        (USER.37)
+ 0000:0000  Imp  ENABLEMENUITEM       (USER.155)
+ 0000:0000  Imp  _LCREAT              (KERNEL.83)
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  CREATEWINDOW         (USER.41)
+ 0000:0000  Imp  __fpmath             (WIN87EM.1)
+ 0000:0000  Imp  LOADCURSOR           (USER.173)
+ 0000:0000  Imp  BEGINPAINT           (USER.39)
+ 0000:0000  Imp  LOCALUNLOCK          (KERNEL.9)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  POSTMESSAGE          (USER.110)
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0000  Imp  ENUMCHILDWINDOWS     (USER.55)
+ 0000:0000  Imp  GETMODULEFILENAME    (KERNEL.49)
+ 0000:0000  Imp  BRINGWINDOWTOTOP     (USER.45)
+ 0000:0000  Imp  PEEKMESSAGE          (USER.109)
+ 0000:0000  Imp  CHECKMENUITEM        (USER.154)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  GETOPENFILENAME      (COMMDLG.1)
+ 0000:0000  Imp  MOVEWINDOW           (USER.56)
+ 0000:0000  Imp  SENDMESSAGE          (USER.111)
+ 0000:0001  Abs  __sizec
+ 0000:0001  Abs  __sized
+ 0000:0006  Abs  pLocalHeap
+ 0000:0008  Abs  pAtomTable
+ 0000:000A  Abs  pStackTop
+ 0000:000C  Abs  pStackMin
+ 0000:000E  Abs  pStackBot
+ 0000:0632  Abs  FISRQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __fptaskdata
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __fltused
+ 0000:D6D6  Abs  __aDBused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0001:0010       __wflags
+ 0001:001A       __astart
+ 0001:00D1       __nomain
+ 0001:00D8       __stubmain
+ 0001:0104       __cinit
+ 0001:01E7       _exit
+ 0001:01F5       __exit
+ 0001:0204       __cexit
+ 0001:0215       __c_exit
+ 0001:0285       __ctermsub
+ 0001:02C2       __FF_MSGBANNER
+ 0001:02E6       __fptrap
+ 0001:02EC       __aNchkstk
+ 0001:030C       __chkstk
+ 0001:030C       __aFchkstk
+ 0001:0346       __setargv
+ 0001:04F0       __setenvp
+ 0001:05AA       __cintDIV
+ 0001:05B4       __amsg_exit
+ 0001:05F6       __NMSG_TEXT
+ 0001:062D       __NMSG_WRITE
+ 0001:066A       __myalloc
+ 0001:0698       __dosret0
+ 0001:06A5       __dosreturn
+ 0001:06B7       __dosretax
+ 0001:06C9       __maperror
+ 0001:06F6       __GetDGROUP
+ 0001:0706       ___ExportedStub
+ 0001:071A       _fclose
+ 0001:081C       __fsopen
+ 0001:0856       _fopen
+ 0001:0876       _fread
+ 0001:09F6       __endstdio
+ 0001:0A0C       __filbuf
+ 0001:0AB6       __flsbuf
+ 0001:0BB0       __freebuf
+ 0001:0BE8       __getbuf
+ 0001:0C34       __openfile
+ 0001:0D74       _fflush
+ 0001:0DD0       __flush
+ 0001:0E50       __flushall
+ 0001:0EE0       __output
+ 0001:13D6       __getstream
+ 0001:142A       _getchar
+ 0001:142A       __fgetchar
+ 0001:1446       _getc
+ 0001:1446       _fgetc
+ 0001:1476       __close
+ 0001:14AE       __lseek
+ 0001:1582       __sopen
+ 0001:159A       __open
+ 0001:1859       __cXENIXtoDOSmode
+ 0001:186A       __read
+ 0001:19E2       __write
+ 0001:1B9C       __stackavail
+ 0001:1BB0       __growseg
+ 0001:1C41       __incseg
+ 0001:1CA7       __findlast
+ 0001:1CC8       _strcat
+ 0001:1D1C       _strcpy
+ 0001:1D58       _strcmp
+ 0001:1D82       _strlen
+ 0001:1D9C       _strncpy
+ 0001:1DC6       _strncmp
+ 0001:1E02       _atof
+ 0001:1E60       __itoa
+ 0001:1E7C       __fptostr
+ 0001:1F2A       _abort
+ 0001:1F4C       __aFahdiff
+ 0001:1F6C       __fcloseall
+ 0001:1FAC       _fgets
+ 0001:2034       _freopen
+ 0001:209C       _fseek
+ 0001:2120       _ftell
+ 0001:22C6       _sprintf
+ 0001:2334       _vsprintf
+ 0001:23A0       __commit
+ 0001:2410       _strchr
+ 0001:2442       _strrchr
+ 0001:2476       __strlwr
+ 0001:249A       __strupr
+ 0001:24BE       _strstr
+ 0001:252A       _memcpy
+ 0001:2588       _memset
+ 0001:25D0       __cltoasub
+ 0001:25DD       __cxtoa
+ 0001:2634       _strtod
+ 0001:2768       _strtoul
+ 0001:2774       _strtol
+ 0001:28A6       __assert
+ 0001:28F4       __wrt2err
+ 0001:2942       _remove
+ 0001:2942       __unlink
+ 0001:2968       __dos_commit
+ 0001:298C       __aFldiv
+ 0001:2A26       __aFulmul
+ 0001:2A26       __aFlmul
+ 0001:2A58       __aFlrem
+ 0001:2AF8       __aFlshl
+ 0001:2B04       __aFulshr
+ 0001:2B10       __fstrlen
+ 0001:2B2A       __fstrcpy
+ 0001:2B66       __fmemset
+ 0001:2BAE       __fstrstr
+ 0001:2C1A       __fmemmove
+ 0001:2CE4       __trandisp1
+ 0001:2D26       __trandisp2
+ 0001:2D89       __rttospopde
+ 0001:2D8C       __rttospop
+ 0001:2D8F       __rtnospop
+ 0001:2D92       __rttosnpop
+ 0001:2D93       __rtnospopde
+ 0001:2D98       __rtzeropop
+ 0001:2D9B       __rtzeronpop
+ 0001:2DA2       __rtonepop
+ 0001:2DA5       __rtonenpop
+ 0001:2DAC       __rtbignan
+ 0001:2DB3       __rtifprojpop
+ 0001:2DBA       __rtindfpop
+ 0001:2DBD       __rtindfnpop
+ 0001:2DCB       __rttosnpopde
+ 0001:2DD2       __rtifprojnpop
+ 0001:2DDB       __rtchsifneg
+ 0001:2DFA       _fFYTOX
+ 0001:2E06       __fFEXP
+ 0001:2EA3       __rtinfpopse
+ 0001:2EA6       __rtinfnpopse
+ 0001:2EB3       __fFLN
+ 0001:2F10       __rtinfpop
+ 0001:2F13       __rtinfnpop
+ 0001:2F2E       __ffexpm1
+ 0001:2F78       __fFCOS
+ 0001:2F88       __fFSIN
+ 0001:3091       __fFATN2
+ 0001:3106       __rtpiby2
+ 0001:313C       _Soft_fFCOS
+ 0001:3153       _Soft_fFSIN
+ 0001:3255       _Soft_fFTAN
+ 0001:3658       $i8_output
+ 0001:3919       $i8_tpwr10
+ 0001:395C       __FASTLDADD
+ 0001:3AE3       __FASTLDMULT
+ 0001:3E9E       __LD12MULTTENPOWER
+ 0001:3F73       __LD12MULT
+ 0001:40F8       __MANTOLD12
+ 0001:41B2       __STRINGTOD
+ 0001:421A       __STRINGTOLD
+ 0001:4482       __forcdecpt
+ 0001:44F8       __cropzeros
+ 0001:457C       __positive
+ 0001:45B4       __fassign
+ 0001:460C       __cftoe
+ 0001:47D8       __cftof
+ 0001:4970       __cftog
+ 0001:4A50       __cfltcvt
+ 0001:4AF2       _sqrt
+ 0001:4AF8       __aFCIsqrt
+ 0001:4AFE       _pow
+ 0001:4B04       _log
+ 0001:4B0A       _log10
+ 0001:4B0F       _exp
+ 0001:4B14       __aFCIpow
+ 0001:4B1A       __aFCIlog
+ 0001:4B20       __aFCIlog10
+ 0001:4B25       __aFCIexp
+ 0001:4B2A       _sin
+ 0001:4B30       _cos
+ 0001:4B35       _tan
+ 0001:4B3A       __aFCIsin
+ 0001:4B40       __aFCIcos
+ 0001:4B45       __aFCItan
+ 0001:4B4A       _asin
+ 0001:4B50       _acos
+ 0001:4B55       _atan
+ 0001:4B5A       _atan2
+ 0001:4B60       __aFCIasin
+ 0001:4B66       __aFCIacos
+ 0001:4B6B       __aFCIatan
+ 0001:4B70       __aFCIatan2
+ 0001:4B76       __Init80x87
+ 0001:4BFC       __fadd
+ 0001:4BFC       __aFfadd
+ 0001:4C12       __aFfmul
+ 0001:4C12       __fmul
+ 0001:4C28       __fsub
+ 0001:4C28       __aFfsub
+ 0001:4C3E       __aFfsubr
+ 0001:4C3E       __fsubr
+ 0001:4C54       __aFfdiv
+ 0001:4C54       __fdiv
+ 0001:4C6A       __aFfdivr
+ 0001:4C6A       __fdivr
+ 0001:4C80       __aFfdup
+ 0001:4C80       __fdup
+ 0001:4C96       __aFfchs
+ 0001:4C96       __fchs
+ 0001:4CAC       __aFfldd
+ 0001:4CAC       __fldd
+ 0001:4CC2       __fstdp
+ 0001:4CC2       __aFfstdp
+ 0001:4CD8       __fstd
+ 0001:4CD8       __aFfstd
+ 0001:4CEE       __faddd
+ 0001:4CEE       __aFfaddd
+ 0001:4D04       __fmuld
+ 0001:4D04       __aFfmuld
+ 0001:4D1A       __aFfsubd
+ 0001:4D1A       __fsubd
+ 0001:4D30       __aFfsubdr
+ 0001:4D30       __fsubdr
+ 0001:4D46       __aFfdivd
+ 0001:4D46       __fdivd
+ 0001:4D5C       __aFfdivdr
+ 0001:4D5C       __fdivdr
+ 0001:4D72       __aFfldw
+ 0001:4D72       __fldw
+ 0001:4D88       __fldl
+ 0001:4D88       __aFfldl
+ 0001:4D9E       __aFfldq
+ 0001:4D9E       __fldq
+ 0001:4DB4       __slds
+ 0001:4DB4       __aFslds
+ 0001:4DB6       __aFelds
+ 0001:4DB6       __elds
+ 0001:4DCD       __sstsp
+ 0001:4DCD       __aFsstsp
+ 0001:4DCF       __aFestsp
+ 0001:4DCF       __estsp
+ 0001:4DE6       __aFssts
+ 0001:4DE6       __ssts
+ 0001:4DE8       __ests
+ 0001:4DE8       __aFests
+ 0001:4DFF       __sadds
+ 0001:4DFF       __aFsadds
+ 0001:4E01       __eadds
+ 0001:4E01       __aFeadds
+ 0001:4E18       __aFsmuls
+ 0001:4E18       __smuls
+ 0001:4E1A       __emuls
+ 0001:4E1A       __aFemuls
+ 0001:4E31       __aFssubs
+ 0001:4E31       __ssubs
+ 0001:4E33       __esubs
+ 0001:4E33       __aFesubs
+ 0001:4E4A       __aFssubsr
+ 0001:4E4A       __ssubsr
+ 0001:4E4C       __aFesubsr
+ 0001:4E4C       __esubsr
+ 0001:4E63       __sdivs
+ 0001:4E63       __aFsdivs
+ 0001:4E65       __edivs
+ 0001:4E65       __aFedivs
+ 0001:4E7C       __aFsdivsr
+ 0001:4E7C       __sdivsr
+ 0001:4E7E       __aFedivsr
+ 0001:4E7E       __edivsr
+ 0001:4E95       __sldd
+ 0001:4E95       __aFsldd
+ 0001:4E97       __aFeldd
+ 0001:4E97       __eldd
+ 0001:4EAE       __sstdp
+ 0001:4EAE       __aFsstdp
+ 0001:4EB0       __estdp
+ 0001:4EB0       __aFestdp
+ 0001:4EC7       __sstd
+ 0001:4EC7       __aFsstd
+ 0001:4EC9       __estd
+ 0001:4EC9       __aFestd
+ 0001:4EE0       __saddd
+ 0001:4EE0       __aFsaddd
+ 0001:4EE2       __aFeaddd
+ 0001:4EE2       __eaddd
+ 0001:4EF9       __aFsmuld
+ 0001:4EF9       __smuld
+ 0001:4EFB       __emuld
+ 0001:4EFB       __aFemuld
+ 0001:4F12       __aFssubd
+ 0001:4F12       __ssubd
+ 0001:4F14       __esubd
+ 0001:4F14       __aFesubd
+ 0001:4F2B       __aFssubdr
+ 0001:4F2B       __ssubdr
+ 0001:4F2D       __esubdr
+ 0001:4F2D       __aFesubdr
+ 0001:4F44       __sdivd
+ 0001:4F44       __aFsdivd
+ 0001:4F46       __aFedivd
+ 0001:4F46       __edivd
+ 0001:4F5D       __aFsdivdr
+ 0001:4F5D       __sdivdr
+ 0001:4F5F       __aFedivdr
+ 0001:4F5F       __edivdr
+ 0001:4F76       __aFsldw
+ 0001:4F76       __sldw
+ 0001:4F78       __aFeldw
+ 0001:4F78       __eldw
+ 0001:4F8F       __sldl
+ 0001:4F8F       __aFsldl
+ 0001:4F91       __eldl
+ 0001:4F91       __aFeldl
+ 0001:4FA8       __aFsldq
+ 0001:4FA8       __sldq
+ 0001:4FAA       __eldq
+ 0001:4FAA       __aFeldq
+ 0001:4FC1       __cintrindisp2
+ 0001:4FF1       __cintrindisp1
+ 0001:501D       __ctrandisp2
+ 0001:5037       __ctrandisp1
+ 0001:5178       __fcmp
+ 0001:5178       __aFfcmp
+ 0001:51A7       __aFfcompp
+ 0001:51A7       __fcompp
+ 0001:51CC       __aFftol
+ 0001:51CC       __ftol
+ 0001:520A       __fltin
+ 0001:526E       __fltout
+ 0001:52C4       __fpsignal
+ 0001:52FC       __matherr
+ 0001:5316       __wcinit
+ 0001:5316       __wcexit
+ 0001:531B       __QWINTerm
+ 0001:531B       __QWINMenuClick
+ 0001:531B       __QWINIsQWINin
+ 0001:531B       __QWINClose
+ 0001:531B       __QWINGetFocus
+ 0001:531B       __QWINSetFocus
+ 0001:531B       __QWINSetBuffSize
+ 0001:531B       __QWINRead
+ 0001:531B       __QWINOpen
+ 0001:531B       __wabout
+ 0001:531B       __QWINSetAboutString
+ 0001:531B       __wgetfocus
+ 0001:531B       __wterm
+ 0001:531B       __wsetscreenbuf
+ 0001:531B       __wmenuclick
+ 0001:531B       __wgetscreenbuf
+ 0001:531B       __wread
+ 0001:531B       __wsetfocus
+ 0001:531B       __wwrite
+ 0001:531B       __QWINInit
+ 0001:531B       __wclose
+ 0001:531B       __QWINWrite
+ 0001:531B       __wgetsize
+ 0001:531B       __wsetsize
+ 0001:531B       __QWINSetSize
+ 0001:531B       __QWINYield
+ 0001:531B       __QWINExit
+ 0001:531B       __QWINGetSize
+ 0001:531B       __QWINGetBuffSize
+ 0001:531B       __wopen
+ 0001:5322       __ffree
+ 0001:5343       __fmalloc
+ 0001:53EA       __initseg
+ 0001:541E       __linkseg
+ 0001:5454       __searchseg
+ 0001:54D0       __newseg
+ 0002:0000       _InputFunction
+ 0002:00D0       _InputRun
+ 0002:0180       _InputExists
+ 0002:0198       _InitInput
+ 0002:0264       _CreateInputWindow
+ 0002:034E       _InputKillMenu
+ 0002:0374       INPUTWNDPROC
+ 0002:0FFC       _FileInitialize
+ 0002:10E8       _FileOpenDlg
+ 0002:1134       _FileSaveDlg
+ 0002:11D2       _FileRead
+ 0002:12FC       _FileWrite
+ 0002:13B2       _FindFindDlg
+ 0002:143E       _FindReplaceDlg
+ 0002:14CA       _FindFindText
+ 0002:15A6       _FindNextText
+ 0002:15DE       _FindReplaceText
+ 0002:1634       _FindValidFind
+ 0002:165E       _InitFrame
+ 0002:1720       _CreateFrame
+ 0002:17AA       _ShowFrame
+ 0002:17F8       _FrameClientWindow
+ 0002:1838       _FrameAttachMenu
+ 0002:18FC       _FrameRemoveMenu
+ 0002:19E8       _FrameClass
+ 0002:1A02       _FramePostMessage
+ 0002:1A28       FRAMEWNDPROC
+ 0002:1FBE       CLOSEENUMPROC
+ 0002:2048       _AppInstance
+ 0002:2060       _AppName
+ 0002:207A       _AppError
+ 0002:20DA       _AppWarning
+ 0002:213A       _AppAbout
+ 0002:2164       WINMAIN
+ 0002:243E       _AppMessagePump
+ 0002:255C       _AppProcessing
+ 0002:2574       _AppPause
+ 0002:258C       _AppIsPaused
+ 0002:25A4       _OutputFunction
+ 0002:271A       _OutputExists
+ 0002:2742       _InitOutput
+ 0002:280E       _CreateOutputWindow
+ 0002:28AC       _OutputKillMenu
+ 0002:28D2       OUTPUTWNDPROC
+ 0002:31DA       _InitOutputBuffer
+ 0002:329A       _DeleteOutputBuffer
+ 0002:3326       _BufferLine
+ 0002:355E       _ClearBuffer
+ 0002:35D2       _BufferedLine
+ 0002:3634       _BufferLineCount
+ 0002:398C       _SetupCFunctions
+ 0002:3A44       _SetupParserExtensions
+ 0002:3A64       _ErrorFunction
+ 0002:45CA       _SetupStringExtensions
+ 0002:45EA       _PRSI_PreAmble
+ 0002:4792       _PRSI_PostAmble
+ 0002:4DE2       _PRSI_ActualParameterList
+ 0002:546A       _PRSI_Block
+ 0002:5546       _PRSI_SetupPredefinedIdentifiers
+ 0002:56BA       _PRSI_FirstPredefinedIdent
+ 0002:6240       _PRS_SetOutputFunction
+ 0002:6274       _PRS_Write
+ 0002:62F4       _PRS_SetCExtension
+ 0002:643A       _PRSI_Constant
+ 0002:687A       _PRSI_ConstantDefinitionPart
+ 0002:6B30       _PRSI_ParseEnumeratedType
+ 0002:6C2A       _PRS_Error
+ 0002:6E14       _PRS_SetErrorHandler
+ 0002:6E48       _PRSI_InitError
+ 0002:6EF6       _PRSI_FreeExpression
+ 0002:6F86       _PRSI_NewExpr
+ 0002:727E       _PRSI_Variable
+ 0002:7CAE       _PRSI_ParseExpression
+ 0002:7CC8       _PRSI_ExprIsLValue
+ 0002:7DCE       _PRSI_IsAssignmentCompatible
+ 0002:82DA       _PRSI_ExpressionType
+ 0002:8B02       _PRSI_FunctionHeading
+ 0002:8CDA       _PRSI_FunctionDeclaration
+ 0002:9066       _PRSI_ValueParameterSection
+ 0002:91C8       _PRSI_VariableParameterSection
+ 0002:932A       _PRSI_ProcedureParameterSection
+ 0002:94FE       _PRSI_FunctionParameterSection
+ 0002:96D2       _PRSI_FormalParameterSection
+ 0002:97C0       _PRSI_FormalParameterList
+ 0002:9B44       _PRSI_GetText
+ 0002:9BC4       _PRSI_NewIdentifier
+ 0002:9D66       _PRSI_NewType
+ 0002:9DE0       _PRSI_FindIdentifier
+ 0002:A0F0       _PRSI_CheckDuplicateIdentifier
+ 0002:A294       _PRSI_InitialiseIdentifiers
+ 0002:A2C2       _PRSI_TerminateIdentifiers
+ 0002:A396       _PRSI_StartLocalScope
+ 0002:A440       _PRSI_EndLocalScope
+ 0002:A494       _PRSI_InLocalScope
+ 0002:A4AC       _PRSI_GetLocalList
+ 0002:A4DE       _PRSI_AllocateGlobalStore
+ 0002:A502       _PRSI_StartTransaction
+ 0002:A598       _PRSI_RollBackTransaction
+ 0002:A61A       _PRS_Fence
+ 0002:A6DE       _PRS_Forget
+ 0002:B5F0       _PRS_WhatIs
+ 0002:B6A2       _PRS_ShowIdentifiers
+ 0002:B7BC       _PRSI_InitialiseICode
+ 0002:B8AE       _PRSI_TerminateICode
+ 0002:D6BA       _PRS_StartVM
+ 0002:D712       _PRS_RunVM
+ 0002:D74C       _PRS_TickVM
+ 0002:D7EC       _PRS_VMRunning
+ 0002:D81E       _PRS_StopVM
+ 0002:D83E       _PRS_SetFaultHandler
+ 0002:D87C       _PRS_Parameters
+ 0002:D8DC       _PRS_ReturnReal
+ 0002:D92C       _PRS_ReturnOrdinal
+ 0002:D980       _PRS_ReturnPtr
+ 0002:E3A8       _PRS_LoadFile
+ 0002:E752       _PRSI_LexPushBackToken
+ 0002:E77E       _PRSI_LexGetToken
+ 0002:E8D4       _PRS_SendCommand
+ 0002:E942       _PRS_FormatCommand
+ 0002:ECFA       _PRS_InputFunction
+ 0002:ED38       _PRSI_LexGetDouble
+ 0002:ED5C       _PRSI_LexGetLong
+ 0002:ED78       _PRSI_LexGetString
+ 0002:ED92       _PRSI_LexGetIdentifier
+ 0002:EDAC       _PRSI_LexGetChar
+ 0003:0000       _PRSI_LexTranslateToken
+ 0003:024C       _PRSI_LexIsAKeyword
+ 0003:02E6       _PRSI_LexShowInput
+ 0003:037A       _PRSI_LexFlushInput
+ 0003:03A6       _PRSI_SetupLexAnalyser
+ 0003:03D8       _PRSI_MustHave
+ 0003:049E       _PRSI_BlockCreate
+ 0003:055A       _PRSI_BlockMalloc
+ 0003:06B6       _PRSI_BlockFree
+ 0003:076C       _PRSI_BlockMark
+ 0003:07EA       _PRSI_BlockFreeFrom
+ 0003:09AE       _PRS_ParseUnit
+ 0003:0B4A       _PRS_InitialiseInterpreter
+ 0003:0B80       _PRS_TerminateInterpreter
+ 0003:0E9C       _PRSI_Plant
+ 0003:0F76       _PRSI_PlantBranch
+ 0003:101E       _PRSI_PlantSetBranch
+ 0003:113A       _PRSI_PlantPosition
+ 0003:115E       _PRSI_PlantAddr
+ 0003:11B4       _PRSI_PlantInteger
+ 0003:120E       _PRSI_PlantFloat
+ 0003:1264       _PRSI_PlantString
+ 0003:1388       _PRSI_PlantNewSegment
+ 0003:13B2       _PRSI_PlantGetSegment
+ 0003:1428       _PRSI_PlantSetRunnable
+ 0003:145E       _PRSI_PlantCurrentSegment
+ 0003:14AE       _PRSI_PlantInitialise
+ 0003:151C       _PRSI_PlantTerminate
+ 0003:15C4       _PRSI_SaveCode
+ 0003:1668       _PRSI_RestoreCode
+ 0003:16EA       _PRSI_IsSimpleType
+ 0003:1B42       _PRSI_PlantCompoundVariable
+ 0003:24A0       _PRSI_PlantExpression
+ 0003:3044       _PRSI_printf
+ 0003:30E4       _PRSI_ProcedureHeading
+ 0003:3282       _PRSI_ProcedureDeclaration
+ 0003:3328       _PRS_CreateString
+ 0003:341C       _PRS_CreateStringOfLength
+ 0003:34BC       _PRSI_ReferenceString
+ 0003:34E6       _PRS_StringContents
+ 0003:352E       _PRS_SetString
+ 0003:3642       _PRSI_StrCmp
+ 0003:36CA       _PRS_CloneString
+ 0003:3758       _PRS_DeleteString
+ 0003:3850       _PRSI_FindRecordField
+ 0003:3E8C       _PRSI_ParseRecordType
+ 0003:415C       _PRSI_SimpleStatement
+ 0003:4ADC       _ConditionalStatement
+ 0003:52DC       _PRSI_RepetativeStatement
+ 0003:5358       _PRSI_StructuredStatement
+ 0003:54EC       _PRSI_CompoundStatement
+ 0003:553C       _PRSI_IsOrdinalType
+ 0003:55B0       _PRSI_GetOrdinalBounds
+ 0003:5C06       _PRSI_Type
+ 0003:5EB4       _PRSI_TypeDefinitionPart
+ 0003:6334       _PRSI_VariableDeclarationPart
+ 0003:6400       _PRS_Version
+ 0004:0004       rsrvptrs
+ 0004:1558       _IntegerTypeDecl
+ 0004:156E       _BooleanTypeDecl
+ 0004:1584       _RealTypeDecl
+ 0004:159A       _StringTypeDecl
+ 0004:4724       _STKHQQ
+ 0004:4726       __hPrevInstance
+ 0004:4728       __hInstance
+ 0004:472A       __lpszCmdLine
+ 0004:472E       __cmdShow
+ 0004:4730       _aseglo
+ 0004:4732       _aseghi
+ 0004:4734       ___aDBswpflg
+ 0004:4736       ___aDBrterr
+ 0004:4738       __acfinfo
+ 0004:4746       __aintdiv
+ 0004:474A       __fac
+ 0004:4754       _errno
+ 0004:4756       __umaskval
+ 0004:4758       __pspadr
+ 0004:475A       __psp
+ 0004:475C       __winminor
+ 0004:475C       __winver
+ 0004:475D       __winmajor
+ 0004:475E       __osver
+ 0004:475E       __osminor
+ 0004:475F       __osmajor
+ 0004:4760       __osversion
+ 0004:4762       __osmode
+ 0004:4763       __cpumode
+ 0004:4764       __oserr
+ 0004:4764       __doserrno
+ 0004:4766       __nfile
+ 0004:4768       __wfile
+ 0004:476A       __wnfile
+ 0004:476C       __osfile
+ 0004:4780       __wsfile
+ 0004:4794       ___argc
+ 0004:4796       ___argv
+ 0004:479A       __environ
+ 0004:479E       __pgmptr
+ 0004:47A3       __child
+ 0004:47A5       __exitflag
+ 0004:47A6       __adbgmsg
+ 0004:47AA       __aaltstkovr
+ 0004:47CA       __cflush
+ 0004:47CC       __lastiob
+ 0004:4830       __iomode
+ 0004:4830       __fmode
+ 0004:4832       __commode
+ 0004:4834       __lseekchk
+ 0004:4836       __amblksiz
+ 0004:4838       __cfltcvt_tab
+ 0004:4854       __sigintseg
+ 0004:4856       __sigintoff
+ 0004:4858       __asizeC
+ 0004:4859       __asizeD
+ 0004:485A       __ctype
+ 0004:485A       __ctype_
+ 0004:498E       __indefinite
+ 0004:4998       __piby2
+ 0004:49A2       __cpower
+ 0004:49B4       __sqrtjmptab
+ 0004:49CC       __infinity
+ 0004:49D6       __logemax
+ 0004:49FE       __ytoxjmptab
+ 0004:4A2E       __logjmptab
+ 0004:4A46       __lnjmptab
+ 0004:4A5E       __expjmptab
+ 0004:4A88       __sinjmptab
+ 0004:4AA0       __cosjmptab
+ 0004:4AB8       __tanjmptab
+ 0004:4AD0       __cotanjmptab
+ 0004:4AE8       __asnjmptab
+ 0004:4B00       __acsjmptab
+ 0004:4B18       __atnjmptab
+ 0004:4B30       __atn2jmptab
+ 0004:4CEC       __80x87
+ 0004:4D60       __HUGE
+ 0004:4D68       __matherr_flag
+ 0004:4D6A       __qwinused
+ 0004:4D6C       __pnhFarHeap
+ 0004:4D70       __fheap
+ 0004:4D80       __fpinit
+ 0004:4D9C       __iob
+ 0004:4E8C       __iob2
+ 0004:53D8       _edata
+ 0004:53D8       __edata
+ 0004:5970       __mbac
+ 0004:5978       _end
+ 0004:5978       __end
+ 0000:4000  Abs  FJARQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+
+Line numbers for INPUT.OBJ(d:\projects\parser\win16\input.c) segment COMDAT_SEG1
+
+    68 0002:0000    69 0002:000d    70 0002:0012    73 0002:003b
+    76 0002:005f    77 0002:006a    78 0002:007b    79 0002:007e
+    82 0002:0092    85 0002:0097    87 0002:00cb     0 0002:00ce
+    96 0002:00d0    97 0002:00dd    98 0002:00e2    99 0002:00e7
+   102 0002:00ec   103 0002:00f2   107 0002:0101   109 0002:0113
+   112 0002:0125   114 0002:012e   115 0002:0134   116 0002:0139
+   118 0002:013e   121 0002:0141   122 0002:0158   123 0002:017c
+     0 0002:017f   132 0002:0180   133 0002:018d   134 0002:0193
+     0 0002:0196   145 0002:0198   146 0002:01a5   149 0002:01aa
+   150 0002:01af   151 0002:01b9   152 0002:01be   153 0002:01c3
+   154 0002:01c9   155 0002:01d8   156 0002:01e7   157 0002:01f1
+   158 0002:01fb   160 0002:0206   162 0002:021a   163 0002:0227
+   166 0002:022d   167 0002:023c   169 0002:0246   170 0002:0253
+   173 0002:0259   174 0002:025f     0 0002:0262   183 0002:0264
+   185 0002:0271   187 0002:0276   188 0002:029e   190 0002:02c7
+   191 0002:02d2   192 0002:02dd   193 0002:02e5   194 0002:02ea
+   195 0002:02ef   196 0002:02f4   197 0002:02f9   198 0002:0303
+   201 0002:030d   203 0002:0324   204 0002:032d   205 0002:0333
+   206 0002:0336   208 0002:0343   209 0002:0349     0 0002:034c
+   218 0002:034e   219 0002:035b   220 0002:0367   221 0002:0370
+     0 0002:0373   233 0002:0374   235 0002:0381   237 0002:0387
+   238 0002:03b4   239 0002:03cc   240 0002:0400   241 0002:0434
+   242 0002:0468   243 0002:047f   246 0002:0493   247 0002:04c3
+   250 0002:04c6   252 0002:04d1   253 0002:04e4   255 0002:04ed
+   256 0002:04f0   258 0002:0536   259 0002:054d     0 0002:0552
+   271 0002:0554   275 0002:0561   283 0002:0566   285 0002:0596
+   287 0002:05a0   288 0002:05ae   291 0002:05b4   294 0002:05c7
+   295 0002:05d1   303 0002:05e4   305 0002:05ef   306 0002:05fe
+   307 0002:0606   308 0002:0615   310 0002:061d   312 0002:0632
+   316 0002:063d   317 0002:0648   319 0002:0657   320 0002:065d
+     0 0002:0660   331 0002:0662   332 0002:066f   333 0002:0698
+   334 0002:06a1   335 0002:06a4     0 0002:06a7   347 0002:06a8
+   348 0002:06b5   349 0002:06de   350 0002:06f3   351 0002:06f6
+     0 0002:06f9   365 0002:06fa   366 0002:0707   367 0002:070c
+   370 0002:0716   371 0002:071f   373 0002:0722   377 0002:0728
+   383 0002:074a   387 0002:0779   392 0002:077c   395 0002:07ab
+   396 0002:07c3   398 0002:07f0   399 0002:07fe   400 0002:080c
+   406 0002:081a   408 0002:083e   413 0002:0841   415 0002:0857
+   416 0002:0865   417 0002:0873   418 0002:0881   422 0002:0884
+   424 0002:0889   426 0002:0896   427 0002:08b0   428 0002:08b5
+   432 0002:08b8   433 0002:08e1   436 0002:08e6   439 0002:08f4
+   440 0002:090d   441 0002:0911   443 0002:091f   444 0002:0938
+   447 0002:0946   448 0002:095f   449 0002:096d   452 0002:0970
+   453 0002:0973   454 0002:09a1   455 0002:09a4     0 0002:09a7
+   471 0002:09a8   473 0002:09b5   475 0002:09c7   478 0002:09cd
+   479 0002:09d3   483 0002:09d6   484 0002:09e4   485 0002:09e7
+   486 0002:0a05   489 0002:0a08   493 0002:0a0e   495 0002:0a28
+   497 0002:0a43   498 0002:0a51   502 0002:0a56   503 0002:0a5c
+   507 0002:0a5f   510 0002:0a62   512 0002:0a7c   514 0002:0a97
+   515 0002:0a9d   517 0002:0aa0   518 0002:0aa3   520 0002:0ab1
+   525 0002:0ab4   526 0002:0acb   528 0002:0ae6   530 0002:0afe
+   533 0002:0b0c   535 0002:0b0f   538 0002:0b12   539 0002:0b27
+   540 0002:0b3c   541 0002:0b51   542 0002:0b66   543 0002:0b7b
+   547 0002:0b91   548 0002:0bba   549 0002:0bdd   550 0002:0beb
+   553 0002:0bee   554 0002:0c17   556 0002:0c3a   557 0002:0c47
+   558 0002:0c5a   559 0002:0c5d   560 0002:0c6b   563 0002:0c6e
+   564 0002:0c97   565 0002:0cba   566 0002:0cc8   570 0002:0ccb
+   571 0002:0cf7   572 0002:0cfc   575 0002:0cff   576 0002:0d2b
+   577 0002:0d4a   580 0002:0d4d   581 0002:0d79   582 0002:0d7e
+   586 0002:0d81   587 0002:0d84   588 0002:0d87   589 0002:0d8a
+   592 0002:0d8d   593 0002:0d90   594 0002:0e46   595 0002:0e49
+     0 0002:0e4c   604 0002:0e4e   605 0002:0e5b   606 0002:0e61
+     0 0002:0e64   615 0002:0e66   616 0002:0e73   617 0002:0e79
+   618 0002:0e7c     0 0002:0e7f   628 0002:0e80   629 0002:0e8d
+   630 0002:0eae   632 0002:0eb4   633 0002:0ed5   634 0002:0ef6
+   637 0002:0f04   638 0002:0f46   639 0002:0f67   641 0002:0f75
+   642 0002:0f96   644 0002:0fba   645 0002:0fc3     0 0002:0fc6
+   662 0002:0fc8   663 0002:0fd5   664 0002:0fde   665 0002:0fec
+   666 0002:0fef   667 0002:0ff4   668 0002:0ff7     0 0002:0ffa
+
+Line numbers for FILE.OBJ(d:\projects\parser\win16\file.c) segment COMDAT_SEG1
+
+    27 0002:0ffc    35 0002:1009    36 0002:1015    37 0002:101b
+    38 0002:1021    39 0002:102f    40 0002:103b    41 0002:1047
+    42 0002:1053    43 0002:105f    44 0002:106b    45 0002:1077
+    46 0002:1083    47 0002:108f    48 0002:109b    49 0002:10a7
+    50 0002:10ad    51 0002:10b3    52 0002:10bf    53 0002:10cb
+    54 0002:10d7    55 0002:10e3     0 0002:10e6    66 0002:10e8
+    67 0002:10f5    68 0002:10fb    69 0002:1108    70 0002:1114
+    72 0002:1120    73 0002:112f     0 0002:1132    83 0002:1134
+    84 0002:1141    85 0002:1147    86 0002:1154    87 0002:1160
+    89 0002:116c    90 0002:117b     0 0002:117e    99 0002:1180
+   100 0002:118d   101 0002:11a1   103 0002:11b5   105 0002:11c5
+   106 0002:11ce     0 0002:11d1   116 0002:11d2   121 0002:11df
+   122 0002:11f7   124 0002:11fd   126 0002:1223   127 0002:122b
+   130 0002:1231   132 0002:1262   133 0002:126a   136 0002:1270
+   137 0002:1287   138 0002:128f   140 0002:12a3   141 0002:12b1
+   142 0002:12f1   143 0002:12f7     0 0002:12fa   153 0002:12fc
+   159 0002:1309   160 0002:1321   161 0002:1339   163 0002:133f
+   164 0002:134a   165 0002:135e   167 0002:136e   169 0002:1389
+   170 0002:1391   173 0002:1397   174 0002:139f   176 0002:13a7
+   177 0002:13ad     0 0002:13b0
+
+Line numbers for FIND.OBJ(d:\projects\parser\win16\find.c) segment COMDAT_SEG1
+
+    20 0002:13b2    23 0002:13bf    24 0002:13cb    25 0002:13d1
+    26 0002:13d7    27 0002:13e3    28 0002:13ef    29 0002:13fb
+    30 0002:1401    31 0002:1407    32 0002:1413    33 0002:141f
+    35 0002:142b    36 0002:143a     0 0002:143d    45 0002:143e
+    48 0002:144b    49 0002:1457    50 0002:145d    51 0002:1463
+    52 0002:146f    53 0002:147b    54 0002:1487    55 0002:148d
+    56 0002:1493    57 0002:149f    58 0002:14ab    60 0002:14b7
+    61 0002:14c6     0 0002:14c9    70 0002:14ca    77 0002:14d7
+    78 0002:14eb    81 0002:14fb    82 0002:1524    85 0002:152c
+    86 0002:153e    89 0002:1544    90 0002:1555    93 0002:1571
+    95 0002:159b    96 0002:15a1     0 0002:15a4   105 0002:15a6
+   108 0002:15b3   110 0002:15be   111 0002:15d9     0 0002:15dc
+   120 0002:15de   122 0002:15eb   123 0002:160a   126 0002:1610
+   128 0002:162a   129 0002:1630     0 0002:1633   138 0002:1634
+   139 0002:1641   140 0002:1659     0 0002:165c
+
+Line numbers for FRAME.OBJ(d:\projects\parser\win16\frame.c) segment COMDAT_SEG1
+
+    32 0002:165e    35 0002:166b    36 0002:1670    37 0002:167a
+    38 0002:167f    39 0002:1684    40 0002:168a    41 0002:1699
+    42 0002:16a8    43 0002:16ad    44 0002:16b7    46 0002:16c2
+    48 0002:16d6    49 0002:16e3    52 0002:16e9    53 0002:16f8
+    55 0002:1702    56 0002:170f    59 0002:1715    60 0002:171b
+     0 0002:171e    70 0002:1720    71 0002:172d    76 0002:1755
+    78 0002:1789    80 0002:1793    84 0002:17a0    85 0002:17a6
+     0 0002:17a9    94 0002:17aa    95 0002:17b7    96 0002:17df
+    97 0002:17eb    98 0002:17f4     0 0002:17f7   107 0002:17f8
+   108 0002:1805   109 0002:182d   110 0002:1833     0 0002:1836
+   121 0002:1838   122 0002:1845   123 0002:186c   124 0002:1894
+   125 0002:18bc   126 0002:18ec   127 0002:18f5   128 0002:18f8
+     0 0002:18fb   138 0002:18fc   139 0002:1909   140 0002:1932
+   141 0002:195b   142 0002:1984   143 0002:19b5   144 0002:19be
+     0 0002:19c1   153 0002:19c2   154 0002:19cf   155 0002:19db
+   156 0002:19e4     0 0002:19e7   165 0002:19e8   166 0002:19f5
+   167 0002:19fd     0 0002:1a00   176 0002:1a02   177 0002:1a0f
+   178 0002:1a24     0 0002:1a27   190 0002:1a28   191 0002:1a35
+   193 0002:1a3b   194 0002:1a68   195 0002:1a7c   199 0002:1ab0
+   200 0002:1ac3   201 0002:1acc   204 0002:1acf   205 0002:1aee
+   206 0002:1af7   207 0002:1afa   208 0002:1b30   209 0002:1b4b
+     0 0002:1b50   220 0002:1b52   223 0002:1b5f   224 0002:1b87
+   225 0002:1bb8   227 0002:1be1   228 0002:1bef   232 0002:1bf4
+   233 0002:1c26   234 0002:1c30   235 0002:1c36   237 0002:1c39
+   238 0002:1c47   240 0002:1c4d     0 0002:1c50   251 0002:1c52
+   252 0002:1c5f   253 0002:1c64   255 0002:1c6e   258 0002:1c74
+   259 0002:1c9d   260 0002:1ca9   263 0002:1caf   264 0002:1cd8
+   265 0002:1ce4   268 0002:1cea   269 0002:1d13   270 0002:1d28
+   272 0002:1d31   273 0002:1d51   275 0002:1d65   278 0002:1d6b
+   279 0002:1d7b   283 0002:1d81   284 0002:1d93   287 0002:1d99
+   288 0002:1dab   291 0002:1db1   292 0002:1dc3   295 0002:1dc9
+   296 0002:1de0   297 0002:1df3   298 0002:1dfe   301 0002:1e04
+   302 0002:1e19   303 0002:1e29   304 0002:1e2f   305 0002:1e3a
+   308 0002:1e40   310 0002:1e55   311 0002:1e65   312 0002:1e79
+   313 0002:1e7c   315 0002:1eca   316 0002:1ed0     0 0002:1ed3
+   331 0002:1ed4   333 0002:1ee1   335 0002:1ef6   336 0002:1f06
+   338 0002:1f2f     0 0002:1f32   349 0002:1f34   350 0002:1f41
+   351 0002:1f53   352 0002:1f66   353 0002:1f6c   354 0002:1f6f
+   355 0002:1f75     0 0002:1f78   365 0002:1f7a   366 0002:1f87
+   369 0002:1f92   370 0002:1f9d   371 0002:1fa8   373 0002:1fb3
+   374 0002:1fba     0 0002:1fbd   385 0002:1fbe   386 0002:1fcb
+   387 0002:1fdd   390 0002:1fe3   393 0002:1ffc   394 0002:201c
+   397 0002:2022   398 0002:203b   399 0002:2041     0 0002:2046
+
+Line numbers for MAIN.OBJ(d:\projects\parser\win16\main.c) segment COMDAT_SEG1
+
+    36 0002:2048    37 0002:2055    38 0002:205b     0 0002:205e
+    47 0002:2060    48 0002:206d    49 0002:2075     0 0002:2078
+    59 0002:207a    61 0002:2087    62 0002:20a6    63 0002:20bd
+    64 0002:20d6     0 0002:20d9    74 0002:20da    76 0002:20e7
+    77 0002:2106    78 0002:211d    79 0002:2136     0 0002:2139
+    88 0002:213a    94 0002:2147    95 0002:215f     0 0002:2162
+   108 0002:2164   110 0002:2171   111 0002:2176   112 0002:2180
+   113 0002:218a   115 0002:2194   119 0002:219d   121 0002:21b0
+   122 0002:21bb   124 0002:21c3   125 0002:21ce   127 0002:21d6
+   131 0002:21dc   134 0002:21e2   136 0002:21ef   137 0002:21fc
+   141 0002:2201   143 0002:220a   145 0002:221d   146 0002:222a
+   150 0002:222f   152 0002:2238   153 0002:224c   154 0002:2260
+   156 0002:2274   157 0002:2279   163 0002:227e   164 0002:22b7
+   166 0002:22bc   168 0002:22c5   169 0002:22d7   170 0002:22e1
+   173 0002:22ee   175 0002:22f7   176 0002:2305   177 0002:230f
+   183 0002:2314   185 0002:231d   186 0002:2326   187 0002:232b
+   191 0002:2336   193 0002:233f   194 0002:2352   195 0002:2365
+   199 0002:2378   201 0002:2381   204 0002:239b   206 0002:23d1
+   207 0002:23dd   209 0002:23e9   212 0002:23ec   213 0002:23fa
+   214 0002:2408   216 0002:2416   218 0002:241b   220 0002:2420
+   221 0002:2429   222 0002:242f   223 0002:2432   224 0002:2438
+     0 0002:243d   235 0002:243e   237 0002:244b   239 0002:2474
+   240 0002:247a   243 0002:2487   245 0002:24a3   246 0002:24ac
+   247 0002:24af   248 0002:24b2   251 0002:24c4   253 0002:24fa
+   254 0002:2506   256 0002:2512   258 0002:2515   259 0002:251e
+   262 0002:2521   263 0002:252b   264 0002:2530   266 0002:2533
+   267 0002:2540   268 0002:2545   269 0002:2548   271 0002:254b
+   272 0002:254e   273 0002:2554   274 0002:2557     0 0002:255a
+   284 0002:255c   285 0002:2569   286 0002:256f     0 0002:2572
+   295 0002:2574   296 0002:2581   297 0002:2587     0 0002:258a
+   306 0002:258c   307 0002:2599   308 0002:259f     0 0002:25a2
+
+Line numbers for OUTPUT.OBJ(d:\projects\parser\win16\output.c) segment COMDAT_SEG1
+
+    49 0002:25a4    50 0002:25b1    51 0002:25b6    54 0002:25bb
+    56 0002:25cd    57 0002:25d2    58 0002:25dc    60 0002:25eb
+    62 0002:25ee    65 0002:25fc    67 0002:2606    68 0002:260c
+    70 0002:2617    71 0002:263a    73 0002:2640    74 0002:2653
+    76 0002:2664    78 0002:2671    79 0002:2680    80 0002:268a
+    81 0002:268f    83 0002:2695    85 0002:2698    86 0002:26b5
+    87 0002:26bf    89 0002:26d8    90 0002:26e5    91 0002:26ef
+    92 0002:26f4    94 0002:26fa    95 0002:270c    97 0002:2715
+     0 0002:2718   106 0002:271a   107 0002:2727   108 0002:273d
+     0 0002:2740   117 0002:2742   118 0002:274f   121 0002:2754
+   122 0002:2759   123 0002:2763   124 0002:2768   125 0002:276d
+   126 0002:2773   127 0002:2782   128 0002:2791   129 0002:279b
+   130 0002:27a5   132 0002:27b0   134 0002:27c4   135 0002:27d1
+   138 0002:27d7   139 0002:27e6   141 0002:27f0   142 0002:27fd
+   144 0002:2803   145 0002:2809     0 0002:280c   154 0002:280e
+   157 0002:281b   159 0002:2844   160 0002:284f   161 0002:285a
+   162 0002:2862   163 0002:2867   164 0002:286c   165 0002:2871
+   166 0002:2876   167 0002:2880   170 0002:288a   172 0002:28a1
+   173 0002:28a7     0 0002:28aa   182 0002:28ac   183 0002:28b9
+   184 0002:28c5   185 0002:28ce     0 0002:28d1   197 0002:28d2
+   198 0002:28df   200 0002:28e5   201 0002:2912   202 0002:2926
+   203 0002:295b   204 0002:298e   205 0002:29c1   206 0002:29f5
+   207 0002:2a29   208 0002:2a5d   211 0002:2a71   212 0002:2aa1
+   215 0002:2aa4   216 0002:2aa7   218 0002:2afd   219 0002:2b14
+     0 0002:2b19   231 0002:2b1a   235 0002:2b27   237 0002:2b32
+   238 0002:2b41   239 0002:2b47   240 0002:2b6e   242 0002:2b77
+   243 0002:2b82   245 0002:2b97   246 0002:2b9d     0 0002:2ba0
+   255 0002:2ba2   257 0002:2baf   258 0002:2bb4   261 0002:2bb9
+   262 0002:2bc3   264 0002:2bc8   266 0002:2bda   267 0002:2c05
+   269 0002:2c40   270 0002:2c4a   271 0002:2c58   273 0002:2c61
+   274 0002:2c72   275 0002:2c92   276 0002:2c98   277 0002:2ca7
+   278 0002:2cb6   279 0002:2cb9     0 0002:2cbc   291 0002:2cbe
+   292 0002:2ccb   293 0002:2cd1   295 0002:2cd7   296 0002:2d14
+   298 0002:2d2c   299 0002:2d3e   301 0002:2d4e   302 0002:2d7f
+   304 0002:2d97   305 0002:2da9   307 0002:2db9   308 0002:2dbc
+     0 0002:2dbf   322 0002:2dc0   323 0002:2dcd   324 0002:2dd2
+   326 0002:2dd8   327 0002:2de0   328 0002:2de8   329 0002:2df0
+   330 0002:2df8   331 0002:2e05   332 0002:2e0d   334 0002:2e3b
+   336 0002:2e90   338 0002:2e99   339 0002:2ea0   340 0002:2ebb
+   342 0002:2ecb   343 0002:2ece     0 0002:2ed1   357 0002:2ed2
+   358 0002:2edf   360 0002:2ee8   362 0002:2eee   363 0002:2f02
+   364 0002:2f16   365 0002:2f2a   366 0002:2f3e   367 0002:2f52
+   368 0002:2f66   369 0002:2f7a   370 0002:2f8e   372 0002:2fb5
+   373 0002:2fb8     0 0002:2fbb   387 0002:2fbc   388 0002:2fc9
+   390 0002:2fce   392 0002:2fd4   393 0002:2fdf   394 0002:2fec
+   395 0002:2ff4   396 0002:2ffc   397 0002:3026   398 0002:304c
+   399 0002:3059   400 0002:3061   402 0002:3085   404 0002:30da
+   406 0002:30e3   407 0002:30ea   408 0002:3105   409 0002:3115
+   411 0002:311d   412 0002:3120     0 0002:3123   426 0002:3124
+   428 0002:3131   429 0002:313a   431 0002:313d   435 0002:3143
+   436 0002:3165   437 0002:3168   438 0002:3176     0 0002:3179
+   453 0002:317a   455 0002:3187     0 0002:318a   464 0002:318c
+   465 0002:3199   466 0002:319f   467 0002:31a2     0 0002:31a5
+   482 0002:31a6   483 0002:31b3   484 0002:31bc   485 0002:31ca
+   486 0002:31cd   487 0002:31d2   489 0002:31d5     0 0002:31d8
+
+Line numbers for BUFFER.OBJ(d:\projects\parser\win16\buffer.c) segment COMDAT_SEG1
+
+    29 0002:31da    30 0002:31e7    32 0002:3219    33 0002:3232
+    34 0002:3246    36 0002:324c    37 0002:325a    38 0002:326f
+    39 0002:327d    40 0002:3289    41 0002:328f    42 0002:3295
+     0 0002:3298    52 0002:329a    53 0002:32a7    54 0002:32bb
+    55 0002:32fd    56 0002:3309    57 0002:3315    58 0002:3321
+     0 0002:3324    67 0002:3326    68 0002:3333    69 0002:3338
+    70 0002:3342    71 0002:3347    73 0002:334c    76 0002:3360
+    77 0002:3379    79 0002:3384    80 0002:3392    86 0002:3398
+    87 0002:33b8    89 0002:33ca    90 0002:33e6    91 0002:3404
+    95 0002:3409    96 0002:341c    98 0002:344b    99 0002:346b
+   100 0002:349b   101 0002:34b7   102 0002:34d5   103 0002:34da
+   104 0002:34e9   105 0002:34ee   108 0002:34f1   109 0002:3507
+   110 0002:3528   111 0002:3534   112 0002:353b   113 0002:3540
+   114 0002:354b   115 0002:3551   117 0002:3556   118 0002:3559
+     0 0002:355c   127 0002:355e   130 0002:356b   131 0002:3571
+   132 0002:3577   133 0002:357d   134 0002:3589   136 0002:3597
+   137 0002:359f   138 0002:35cb   139 0002:35ce     0 0002:35d1
+   149 0002:35d2   150 0002:35df   152 0002:35f3   155 0002:35fc
+   156 0002:3612   157 0002:362f     0 0002:3632   167 0002:3634
+   168 0002:3641   169 0002:3647     0 0002:364a
+
+Line numbers for PDRIVE.OBJ(d:\projects\parser\win16\pdrive.c) segment COMDAT_SEG1
+
+    44 0002:364c    45 0002:3659    46 0002:3663    47 0002:3668
+    48 0002:3683    49 0002:36b3    50 0002:36ce    51 0002:36dc
+    52 0002:36e2     0 0002:36e5    65 0002:36e6    66 0002:36f3
+    67 0002:36f8    68 0002:3713    69 0002:3743    70 0002:375e
+    71 0002:376c    72 0002:3772     0 0002:3775    88 0002:3776
+    89 0002:3783    90 0002:3788    91 0002:37a3    92 0002:37d3
+    93 0002:37ee    94 0002:37fc    95 0002:3802     0 0002:3805
+   106 0002:3806   111 0002:3813   112 0002:3829   113 0002:3845
+   115 0002:3854   116 0002:385a     0 0002:385d   125 0002:385e
+   126 0002:386b   127 0002:3875   128 0002:387b     0 0002:387e
+   137 0002:3880   138 0002:388d   139 0002:3897   140 0002:38b2
+   141 0002:38e3   142 0002:38f7   145 0002:390d   146 0002:3924
+   147 0002:393a   149 0002:394a   150 0002:3958   151 0002:395e
+     0 0002:3961   161 0002:3962   162 0002:396f   163 0002:3981
+   164 0002:3987     0 0002:398a   176 0002:398c   178 0002:3999
+   179 0002:39ca   181 0002:39fc   182 0002:3a39   183 0002:3a3c
+   184 0002:3a3f     0 0002:3a42   195 0002:3a44   196 0002:3a51
+   197 0002:3a60     0 0002:3a63
+
+Line numbers for ERROR.OBJ(d:\projects\parser\win16\error.c) segment COMDAT_SEG1
+
+    29 0002:3a64    30 0002:3a71    32 0002:3a83    33 0002:3a98
+    35 0002:3aae    37 0002:3ab1    38 0002:3ac8    41 0002:3ade
+     0 0002:3ae1
+
+Line numbers for STRING.OBJ(d:\projects\parser\win16\string.c) segment COMDAT_SEG1
+
+    49 0002:3ae2    50 0002:3aef    51 0002:3b0a    52 0002:3b1c
+    53 0002:3b2a    54 0002:3b30     0 0002:3b33    64 0002:3b34
+    65 0002:3b41    66 0002:3b4b    67 0002:3b5b    68 0002:3b76
+    69 0002:3b86    70 0002:3b8c     0 0002:3b8f    80 0002:3b90
+    81 0002:3b9d    82 0002:3bad    83 0002:3bd2    84 0002:3be4
+    85 0002:3bea     0 0002:3bed    96 0002:3bee    97 0002:3bfb
+    98 0002:3c00    99 0002:3c0a   101 0002:3c1a   103 0002:3c3e
+   105 0002:3c50   106 0002:3c71   107 0002:3c93   109 0002:3cad
+   110 0002:3cb0   112 0002:3cb5   114 0002:3cc3   115 0002:3cd6
+   116 0002:3ce8   117 0002:3cee     0 0002:3cf1   131 0002:3cf2
+   138 0002:3cff   139 0002:3d09   140 0002:3d13   141 0002:3d18
+   143 0002:3d1d   148 0002:3d2d   149 0002:3d52   150 0002:3d5f
+   151 0002:3d7e   152 0002:3d83   153 0002:3d86   156 0002:3d94
+   159 0002:3da5   161 0002:3db7   162 0002:3ddc   163 0002:3df2
+   165 0002:3dfc   166 0002:3dff   168 0002:3e04   170 0002:3e12
+   172 0002:3e24   173 0002:3e2a     0 0002:3e2d   184 0002:3e2e
+   192 0002:3e3b   193 0002:3e45   194 0002:3e4a   196 0002:3e54
+   198 0002:3e64   200 0002:3e80   201 0002:3e96   202 0002:3eb2
+   203 0002:3ec1   206 0002:3ed0   208 0002:3f12   209 0002:3f33
+   210 0002:3f4f   213 0002:3f5e   214 0002:3f78   218 0002:3f8a
+   219 0002:3fc6   221 0002:3fe4   222 0002:3fe7   224 0002:3fec
+   226 0002:3ffa   228 0002:400c   229 0002:4012     0 0002:4015
+   242 0002:4016   249 0002:4023   250 0002:402d   251 0002:4037
+   252 0002:403c   253 0002:4041   255 0002:4046   260 0002:4056
+   262 0002:407b   263 0002:4088   265 0002:408d   267 0002:40ac
+   268 0002:40b1   270 0002:40b6   272 0002:40b9   273 0002:40c7
+   276 0002:40e1   279 0002:40f2   281 0002:4104   282 0002:4130
+   284 0002:413a   285 0002:413d   287 0002:4142   289 0002:4150
+   291 0002:4162   292 0002:4168     0 0002:416b   305 0002:416c
+   312 0002:4179   313 0002:4183   314 0002:418d   315 0002:4192
+   316 0002:419c   318 0002:41a1   323 0002:41b1   324 0002:41c5
+   325 0002:41ca   327 0002:4208   328 0002:420c   329 0002:4210
+   330 0002:4213   335 0002:4244   336 0002:4255   338 0002:4267
+   339 0002:428c   341 0002:42a2   342 0002:42a5   344 0002:42aa
+   346 0002:42b8   347 0002:42ca   348 0002:42dd   349 0002:42e3
+     0 0002:42e6   362 0002:42e8   369 0002:42f5   370 0002:42ff
+   371 0002:4309   372 0002:430e   373 0002:4318   375 0002:431d
+   380 0002:432d   381 0002:4341   382 0002:4346   384 0002:4384
+   385 0002:4388   386 0002:438c   387 0002:438f   392 0002:43c0
+   393 0002:43d1   395 0002:43e3   396 0002:4408   398 0002:441e
+   399 0002:4421   401 0002:4426   403 0002:4434   404 0002:4446
+   405 0002:4459   406 0002:445f     0 0002:4462   416 0002:4464
+   423 0002:4471   425 0002:447b   427 0002:448b   428 0002:44c0
+   429 0002:44cc   430 0002:44cf   432 0002:44db   433 0002:44ed
+   434 0002:4500   435 0002:4506     0 0002:4509   445 0002:450a
+   446 0002:4517   447 0002:4527   448 0002:453a   449 0002:454d
+   450 0002:4560   451 0002:4566     0 0002:4569   461 0002:456a
+   462 0002:4577   463 0002:4587   464 0002:459a   465 0002:45ad
+   466 0002:45c0   467 0002:45c6     0 0002:45c9   476 0002:45ca
+   477 0002:45d7   478 0002:45e6     0 0002:45e9
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\amble.c) segment COMDAT_SEG1
+
+    31 0002:45ea    32 0002:45f7    33 0002:4601    34 0002:460b
+    35 0002:4610    37 0002:4615    40 0002:4645    41 0002:4652
+    44 0002:465e    45 0002:4669    47 0002:466c    48 0002:46a1
+    49 0002:46af    50 0002:46c0    55 0002:46d2    56 0002:46e0
+    61 0002:46ea    62 0002:46f5    64 0002:46f8    65 0002:472d
+    67 0002:473d    68 0002:4749    69 0002:475b    71 0002:4765
+    72 0002:4776    93 0002:4788    94 0002:478e     0 0002:4791
+   106 0002:4792   107 0002:479f   108 0002:47a9   109 0002:47b3
+   110 0002:47b8   111 0002:47bd   113 0002:47c2   118 0002:47f2
+   119 0002:47fd   121 0002:4800   122 0002:4835   124 0002:4845
+   125 0002:4857   126 0002:4861   128 0002:486b   129 0002:4879
+   130 0002:488a   136 0002:489c   137 0002:48ad   141 0002:48b0
+   143 0002:48e4   144 0002:48f6   145 0002:4900   148 0002:490a
+   149 0002:4917   150 0002:491b   154 0002:491e   155 0002:4938
+   156 0002:493c   158 0002:493f   159 0002:4975   162 0002:4983
+   163 0002:4994   165 0002:49a6   167 0002:49b0   168 0002:49b9
+   169 0002:49c3   171 0002:49c6   172 0002:49d4   175 0002:49de
+   176 0002:49e4     0 0002:49e7
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\aplist.c) segment COMDAT_SEG1
+
+    32 0002:49e8    33 0002:49f5    34 0002:49fa    36 0002:4a04
+    37 0002:4a34    38 0002:4a5b    39 0002:4a8b    41 0002:4abb
+    42 0002:4acf    43 0002:4ae1    44 0002:4ae6    49 0002:4ae9
+    50 0002:4b12    51 0002:4b17    53 0002:4b27    54 0002:4b50
+    58 0002:4b55    60 0002:4b5e    62 0002:4b6b    63 0002:4b8c
+    65 0002:4b8f    70 0002:4bb0    72 0002:4bc6    75 0002:4bdc
+    76 0002:4bfd    80 0002:4c02    81 0002:4c08     0 0002:4c0b
+    97 0002:4c0c    98 0002:4c19    99 0002:4c1e   100 0002:4c28
+   102 0002:4c32   103 0002:4c62   104 0002:4c89   105 0002:4cb9
+   107 0002:4ce9   108 0002:4cfa   110 0002:4d0b   112 0002:4d2f
+   114 0002:4d4f   115 0002:4d54   118 0002:4d57   119 0002:4d68
+   120 0002:4d79   126 0002:4d7c   128 0002:4d85   129 0002:4da9
+   132 0002:4dae   135 0002:4db7   137 0002:4dd8   138 0002:4dde
+     0 0002:4de1   152 0002:4de2   153 0002:4def   154 0002:4df9
+   155 0002:4e03   156 0002:4e0e   158 0002:4e18   159 0002:4e1d
+   160 0002:4e22   161 0002:4e2c   162 0002:4e36   163 0002:4e3b
+   165 0002:4e40   166 0002:4e71   168 0002:4ea2   169 0002:4eb3
+   171 0002:4ed1   172 0002:4ed9   174 0002:4ee2   176 0002:4eeb
+   177 0002:4ef6   179 0002:4efb   181 0002:4efe   182 0002:4f12
+   185 0002:4f17   187 0002:4f1a   189 0002:4f1d   190 0002:4f21
+   192 0002:4f2b   194 0002:4f3d   195 0002:4f51   196 0002:4f56
+   202 0002:4f59   206 0002:4f63   207 0002:4f6e   208 0002:4f80
+   209 0002:4f85   211 0002:4f88   212 0002:4fa8   214 0002:4fb1
+   215 0002:4fbf   218 0002:4fc2   221 0002:4fc5   222 0002:4fcd
+   225 0002:4fd6   226 0002:4ff7   228 0002:4ffc   229 0002:4fff
+   231 0002:502a   232 0002:503a   234 0002:503f   237 0002:504f
+   238 0002:5076   240 0002:507b   241 0002:507e   243 0002:509e
+   245 0002:50a7   247 0002:50c2   248 0002:50cc   250 0002:50d1
+   252 0002:50d4   253 0002:50dc   257 0002:50ed   260 0002:50f0
+   261 0002:50f8   264 0002:5101   265 0002:5122   267 0002:5127
+   268 0002:512a   270 0002:5155   271 0002:5165   273 0002:516a
+   276 0002:517a   277 0002:51a1   279 0002:51a6   282 0002:51c9
+   283 0002:51f1   285 0002:51f6   286 0002:51f9   288 0002:5219
+   290 0002:5222   292 0002:523d   293 0002:5247   295 0002:524c
+   297 0002:524f   298 0002:5257   302 0002:5268   303 0002:526b
+   313 0002:5289   315 0002:52a4   316 0002:52b3   318 0002:52bc
+   319 0002:52cd   321 0002:52d9   323 0002:52dc   324 0002:52ec
+   325 0002:52fd   330 0002:530e   331 0002:5316   333 0002:531f
+   334 0002:5324   335 0002:532d   337 0002:5338   339 0002:5341
+   340 0002:534a   345 0002:5357   347 0002:537b   348 0002:538f
+   351 0002:5394   353 0002:539d   354 0002:53ab   357 0002:53b5
+   358 0002:53c5   359 0002:53cb     0 0002:53ce
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\block.c) segment COMDAT_SEG1
+
+    37 0002:53d0    38 0002:53dd    41 0002:53e2    42 0002:53ea
+    44 0002:53f5    45 0002:53fe    47 0002:5406    49 0002:540f
+    50 0002:5417    52 0002:5422    53 0002:542b    56 0002:5433
+    58 0002:543c    59 0002:5444    61 0002:544f    62 0002:5458
+    65 0002:5460    66 0002:5466     0 0002:5469    82 0002:546a
+    83 0002:5477    85 0002:547c    87 0002:54ac    89 0002:54b4
+    90 0002:54bd    92 0002:54cb    93 0002:54d4    95 0002:54dc
+    96 0002:54e5    98 0002:54f3   100 0002:54fc   101 0002:550c
+   103 0002:5523   104 0002:5537   108 0002:553c   109 0002:5542
+     0 0002:5545
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\builtin.c) segment COMDAT_SEG1
+
+   120 0002:5546   126 0002:5553   127 0002:555f   129 0002:556b
+   130 0002:5577   131 0002:5583   132 0002:558f   133 0002:5595
+   142 0002:55a1   145 0002:55ad   146 0002:55b9   147 0002:55c5
+   148 0002:55d1   150 0002:55dd   151 0002:55e9   152 0002:55f5
+   153 0002:5601   154 0002:560d   155 0002:5619   156 0002:5625
+   157 0002:5631   158 0002:563d   159 0002:5649   160 0002:5655
+   161 0002:5661   162 0002:566d   163 0002:5679   164 0002:5685
+   165 0002:5691   166 0002:569d   167 0002:56a9   168 0002:56b5
+     0 0002:56b8   178 0002:56ba   179 0002:56c7   180 0002:56cf
+     0 0002:56d2   192 0002:56d4   204 0002:56e1   206 0002:56e6
+   207 0002:56f6   208 0002:5727   209 0002:575d   213 0002:576d
+   215 0002:57b2   219 0002:57c5   221 0002:5804   222 0002:5807
+   224 0002:580c   225 0002:5812     0 0002:5815   237 0002:5816
+   239 0002:5823   241 0002:582c   242 0002:5842   243 0002:5864
+   244 0002:5877   245 0002:5885   246 0002:5896     0 0002:5899
+   257 0002:589a   258 0002:58a7   261 0002:58b1   262 0002:58cc
+   263 0002:58d5   265 0002:58d9   266 0002:58f5     0 0002:58f8
+   277 0002:58fa   278 0002:5907   280 0002:5910   281 0002:5926
+   282 0002:5948   283 0002:5959     0 0002:595c   294 0002:595e
+   295 0002:596b   297 0002:5974   298 0002:598a   299 0002:59ac
+   300 0002:59bd     0 0002:59c0   312 0002:59c2   313 0002:59cf
+   314 0002:59d8   316 0002:59dd   317 0002:59f3   318 0002:5a06
+   319 0002:5a0b   320 0002:5a0e   321 0002:5a30   323 0002:5a3e
+   324 0002:5a44     0 0002:5a47   336 0002:5a48   337 0002:5a55
+   338 0002:5a70   339 0002:5a89     0 0002:5a8c   351 0002:5a8e
+   362 0002:5a9b   363 0002:5aa5   365 0002:5aaa   367 0002:5aba
+   368 0002:5aeb   369 0002:5b21   371 0002:5b31   372 0002:5b41
+   373 0002:5b56   374 0002:5b59   375 0002:5b5e   377 0002:5b70
+   378 0002:5b8e   379 0002:5b9e   380 0002:5ba1   382 0002:5ba6
+   383 0002:5bb4   385 0002:5bba     0 0002:5bbd   399 0002:5bbe
+   400 0002:5bcb   401 0002:5bdf   402 0002:5bea   403 0002:5bf0
+     0 0002:5bf3   415 0002:5bf4   416 0002:5c01   417 0002:5c1c
+   418 0002:5c35     0 0002:5c38   429 0002:5c3a   430 0002:5c47
+   431 0002:5c50   433 0002:5c5a   434 0002:5c70   435 0002:5c8c
+   436 0002:5ca0   437 0002:5ca3   438 0002:5cb7   439 0002:5cc8
+     0 0002:5ccb   450 0002:5ccc   451 0002:5cd9   453 0002:5ce2
+   454 0002:5cf8   455 0002:5d1a   456 0002:5d2b     0 0002:5d2e
+   469 0002:5d30   481 0002:5d3d   483 0002:5d42   484 0002:5d52
+   485 0002:5d83   486 0002:5db9   488 0002:5dc9   490 0002:5dec
+   492 0002:5dff   494 0002:5e1e   495 0002:5e21   497 0002:5e26
+   500 0002:5e2c     0 0002:5e2f   513 0002:5e30   514 0002:5e3d
+   515 0002:5e46   517 0002:5e4b   518 0002:5e61   519 0002:5e74
+   520 0002:5e96   521 0002:5e99   523 0002:5e9e   525 0002:5eac
+   527 0002:5eb2     0 0002:5eb5   540 0002:5eb6   541 0002:5ec3
+   542 0002:5ede   543 0002:5ef7     0 0002:5efa   555 0002:5efc
+   556 0002:5f09   557 0002:5f1f   558 0002:5f36     0 0002:5f39
+   570 0002:5f3a   584 0002:5f47   585 0002:5f53   586 0002:5f59
+   588 0002:5f5f   591 0002:5f69   594 0002:5f84   596 0002:5fa7
+   598 0002:5fb9   599 0002:5fec   600 0002:6023   603 0002:6031
+   604 0002:6057   607 0002:605a   608 0002:6087   611 0002:608a
+   612 0002:60b4   613 0002:60c7   617 0002:60ca   619 0002:610d
+   621 0002:612e   622 0002:6154   624 0002:6157   625 0002:615a
+   628 0002:615d   629 0002:6163   631 0002:6166   633 0002:618c
+   635 0002:6196   636 0002:61bb   637 0002:61c1   639 0002:61c4
+   642 0002:61db   643 0002:61de   645 0002:61e5     0 0002:61e8
+   657 0002:61ea   658 0002:61f7   659 0002:61ff   660 0002:6213
+   662 0002:6221   664 0002:6235   665 0002:623b     0 0002:623e
+   680 0002:6240   681 0002:624d   682 0002:625a   683 0002:6267
+   684 0002:6270     0 0002:6273   695 0002:6274   696 0002:6281
+   697 0002:6295   698 0002:62a2   699 0002:62a5     0 0002:62a8
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\ccall.c) segment COMDAT_SEG1
+
+    36 0002:62aa    37 0002:62b7    38 0002:62e7    39 0002:62f0
+     0 0002:62f3    51 0002:62f4    53 0002:6301    55 0002:630b
+    57 0002:6310    58 0002:6340    63 0002:6370    66 0002:6384
+    69 0002:6392    71 0002:639a    74 0002:63a0    75 0002:63b0
+    78 0002:63b3    79 0002:63c3    82 0002:63c6    83 0002:63d0
+    84 0002:63d5    85 0002:63d8    87 0002:63ee    89 0002:6400
+    90 0002:6408    92 0002:6419    94 0002:641c    97 0002:6421
+    98 0002:642f    99 0002:6435     0 0002:6438
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\constant.c) segment COMDAT_SEG1
+
+    36 0002:643a    38 0002:6447    39 0002:644c    40 0002:6456
+    41 0002:645b    43 0002:6460    45 0002:6490    46 0002:6498
+    49 0002:649e    50 0002:64ae    51 0002:64be    54 0002:64c1
+    55 0002:64d1    56 0002:64e8    59 0002:64eb    60 0002:64fb
+    62 0002:6515    63 0002:652c    64 0002:653f    67 0002:6542
+    70 0002:6547    71 0002:6554    73 0002:655d    74 0002:6567
+    75 0002:656c    77 0002:656f    81 0002:6574    82 0002:6589
+    84 0002:659b    85 0002:65a5    86 0002:65aa    89 0002:65ad
+    91 0002:65c3    92 0002:65cd    96 0002:65d2    98 0002:65db
+    99 0002:6610   100 0002:6626   103 0002:6633   104 0002:6654
+   107 0002:6657   108 0002:6676   111 0002:6679   113 0002:6682
+   114 0002:668c   116 0002:6691   117 0002:66a7   120 0002:66aa
+   122 0002:66b3   123 0002:66bd   125 0002:66c2   126 0002:66d8
+   129 0002:66db   130 0002:66e5   131 0002:66ea   132 0002:66ed
+   135 0002:6713   138 0002:6716   139 0002:6720   140 0002:6725
+   141 0002:6728   142 0002:675e   143 0002:6764     0 0002:6767
+   155 0002:6768   156 0002:6775   157 0002:677a   158 0002:6784
+   160 0002:678e   162 0002:679b   164 0002:67a4   165 0002:67af
+   167 0002:67cd   168 0002:67d7   172 0002:67dc   173 0002:67e5
+   175 0002:67f2   177 0002:67fb   178 0002:6811   181 0002:682f
+   183 0002:6838   184 0002:6841   185 0002:685e   188 0002:686f
+   189 0002:6875     0 0002:6878   200 0002:687a   202 0002:6887
+   204 0002:688c   206 0002:6899   208 0002:68a2   209 0002:68aa
+   210 0002:68c0   212 0002:68d1   214 0002:68e3   215 0002:68eb
+   216 0002:6901   217 0002:6912   218 0002:6915   219 0002:691e
+   222 0002:6929   223 0002:692f     0 0002:6932
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\enums.c) segment COMDAT_SEG1
+
+    32 0002:6934    33 0002:6941    34 0002:694b    36 0002:6950
+    37 0002:695a    38 0002:6964    40 0002:696f    41 0002:699f
+    43 0002:69cf    47 0002:69d7    48 0002:69e4    49 0002:69ed
+    52 0002:69f0    53 0002:69fb    55 0002:6a19    56 0002:6a23
+    59 0002:6a28    60 0002:6a3e    62 0002:6a50    63 0002:6a5a
+    66 0002:6a5d    67 0002:6a66    68 0002:6a83    69 0002:6a94
+    72 0002:6aa6    73 0002:6ab5    74 0002:6ac5    77 0002:6ad6
+    79 0002:6ade    81 0002:6ae5    83 0002:6aee    85 0002:6af7
+    86 0002:6b02    89 0002:6b0f    90 0002:6b18    92 0002:6b22
+    93 0002:6b2b     0 0002:6b2e   102 0002:6b30   103 0002:6b3d
+   104 0002:6b47   105 0002:6b4c   107 0002:6b59   109 0002:6b62
+   111 0002:6b6d   112 0002:6b7f   113 0002:6b89   115 0002:6b8c
+   116 0002:6b94   117 0002:6b9d   118 0002:6bbd   119 0002:6bc7
+   120 0002:6bd6   122 0002:6be8   123 0002:6bff   124 0002:6c09
+   125 0002:6c0c   129 0002:6c1d   130 0002:6c26     0 0002:6c29
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\error.c) segment COMDAT_SEG1
+
+    32 0002:6c2a    34 0002:6c37    35 0002:6c41    38 0002:6c4b
+    40 0002:6c55    42 0002:6c65    43 0002:6c7d    45 0002:6c8f
+    46 0002:6cae    48 0002:6cbc    49 0002:6cbf    51 0002:6cd8
+    53 0002:6ce2    54 0002:6cf6    56 0002:6d04    57 0002:6d1a
+    59 0002:6d3c    60 0002:6d62    61 0002:6d73    63 0002:6d76
+    64 0002:6d8a    66 0002:6d97    68 0002:6da8    69 0002:6db0
+    71 0002:6dc7    72 0002:6dd3    74 0002:6ddf    76 0002:6df3
+    77 0002:6e01    80 0002:6e0c    81 0002:6e0f     0 0002:6e12
+    88 0002:6e14    89 0002:6e21    90 0002:6e2e    91 0002:6e3b
+    92 0002:6e44     0 0002:6e47   100 0002:6e48   103 0002:6e55
+   105 0002:6e5f   108 0002:6e79   109 0002:6e90   110 0002:6ea2
+   113 0002:6eb9   114 0002:6ecb   115 0002:6ed3   116 0002:6ed6
+   118 0002:6edb   124 0002:6ef1     0 0002:6ef4
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\expr.c) segment COMDAT_SEG1
+
+    58 0002:6ef6    59 0002:6f03    60 0002:6f15    65 0002:6f18
+    66 0002:6f24    68 0002:6f37    69 0002:6f4a    70 0002:6f5d
+    71 0002:6f70    72 0002:6f7e    73 0002:6f81     0 0002:6f84
+    80 0002:6f86    81 0002:6f93    83 0002:6f9d    84 0002:6fad
+    86 0002:6fbf    88 0002:6fc9    90 0002:6fcc    91 0002:6fd4
+    92 0002:6fe3    93 0002:6ff2    94 0002:7001    96 0002:7010
+    97 0002:7019     0 0002:701c   109 0002:701e   110 0002:702b
+   111 0002:7035   113 0002:703a   115 0002:706a   116 0002:7075
+   117 0002:7087   118 0002:708c   120 0002:708f   121 0002:7097
+   125 0002:70a8   127 0002:70b1   129 0002:70c8   133 0002:70e6
+   135 0002:70ef   136 0002:70fd   139 0002:7107   140 0002:7110
+     0 0002:7113   152 0002:7114   153 0002:7121   154 0002:712b
+   155 0002:7135   156 0002:713f   158 0002:7144   160 0002:7175
+   162 0002:7182   164 0002:718b   165 0002:7196   167 0002:71b0
+   169 0002:71c2   170 0002:71f7   171 0002:7211   175 0002:7216
+   177 0002:721f   178 0002:722a   179 0002:723c   180 0002:7241
+   182 0002:7244   183 0002:724c   187 0002:725d   188 0002:7266
+   190 0002:7270   191 0002:7279     0 0002:727c   216 0002:727e
+   217 0002:728b   218 0002:7295   220 0002:729f   222 0002:72a4
+   224 0002:72d5   225 0002:72e0   227 0002:72f2   228 0002:72fa
+   230 0002:730b   232 0002:7313   234 0002:7325   236 0002:732e
+   237 0002:733a   238 0002:7345   240 0002:7357   241 0002:7365
+   243 0002:7368   244 0002:7371   245 0002:7382   246 0002:7392
+   248 0002:739f   250 0002:73bf   251 0002:73cd   252 0002:73db
+   253 0002:73e5   256 0002:73e8   258 0002:73eb   259 0002:73f7
+   260 0002:7402   262 0002:7414   263 0002:7422   266 0002:7425
+   267 0002:742e   268 0002:743f   269 0002:7458   271 0002:746f
+   272 0002:747d   273 0002:748b   274 0002:7495   277 0002:7498
+   281 0002:74ad   282 0002:74b5   283 0002:74b8   284 0002:74ca
+   287 0002:74d5   288 0002:74de     0 0002:74e1   298 0002:74e2
+   299 0002:74ef   301 0002:74f9   302 0002:7503   303 0002:750d
+   305 0002:7512   307 0002:751a   310 0002:7520   311 0002:752b
+   312 0002:7538   314 0002:7541   315 0002:754f   317 0002:7559
+   320 0002:755c   321 0002:7567   323 0002:7579   324 0002:7582
+   326 0002:7592   328 0002:75a9   329 0002:75bc   330 0002:75ca
+   333 0002:75d4   336 0002:75d7   337 0002:75e2   339 0002:75f4
+   340 0002:75fd   342 0002:760d   346 0002:7610   347 0002:761b
+   349 0002:762d   350 0002:7636   352 0002:764d   355 0002:7650
+   356 0002:765b   358 0002:766d   359 0002:7676   361 0002:7690
+   364 0002:7693   366 0002:769e   367 0002:76b2   369 0002:76c4
+   370 0002:76d4   372 0002:76de   374 0002:76e1   377 0002:76eb
+   378 0002:76ff   381 0002:7702   382 0002:770d   384 0002:771f
+   385 0002:7728   387 0002:7739   390 0002:773c   391 0002:7750
+   394 0002:7753   395 0002:7763   396 0002:776d   397 0002:7770
+   399 0002:778e   403 0002:7791   404 0002:77a8   406 0002:77b2
+   408 0002:77e8   409 0002:77f1     0 0002:77f4   416 0002:77f6
+   417 0002:7803   418 0002:780d   420 0002:7817   422 0002:781c
+   426 0002:7827   428 0002:7839   432 0002:783e   433 0002:7846
+   440 0002:784c   442 0002:7858   443 0002:7863   445 0002:7875
+   447 0002:7883   449 0002:7886   450 0002:788f   451 0002:78a0
+   453 0002:78b0   455 0002:78c7   456 0002:78da   457 0002:78e8
+   461 0002:78f2   464 0002:78f5   465 0002:7900   466 0002:7905
+   467 0002:7908   469 0002:7936   472 0002:7951   473 0002:795a
+     0 0002:795d   480 0002:795e   481 0002:796b   482 0002:7975
+   483 0002:797f   485 0002:7989   486 0002:798e   490 0002:7993
+   492 0002:799b   495 0002:79a1   498 0002:79a4   499 0002:79a9
+   502 0002:79ac   503 0002:79b7   504 0002:79ba   507 0002:79d0
+   511 0002:79db   513 0002:79ed   515 0002:79f6   516 0002:7a02
+   517 0002:7a0d   519 0002:7a1f   521 0002:7a2d   523 0002:7a30
+   524 0002:7a38   531 0002:7a49   533 0002:7a5b   537 0002:7a60
+   538 0002:7a68   543 0002:7a6e   545 0002:7a7a   546 0002:7a85
+   548 0002:7a97   550 0002:7aa5   552 0002:7aa8   553 0002:7ab1
+   554 0002:7ac2   556 0002:7ad2   558 0002:7ae9   559 0002:7afc
+   560 0002:7b0a   564 0002:7b14   567 0002:7b17   568 0002:7b22
+   569 0002:7b27   570 0002:7b2a   572 0002:7b48   575 0002:7b63
+   576 0002:7b6c     0 0002:7b6f   584 0002:7b70   585 0002:7b7d
+   586 0002:7b87   589 0002:7b91   591 0002:7b9c   594 0002:7bae
+   597 0002:7bb6   606 0002:7bbc   608 0002:7bc8   609 0002:7bd3
+   611 0002:7be5   612 0002:7bf3   613 0002:7bfd   616 0002:7c00
+   617 0002:7c09   618 0002:7c1a   623 0002:7c2a   625 0002:7c41
+   626 0002:7c54   627 0002:7c62   629 0002:7c6c   632 0002:7c6f
+   633 0002:7c7a   634 0002:7c7d   637 0002:7ca0   638 0002:7ca9
+     0 0002:7cac   649 0002:7cae   650 0002:7cbb   651 0002:7cc3
+     0 0002:7cc6
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\exprtype.c) segment COMDAT_SEG1
+
+    42 0002:7cc8    43 0002:7cd5    45 0002:7cda    46 0002:7cec
+    47 0002:7cf1    48 0002:7d2a    49 0002:7d2f    51 0002:7d32
+    56 0002:7d3b    57 0002:7d40    60 0002:7d43    61 0002:7d78
+    62 0002:7d95    65 0002:7d98    66 0002:7d9d    69 0002:7dc3
+    70 0002:7dc9     0 0002:7dcc    81 0002:7dce    82 0002:7ddb
+    84 0002:7de5    85 0002:7e15    87 0002:7e45    90 0002:7e4e
+    91 0002:7e5a    92 0002:7e65    96 0002:7e68    97 0002:7e80
+    98 0002:7e8b   101 0002:7e8e   102 0002:7e9a   103 0002:7ea5
+   107 0002:7ea8   110 0002:7eb4   112 0002:7ed4   116 0002:7ee5
+   120 0002:7ee8   121 0002:7efe   122 0002:7f0a   126 0002:7f0d
+   127 0002:7f23   128 0002:7f2f   135 0002:7f32   136 0002:7f46
+   137 0002:7f50   138 0002:7f53   139 0002:7f5f   140 0002:7f62
+   142 0002:7f98   143 0002:7fa1     0 0002:7fa4   155 0002:7fa6
+   156 0002:7fb3   157 0002:7fbd   158 0002:7fc7   160 0002:7fd1
+   162 0002:8002   163 0002:801b   165 0002:8034   168 0002:8058
+   170 0002:8082   171 0002:808e   173 0002:8099   174 0002:80a5
+   177 0002:80b0   180 0002:80b9   181 0002:80c5   182 0002:80d0
+   183 0002:80d3   184 0002:80dd   187 0002:80e0   188 0002:80ec
+   189 0002:80f7   190 0002:80fa   191 0002:8104   194 0002:8107
+   197 0002:8113   198 0002:8133   199 0002:813e   200 0002:8141
+   202 0002:814b   203 0002:814e   204 0002:8158   207 0002:815b
+   208 0002:8167   209 0002:8172   210 0002:8175   211 0002:817f
+   213 0002:8182   215 0002:81a8   216 0002:81b1     0 0002:81b4
+   230 0002:81b6   231 0002:81c3   233 0002:81cd   234 0002:81fe
+   236 0002:8229   237 0002:823e   239 0002:826f   248 0002:8278
+   255 0002:827b   256 0002:8294   257 0002:8297   258 0002:82cd
+   259 0002:82d6     0 0002:82d9   268 0002:82da   269 0002:82e7
+   270 0002:82f1   271 0002:82fb   272 0002:8305   274 0002:830f
+   276 0002:8321   279 0002:832a   282 0002:8333   283 0002:833e
+   286 0002:8341   287 0002:834c   290 0002:834f   291 0002:835a
+   294 0002:835d   295 0002:8372   298 0002:8375   299 0002:838a
+   302 0002:838d   303 0002:83a1   311 0002:83a4   312 0002:83b8
+   318 0002:83bb   321 0002:8414   323 0002:843e   324 0002:844a
+   326 0002:8455   327 0002:8461   330 0002:846c   333 0002:8475
+   334 0002:8481   335 0002:848b   336 0002:848e   337 0002:8499
+   340 0002:849c   341 0002:84a8   342 0002:84b2   343 0002:84b5
+   344 0002:84c0   347 0002:84c3   348 0002:84cd   349 0002:84d0
+   350 0002:84e6   354 0002:84e9   356 0002:8542   357 0002:856c
+   358 0002:8576   359 0002:8579   361 0002:8584   364 0002:8587
+   368 0002:85e0   369 0002:8610   370 0002:861b   371 0002:861e
+   372 0002:8628   376 0002:862b   378 0002:8684   380 0002:8699
+   381 0002:86ae   382 0002:86b9   383 0002:86bc   385 0002:86c6
+   387 0002:86d5   388 0002:86e1   389 0002:86ec   390 0002:86ef
+   392 0002:86f9   393 0002:86fc   394 0002:8706   397 0002:8709
+   399 0002:8737   400 0002:874c   401 0002:8757   402 0002:8766
+   403 0002:8771   404 0002:8774   405 0002:877e   408 0002:8781
+   409 0002:87af   411 0002:87d9   412 0002:87e3   414 0002:87ed
+   415 0002:87f0   417 0002:87fc   420 0002:87ff   421 0002:8858
+   423 0002:8864   424 0002:886e   426 0002:8878   427 0002:887b
+   429 0002:8887   432 0002:888a   433 0002:88e3   434 0002:88f9
+   435 0002:8903   437 0002:8906   439 0002:8912   440 0002:891c
+   442 0002:8926   444 0002:8929   445 0002:893a   447 0002:894b
+   448 0002:8955   450 0002:895f   451 0002:8962   453 0002:898e
+   454 0002:8998   456 0002:89a2   457 0002:89a5   460 0002:89b6
+   463 0002:89b9   464 0002:8a12   465 0002:8a2c   467 0002:8a3e
+   469 0002:8a48   472 0002:8a4b   473 0002:8a5b   475 0002:8a5e
+   477 0002:8af5   478 0002:8afe     0 0002:8b01
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\fndec.c) segment COMDAT_SEG1
+
+    38 0002:8b02    39 0002:8b0f    40 0002:8b14    41 0002:8b1e
+    44 0002:8b28    46 0002:8b35    48 0002:8b3e    49 0002:8b49
+    51 0002:8b5b    52 0002:8b65    56 0002:8b6a    59 0002:8b73
+    60 0002:8b84    61 0002:8b8d    65 0002:8b9d    67 0002:8ba6
+    68 0002:8bbd    70 0002:8bcf    71 0002:8bdf    79 0002:8be4
+    81 0002:8bed    82 0002:8bf6    84 0002:8c0f    85 0002:8c20
+    87 0002:8c29    88 0002:8c39    90 0002:8c5c    91 0002:8c5f
+    96 0002:8c6e    97 0002:8c77    99 0002:8c84   101 0002:8c8d
+   102 0002:8c9d   103 0002:8cb4   107 0002:8cb9   108 0002:8cc2
+   110 0002:8ccc   111 0002:8cd5     0 0002:8cd8   124 0002:8cda
+   125 0002:8ce7   126 0002:8cec   128 0002:8cf6   130 0002:8cfb
+   131 0002:8d0b   133 0002:8d29   134 0002:8d32   136 0002:8d40
+   137 0002:8d49   139 0002:8d56   140 0002:8d5f   142 0002:8d70
+   144 0002:8d75   145 0002:8d7b     0 0002:8d7e
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\fplist.c) segment COMDAT_SEG1
+
+    36 0002:8d80    37 0002:8d8d    39 0002:8d92    40 0002:8da4
+    41 0002:8da9    43 0002:8dac    46 0002:8db6    48 0002:8dc3
+    49 0002:8df8    51 0002:8e08    52 0002:8e0b    53 0002:8e10
+    57 0002:8e13    58 0002:8e18    61 0002:8e1b    62 0002:8e25
+    63 0002:8e28    64 0002:8e46    65 0002:8e5c    67 0002:8e66
+    68 0002:8e6c     0 0002:8e6f    84 0002:8e70    85 0002:8e7d
+    86 0002:8e87    87 0002:8e91    89 0002:8e9b    90 0002:8ea5
+    92 0002:8eaa    96 0002:8eda    97 0002:8ee7    98 0002:8ef0
+   100 0002:8ef3   101 0002:8efe   103 0002:8f10   104 0002:8f1a
+   110 0002:8f1f   111 0002:8f2b   113 0002:8f61   115 0002:8f81
+   116 0002:8f91   117 0002:8f96   119 0002:8f99   120 0002:8faa
+   124 0002:8fad   126 0002:8fb6   127 0002:8fcc   129 0002:8fde
+   130 0002:8fee   135 0002:8ff3   137 0002:8ffc   138 0002:9005
+   140 0002:900f   141 0002:901f   144 0002:902e   145 0002:9036
+   147 0002:9048   148 0002:9051   150 0002:905c   151 0002:9062
+     0 0002:9065   163 0002:9066   164 0002:9073   165 0002:9078
+   166 0002:9082   167 0002:908c   169 0002:9096   172 0002:90c7
+   173 0002:90d3   174 0002:9109   177 0002:911d   179 0002:9130
+   180 0002:9139   182 0002:9146   184 0002:914f   185 0002:915a
+   188 0002:916c   189 0002:91a2   191 0002:91b6   192 0002:91b9
+   194 0002:91be   195 0002:91c4     0 0002:91c7   207 0002:91c8
+   208 0002:91d5   209 0002:91da   210 0002:91e4   211 0002:91ee
+   213 0002:91f8   216 0002:9229   217 0002:9235   218 0002:926b
+   221 0002:927f   223 0002:9292   224 0002:929b   226 0002:92a8
+   228 0002:92b1   229 0002:92bc   232 0002:92ce   233 0002:9304
+   235 0002:9318   236 0002:931b   238 0002:9320   239 0002:9326
+     0 0002:9329   251 0002:932a   252 0002:9337   253 0002:933c
+   254 0002:9346   255 0002:9350   257 0002:935a   259 0002:938b
+   260 0002:939b   262 0002:93b9   267 0002:93c2   268 0002:93ce
+   270 0002:9404   271 0002:9439   272 0002:946e   274 0002:9492
+   275 0002:94a6   276 0002:94ab   278 0002:94ae   279 0002:94bf
+   282 0002:94c2   284 0002:94cb   285 0002:94d4   286 0002:94e4
+   288 0002:94f3   289 0002:94f9     0 0002:94fc   301 0002:94fe
+   302 0002:950b   303 0002:9510   304 0002:951a   305 0002:9524
+   307 0002:952e   309 0002:955f   310 0002:956f   312 0002:958d
+   317 0002:9596   318 0002:95a2   320 0002:95d8   322 0002:95fc
+   323 0002:9631   324 0002:9666   325 0002:967a   326 0002:967f
+   328 0002:9682   329 0002:9693   332 0002:9696   334 0002:969f
+   335 0002:96a8   336 0002:96b8   338 0002:96c7   339 0002:96cd
+     0 0002:96d0   355 0002:96d2   357 0002:96df   359 0002:96e4
+   361 0002:9715   363 0002:971d   366 0002:9723   367 0002:9734
+   370 0002:9737   371 0002:9748   374 0002:974b   375 0002:975c
+   378 0002:975f   379 0002:976a   380 0002:977b   383 0002:977e
+   384 0002:9788   385 0002:978d   386 0002:9790   388 0002:97b6
+   389 0002:97bc     0 0002:97bf   402 0002:97c0   403 0002:97cd
+   407 0002:97d7   409 0002:97e4   413 0002:97ed   414 0002:97ff
+   416 0002:9807   419 0002:9819   421 0002:9822   422 0002:982d
+   425 0002:983a   426 0002:9843   428 0002:9851   429 0002:985a
+     0 0002:985d
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\gettext.c) segment COMDAT_SEG1
+
+    41 0002:985e    45 0002:986b    46 0002:9875    47 0002:987f
+    48 0002:9889    49 0002:9893    51 0002:989d    52 0002:98cd
+    55 0002:98f4    57 0002:9904    58 0002:9922    60 0002:992b
+    61 0002:994c    63 0002:9955    66 0002:9964    69 0002:998f
+    71 0002:99ad    72 0002:99bb    75 0002:99c4    77 0002:99e6
+    78 0002:99f4    82 0002:99fd    83 0002:9a02    84 0002:9a0e
+    86 0002:9a21    87 0002:9a25    88 0002:9a32    91 0002:9a35
+    93 0002:9a63    94 0002:9a71    98 0002:9a7a    99 0002:9a86
+   100 0002:9a9e   101 0002:9aaa   103 0002:9ab9   104 0002:9adc
+   105 0002:9af3   106 0002:9afd   107 0002:9b0b   108 0002:9b18
+   111 0002:9b1b   113 0002:9b29   114 0002:9b37   115 0002:9b40
+     0 0002:9b43   129 0002:9b44   130 0002:9b51   131 0002:9b5b
+   133 0002:9b65   135 0002:9b80   137 0002:9b92   138 0002:9ba9
+   140 0002:9bb7   141 0002:9bc0     0 0002:9bc3
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\ident.c) segment COMDAT_SEG1
+
+    63 0002:9bc4    64 0002:9bd1    65 0002:9bdb    66 0002:9be5
+    67 0002:9bea    69 0002:9bf4    71 0002:9c24    73 0002:9c2e
+    74 0002:9c39    76 0002:9c3f    78 0002:9c42    79 0002:9c4d
+    82 0002:9c53    84 0002:9c66    88 0002:9c78    89 0002:9c9b
+    90 0002:9cad    91 0002:9cc1    94 0002:9cd1    95 0002:9ce0
+    97 0002:9cef   100 0002:9cf8   101 0002:9d0b   104 0002:9d20
+   105 0002:9d29   106 0002:9d32   107 0002:9d41   108 0002:9d4a
+   110 0002:9d59   111 0002:9d62     0 0002:9d65   118 0002:9d66
+   119 0002:9d73   120 0002:9d78   122 0002:9d82   123 0002:9d8c
+   124 0002:9d92   125 0002:9d95   127 0002:9d9b   129 0002:9dae
+   130 0002:9dc0   132 0002:9dd2   133 0002:9ddb     0 0002:9dde
+   144 0002:9de0   146 0002:9ded   147 0002:9df7   149 0002:9e01
+   152 0002:9e32   154 0002:9e65   155 0002:9e9a   157 0002:9eba
+   158 0002:9ec6   160 0002:9ec9   165 0002:9ecc   167 0002:9ef2
+   169 0002:9f25   170 0002:9f5a   172 0002:9f7a   173 0002:9f86
+   175 0002:9f89   179 0002:9f8c   181 0002:9f9e   183 0002:9fd1
+   184 0002:a006   186 0002:a026   187 0002:a032   189 0002:a035
+   193 0002:a038   195 0002:a04a   197 0002:a07b   198 0002:a0b0
+   200 0002:a0d0   201 0002:a0dc   203 0002:a0df   206 0002:a0e2
+   207 0002:a0eb     0 0002:a0ee   217 0002:a0f0   218 0002:a0fd
+   219 0002:a107   221 0002:a10c   223 0002:a13d   225 0002:a14e
+   227 0002:a157   229 0002:a161   231 0002:a194   232 0002:a1c9
+   234 0002:a1e9   235 0002:a1ee   237 0002:a1f1   239 0002:a1f4
+   241 0002:a1f7   243 0002:a22a   244 0002:a25f   246 0002:a27f
+   247 0002:a284   249 0002:a287   253 0002:a28a   254 0002:a290
+     0 0002:a293   263 0002:a294   264 0002:a2a1   265 0002:a2a9
+   266 0002:a2b5   267 0002:a2ba   268 0002:a2bd     0 0002:a2c0
+   275 0002:a2c2   276 0002:a2cf   279 0002:a2d9   282 0002:a30c
+   284 0002:a326   285 0002:a35c   286 0002:a36c   288 0002:a37f
+   290 0002:a382   291 0002:a38e   292 0002:a391     0 0002:a394
+   304 0002:a396   305 0002:a3a3   306 0002:a3d4   308 0002:a3fd
+   309 0002:a405   311 0002:a411   312 0002:a423   314 0002:a435
+   315 0002:a43b     0 0002:a43e   322 0002:a440   323 0002:a44d
+   325 0002:a457   326 0002:a463   327 0002:a46f   328 0002:a47b
+   329 0002:a487   331 0002:a48d   332 0002:a490     0 0002:a493
+   340 0002:a494   341 0002:a4a1   342 0002:a4a7     0 0002:a4aa
+   349 0002:a4ac   350 0002:a4b9   351 0002:a4c3   352 0002:a4cd
+   353 0002:a4d0   354 0002:a4d9     0 0002:a4dc   361 0002:a4de
+   362 0002:a4eb   363 0002:a4fd     0 0002:a500   373 0002:a502
+   374 0002:a50f   375 0002:a540   377 0002:a569   378 0002:a57a
+   379 0002:a591   380 0002:a594     0 0002:a597   388 0002:a598
+   389 0002:a5a5   391 0002:a5d6   392 0002:a5e7   394 0002:a5f6
+   396 0002:a60d   398 0002:a612   399 0002:a615     0 0002:a618
+   408 0002:a61a   409 0002:a627   410 0002:a631   412 0002:a636
+   414 0002:a643   416 0002:a646   417 0002:a67b   419 0002:a69b
+   420 0002:a6a8   421 0002:a6ad   424 0002:a6b0   425 0002:a6c1
+   426 0002:a6d3   428 0002:a6d9     0 0002:a6dc   441 0002:a6de
+   442 0002:a6eb   443 0002:a6f5   444 0002:a6ff   445 0002:a709
+   447 0002:a70e   452 0002:a73f   454 0002:a753   455 0002:a75e
+   457 0002:a76b   459 0002:a76e   460 0002:a781   463 0002:a793
+   465 0002:a796   466 0002:a7cb   469 0002:a7eb   470 0002:a808
+   471 0002:a818   477 0002:a81b   481 0002:a84d   483 0002:a867
+   484 0002:a89d   486 0002:a8ad   491 0002:a8c0   493 0002:a8da
+   495 0002:a8ec   497 0002:a903   498 0002:a916   502 0002:a925
+   503 0002:a928   504 0002:a936   505 0002:a943   506 0002:a955
+   508 0002:a95a   511 0002:a95d   512 0002:a96e   513 0002:a97f
+   514 0002:a991   515 0002:a997     0 0002:a99a   533 0002:a99c
+   535 0002:a9a9   536 0002:a9cb   537 0002:a9dc   538 0002:a9e5
+     0 0002:a9e8   541 0002:a9ea   542 0002:a9f7   543 0002:aa06
+   544 0002:aa1c   545 0002:aa22     0 0002:aa25   548 0002:aa26
+   549 0002:aa33   551 0002:aa64   553 0002:aa80   554 0002:aa95
+   556 0002:aaa7   559 0002:aaaa   562 0002:aaaf   563 0002:aab4
+   564 0002:aab9   566 0002:aabe   567 0002:aae0   568 0002:aae5
+   570 0002:aaf7     0 0002:aafa   576 0002:aafc   577 0002:ab09
+   580 0002:ab13   582 0002:ab44   583 0002:ab51   585 0002:ab54
+   587 0002:ab6a   588 0002:aba0   591 0002:abad   592 0002:abce
+   595 0002:abd1   596 0002:abf9   599 0002:abfc   600 0002:ac21
+   604 0002:ac24   606 0002:ac5f   608 0002:ac7f   609 0002:ac98
+   611 0002:ac9b   612 0002:ac9e   615 0002:aca1   616 0002:aca4
+   618 0002:acca   619 0002:acd9   620 0002:acdc     0 0002:acdf
+   627 0002:ace0   628 0002:aced   630 0002:acf7   632 0002:ad28
+   633 0002:ad37   635 0002:ad3c   637 0002:ad41   638 0002:ad46
+   639 0002:ad55   641 0002:ad5a   642 0002:ad6b   644 0002:ad6e
+   645 0002:ad73   646 0002:ad81   647 0002:ad92   648 0002:ada4
+   649 0002:adb3   650 0002:adb8   652 0002:adca   653 0002:adcf
+   654 0002:adde   656 0002:ade3   657 0002:ade8   658 0002:adeb
+     0 0002:adee   668 0002:adf0   669 0002:adfd   671 0002:ae07
+   673 0002:ae38   675 0002:ae6b   677 0002:ae93   679 0002:ae9c
+   681 0002:ae9f   683 0002:aed2   685 0002:aefa   687 0002:af03
+   690 0002:af06   692 0002:af37   694 0002:af5f   696 0002:af68
+   698 0002:af6b   699 0002:af74     0 0002:af77   705 0002:af78
+   706 0002:af85   707 0002:af8f   709 0002:af94   710 0002:afc5
+   712 0002:aff0   720 0002:afff   722 0002:b036   723 0002:b05b
+   725 0002:b05e   726 0002:b083   728 0002:b086   729 0002:b08f
+   731 0002:b09e   733 0002:b0b0   734 0002:b0b5   736 0002:b0b8
+   738 0002:b0c7   739 0002:b0ca     0 0002:b0cd   749 0002:b0ce
+   750 0002:b0db   752 0002:b0e5   757 0002:b116   759 0002:b11f
+   765 0002:b133   767 0002:b145   769 0002:b157   771 0002:b15a
+   775 0002:b163   776 0002:b193   777 0002:b1a2   780 0002:b1a5
+   781 0002:b1c6   782 0002:b1d5   783 0002:b1e4   784 0002:b205
+   786 0002:b214   789 0002:b217   790 0002:b226   793 0002:b229
+   794 0002:b238   797 0002:b23b   798 0002:b249   801 0002:b24c
+   802 0002:b25b   803 0002:b270   804 0002:b27f   805 0002:b294
+   808 0002:b297   809 0002:b2a5   812 0002:b2a8   813 0002:b2b7
+   815 0002:b2ed   816 0002:b2f0     0 0002:b2f3   825 0002:b2f4
+   826 0002:b301   828 0002:b304   829 0002:b312   830 0002:b323
+   831 0002:b335   832 0002:b344   834 0002:b356   835 0002:b359
+     0 0002:b35c   844 0002:b35e   845 0002:b36b   846 0002:b39c
+   849 0002:b3a6   852 0002:b3b6   854 0002:b3b9   855 0002:b3c8
+   856 0002:b3da   857 0002:b3e9   859 0002:b3f7   862 0002:b3fa
+   863 0002:b409   864 0002:b41b   865 0002:b42a   866 0002:b43f
+   869 0002:b442   870 0002:b44f   871 0002:b45e   872 0002:b470
+   873 0002:b47f   874 0002:b494   878 0002:b497   879 0002:b4a9
+   880 0002:b4b8   881 0002:b4c5   882 0002:b4d4   883 0002:b4d7
+   885 0002:b4e6   886 0002:b4f8   888 0002:b50f   889 0002:b51e
+   890 0002:b531   893 0002:b540   895 0002:b54d   896 0002:b55c
+   898 0002:b571   901 0002:b574   902 0002:b586   903 0002:b595
+   904 0002:b5aa   907 0002:b5ad   908 0002:b5c6   909 0002:b5c9
+   911 0002:b5e9   912 0002:b5ec     0 0002:b5ef   920 0002:b5f0
+   921 0002:b5fd   923 0002:b607   925 0002:b638   926 0002:b64c
+   928 0002:b65e   929 0002:b66c   930 0002:b67b   932 0002:b680
+   933 0002:b69e     0 0002:b6a1   940 0002:b6a2   941 0002:b6af
+   943 0002:b6b9   945 0002:b6c2   949 0002:b6f5   950 0002:b712
+   952 0002:b715   953 0002:b723   954 0002:b732   955 0002:b737
+   957 0002:b73a   959 0002:b73d   963 0002:b770   964 0002:b78d
+   966 0002:b790   967 0002:b79e   968 0002:b7ad   969 0002:b7b2
+   971 0002:b7b5   972 0002:b7b8     0 0002:b7bb
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\iproc.c) segment COMDAT_SEG1
+
+   177 0002:b7bc   178 0002:b7c9   179 0002:b7db   181 0002:b7ed
+   183 0002:b815   184 0002:b820   185 0002:b834   186 0002:b844
+   187 0002:b858   188 0002:b868   189 0002:b874   192 0002:b880
+   193 0002:b88e   194 0002:b894   195 0002:b89a   202 0002:b8a6
+   203 0002:b8a9     0 0002:b8ac   210 0002:b8ae   211 0002:b8bb
+   212 0002:b8cf   213 0002:b8df   214 0002:b8f3   215 0002:b903
+   216 0002:b90f   217 0002:b91b     0 0002:b91e   229 0002:b920
+   230 0002:b92d   233 0002:b933   239 0002:b936   242 0002:b939
+   243 0002:b944   246 0002:b947   247 0002:b952   250 0002:b955
+   251 0002:b960   254 0002:b963   255 0002:b96e   258 0002:b971
+   259 0002:b97c   262 0002:b97f   263 0002:b98a   266 0002:b98d
+   267 0002:b998   270 0002:b99b   271 0002:b9a6   274 0002:b9a9
+   275 0002:b9b4   278 0002:b9b7   279 0002:b9c5   280 0002:b9c8
+   281 0002:b9f2   282 0002:b9f8     0 0002:b9fb   294 0002:b9fc
+   295 0002:ba09   296 0002:ba0e   297 0002:ba27   298 0002:ba2d
+     0 0002:ba30   309 0002:ba32   310 0002:ba3f   311 0002:ba4f
+   312 0002:ba68   338 0002:ba6d   341 0002:ba73   344 0002:ba76
+   345 0002:babd   348 0002:bac0   349 0002:bafd   350 0002:bb02
+   353 0002:bb05   354 0002:bb45   355 0002:bb4a   357 0002:bb4d
+   360 0002:bb73   363 0002:bb79   370 0002:bb7c   371 0002:bb86
+   372 0002:bb8b   374 0002:bb8e   375 0002:bbcb   377 0002:bbd0
+   380 0002:bbd3   381 0002:bbdd   382 0002:bbe2   384 0002:bbe5
+   385 0002:bc22   387 0002:bc27   390 0002:bc2a   391 0002:bc34
+   392 0002:bc39   394 0002:bc3c   395 0002:bc9b   397 0002:bca0
+   400 0002:bca3   401 0002:bcad   402 0002:bcb2   404 0002:bcb5
+   406 0002:bcde   407 0002:bce3   409 0002:bd04   410 0002:bd07
+   411 0002:bd66   413 0002:bd6b   416 0002:bd6e   417 0002:bd78
+   418 0002:bd7d   420 0002:bd80   422 0002:bda9   423 0002:bdae
+   425 0002:bdcf   426 0002:bdd2   427 0002:be31   429 0002:be36
+   432 0002:be39   433 0002:be43   434 0002:be48   436 0002:be4b
+   437 0002:be88   439 0002:be8d   442 0002:be90   443 0002:be9a
+   444 0002:be9f   446 0002:bea2   447 0002:bedf   449 0002:bee4
+   452 0002:bee7   453 0002:bef1   454 0002:bef6   455 0002:bef9
+   456 0002:bf3a   463 0002:bf3d   464 0002:bf47   465 0002:bf4c
+   467 0002:bf4f   468 0002:bf9e   470 0002:bfa3   473 0002:bfa6
+   474 0002:bfb0   475 0002:bfb5   477 0002:bfb8   478 0002:c007
+   480 0002:c00c   483 0002:c00f   484 0002:c019   485 0002:c01e
+   487 0002:c021   488 0002:c070   490 0002:c075   493 0002:c078
+   494 0002:c082   495 0002:c087   497 0002:c08a   499 0002:c0b3
+   500 0002:c0b8   502 0002:c0d7   503 0002:c0da   504 0002:c129
+   506 0002:c12e   512 0002:c131   513 0002:c13b   514 0002:c140
+   515 0002:c143   516 0002:c179   519 0002:c17c   520 0002:c186
+   521 0002:c18b   522 0002:c18e   523 0002:c1ce   529 0002:c1d1
+   530 0002:c1db   531 0002:c1e0   533 0002:c1e3   534 0002:c255
+   536 0002:c25a   539 0002:c25d   540 0002:c267   541 0002:c26c
+   543 0002:c26f   544 0002:c2e1   546 0002:c2e6   549 0002:c2e9
+   550 0002:c2f3   551 0002:c2f8   553 0002:c2fb   554 0002:c372
+   556 0002:c377   559 0002:c37a   560 0002:c384   561 0002:c389
+   563 0002:c38c   564 0002:c403   566 0002:c408   569 0002:c40b
+   570 0002:c415   571 0002:c41a   573 0002:c41d   574 0002:c494
+   576 0002:c499   579 0002:c49c   580 0002:c4a6   581 0002:c4ab
+   583 0002:c4ae   584 0002:c525   586 0002:c52a   589 0002:c52d
+   590 0002:c537   591 0002:c53c   594 0002:c53f   595 0002:c5ac
+   597 0002:c5b1   600 0002:c5b4   601 0002:c5be   602 0002:c5c3
+   605 0002:c5c6   606 0002:c633   608 0002:c638   611 0002:c63b
+   612 0002:c645   613 0002:c64a   616 0002:c64d   617 0002:c6ba
+   619 0002:c6bf   622 0002:c6c2   623 0002:c6cc   624 0002:c6d1
+   627 0002:c6d4   628 0002:c741   630 0002:c746   633 0002:c749
+   634 0002:c753   635 0002:c758   636 0002:c75b   637 0002:c7af
+   644 0002:c7b2   645 0002:c7bc   646 0002:c7c1   647 0002:c7c4
+   652 0002:c7e7   655 0002:c7ea   656 0002:c7f4   657 0002:c7f9
+   659 0002:c7fc   661 0002:c825   666 0002:c848   668 0002:c84b
+   673 0002:c850   675 0002:c855   678 0002:c858   679 0002:c862
+   680 0002:c867   681 0002:c893   682 0002:c898   684 0002:c89b
+   685 0002:c8a8   686 0002:c8ce   687 0002:c8ea   693 0002:c8ef
+   696 0002:c8f2   697 0002:c8fc   698 0002:c901   700 0002:c904
+   701 0002:c921   702 0002:c926   703 0002:c93b   705 0002:c95e
+   708 0002:c961   709 0002:c976   710 0002:c97b   711 0002:c998
+   714 0002:c99b   715 0002:c9a0   719 0002:c9bd   722 0002:c9c0
+   723 0002:c9ca   724 0002:c9cf   726 0002:c9d2   727 0002:c9d7
+   728 0002:c9f4   733 0002:ca17   736 0002:ca1a   737 0002:ca24
+   738 0002:ca29   739 0002:ca55   740 0002:ca5a   746 0002:ca5d
+   751 0002:ca6a   754 0002:ca95   756 0002:caa2   763 0002:caa5
+   764 0002:cab0   765 0002:cab5   767 0002:cab8   768 0002:caf2
+   770 0002:caf7   773 0002:cafa   774 0002:cb05   775 0002:cb0a
+   777 0002:cb0d   778 0002:cb47   780 0002:cb4c   783 0002:cb4f
+   784 0002:cb59   785 0002:cb5e   786 0002:cb61   787 0002:cb66
+   790 0002:cb69   791 0002:cb73   792 0002:cb78   793 0002:cbb7
+   794 0002:cbbc   795 0002:cbbf   796 0002:cc1c   799 0002:cc1f
+   800 0002:cc29   801 0002:cc2e   803 0002:cc31   804 0002:cc6b
+   805 0002:cca8   807 0002:cce2   810 0002:cce5   811 0002:ccef
+   812 0002:ccf4   814 0002:ccf7   815 0002:cd34   817 0002:cd39
+   824 0002:cd3c   825 0002:cd46   826 0002:cd4b   828 0002:cd4e
+   829 0002:cd94   831 0002:cd99   834 0002:cd9c   835 0002:cda6
+   836 0002:cdab   837 0002:cdae   838 0002:cdf4   841 0002:cdf7
+   842 0002:ce01   843 0002:ce06   845 0002:ce09   846 0002:ce49
+   848 0002:ce4e   851 0002:ce51   852 0002:ce5b   853 0002:ce60
+   854 0002:ce63   855 0002:ceab   858 0002:ceae   859 0002:ceb8
+   860 0002:cebd   862 0002:cec0   863 0002:cf00   865 0002:cf05
+   868 0002:cf08   869 0002:cf12   870 0002:cf17   871 0002:cf1a
+   872 0002:cf5d   875 0002:cf60   876 0002:cf6a   877 0002:cf6f
+   878 0002:cf7d   879 0002:cf82   881 0002:cf85   882 0002:cfbb
+   884 0002:cfc0   887 0002:cfc3   888 0002:cfce   889 0002:cfd3
+   890 0002:cfe1   891 0002:cfe6   893 0002:cfe9   894 0002:cfee
+   896 0002:d026   899 0002:d029   900 0002:d033   901 0002:d038
+   902 0002:d03b   903 0002:d082   906 0002:d085   907 0002:d08f
+   908 0002:d094   909 0002:d097   910 0002:d0e7   913 0002:d0ea
+   914 0002:d0f4   915 0002:d0f9   917 0002:d0fc   918 0002:d15c
+   920 0002:d161   923 0002:d164   924 0002:d16e   925 0002:d173
+   926 0002:d176   927 0002:d1c3   930 0002:d1c6   931 0002:d1d0
+   932 0002:d1d5   934 0002:d1d8   935 0002:d22a   937 0002:d22f
+   940 0002:d232   941 0002:d23c   942 0002:d241   943 0002:d244
+   944 0002:d296   947 0002:d299   948 0002:d2a3   949 0002:d2a8
+   951 0002:d2ab   952 0002:d2fd   954 0002:d302   957 0002:d305
+   958 0002:d30a   961 0002:d30d   962 0002:d317   963 0002:d31c
+   964 0002:d31f   965 0002:d341   968 0002:d344   969 0002:d34e
+   970 0002:d353   973 0002:d356   974 0002:d3ee   975 0002:d3f3
+   977 0002:d3f8   980 0002:d3fb   981 0002:d406   982 0002:d40b
+   983 0002:d418   984 0002:d41d   986 0002:d420   987 0002:d443
+   988 0002:d46d   989 0002:d477   990 0002:d482   992 0002:d487
+   995 0002:d48a   996 0002:d494   997 0002:d499  1001 0002:d49c
+  1002 0002:d500  1004 0002:d505  1008 0002:d508  1009 0002:d512
+  1010 0002:d517  1011 0002:d51a  1012 0002:d561  1015 0002:d564
+  1016 0002:d56e  1017 0002:d573  1018 0002:d576  1019 0002:d59f
+  1022 0002:d5a2  1023 0002:d5ad  1024 0002:d5b2  1026 0002:d5b5
+  1027 0002:d5e7  1028 0002:d5f9  1029 0002:d601  1031 0002:d606
+  1034 0002:d609  1035 0002:d611  1038 0002:d614  1039 0002:d619
+  1040 0002:d61c  1047 0002:d6b0  1048 0002:d6b6     0 0002:d6b9
+  1060 0002:d6ba  1061 0002:d6c7  1066 0002:d6d3  1067 0002:d6e1
+  1068 0002:d6e7  1073 0002:d6ed  1074 0002:d70d     0 0002:d710
+  1085 0002:d712  1086 0002:d71f  1087 0002:d724  1090 0002:d731
+  1092 0002:d739  1093 0002:d742  1094 0002:d748     0 0002:d74b
+  1104 0002:d74c  1105 0002:d759  1106 0002:d75e  1108 0002:d791
+  1109 0002:d799  1110 0002:d7bf  1113 0002:d7cc  1114 0002:d7d5
+  1116 0002:d7e1  1117 0002:d7e7     0 0002:d7ea  1128 0002:d7ec
+  1129 0002:d7f9  1130 0002:d819     0 0002:d81c  1141 0002:d81e
+  1142 0002:d82b  1143 0002:d837  1144 0002:d83a     0 0002:d83d
+  1157 0002:d83e  1158 0002:d84b  1159 0002:d855  1160 0002:d862
+  1161 0002:d86f  1162 0002:d878     0 0002:d87b  1169 0002:d87c
+  1170 0002:d889  1172 0002:d893  1174 0002:d8a7  1175 0002:d8ae
+  1177 0002:d8c1  1178 0002:d8c4  1179 0002:d8cf  1180 0002:d8d8
+     0 0002:d8db  1186 0002:d8dc  1187 0002:d8e9  1188 0002:d8ee
+  1189 0002:d8f9  1190 0002:d8fe  1192 0002:d901  1193 0002:d91c
+  1195 0002:d921  1196 0002:d927     0 0002:d92a  1202 0002:d92c
+  1203 0002:d939  1205 0002:d93e  1206 0002:d949  1207 0002:d94e
+  1208 0002:d951  1209 0002:d976  1210 0002:d97c     0 0002:d97f
+  1216 0002:d980  1217 0002:d98d  1218 0002:d992  1219 0002:d99d
+  1220 0002:d9a2  1222 0002:d9a5  1223 0002:d9c5  1225 0002:d9ca
+  1226 0002:d9d0     0 0002:d9d3
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\lex.c) segment COMDAT_SEG1
+
+   140 0002:d9d4   141 0002:d9e1   142 0002:da14   143 0002:da41
+   144 0002:da49     0 0002:da4c   151 0002:da4e   152 0002:da5b
+   153 0002:da65   155 0002:da6a   157 0002:da9b   159 0002:dabd
+   161 0002:dad9   162 0002:dade   164 0002:dae1   165 0002:dae4
+   166 0002:daea     0 0002:daed   173 0002:daee   174 0002:dafb
+   175 0002:db2c     0 0002:db2f   185 0002:db30   186 0002:db3d
+   188 0002:db47   190 0002:db7a   191 0002:db7f   193 0002:dbc1
+   199 0002:dbd9   200 0002:dbe3   201 0002:dbf7   202 0002:dc17
+   203 0002:dc2e   204 0002:dc45   205 0002:dc57   207 0002:dc5d
+   208 0002:dc69   209 0002:dc6c   210 0002:dc71   212 0002:dc9b
+   214 0002:dcc3   215 0002:dccd   216 0002:dce1   217 0002:dd01
+   218 0002:dd18   219 0002:dd2f   220 0002:dd41   221 0002:dd47
+   222 0002:dd53   223 0002:dd56   224 0002:dd94   226 0002:dd99
+   227 0002:dd9c   228 0002:dda2     0 0002:dda5   236 0002:dda6
+   239 0002:ddb3   241 0002:ddeb   243 0002:ddf0   245 0002:de00
+   247 0002:de09   249 0002:de1c   251 0002:de25   253 0002:de38
+   255 0002:de41   257 0002:de61   259 0002:de7d   261 0002:de80
+   264 0002:de93   266 0002:de99     0 0002:de9c   274 0002:de9e
+   275 0002:deab   278 0002:deb5   280 0002:deed   281 0002:def8
+   283 0002:defd   284 0002:df02   286 0002:df1b   287 0002:df2b
+   289 0002:df31   290 0002:df4a   291 0002:df5c   292 0002:df5f
+   294 0002:df7c   295 0002:df80   298 0002:df8b   299 0002:dfb4
+   300 0002:dfbc   301 0002:dfcc   303 0002:dfd1   305 0002:dfd7
+   306 0002:dfda   307 0002:dfe1   308 0002:dfe6   309 0002:dfec
+     0 0002:dfef   318 0002:dff0   319 0002:dffd   320 0002:e00a
+   322 0002:e00f   324 0002:e040   325 0002:e06b   327 0002:e072
+   329 0002:e09e   330 0002:e0c2   332 0002:e0c7   334 0002:e0ca
+   335 0002:e0ea   337 0002:e0ef   338 0002:e0f5     0 0002:e0f8
+   347 0002:e0fa   350 0002:e107   352 0002:e13f   354 0002:e144
+   355 0002:e15d   356 0002:e165   357 0002:e168   360 0002:e17b
+   362 0002:e194   363 0002:e1a4   364 0002:e1aa   365 0002:e1af
+   366 0002:e1b2   368 0002:e1b7   369 0002:e1bd   371 0002:e1c3
+     0 0002:e1c6   379 0002:e1c8   380 0002:e1d5   382 0002:e1da
+   385 0002:e1e7   388 0002:e218   389 0002:e230   391 0002:e237
+   392 0002:e240   395 0002:e247   397 0002:e24f   399 0002:e27e
+   400 0002:e295   402 0002:e298   404 0002:e2a7   406 0002:e2b0
+   409 0002:e2c7   410 0002:e2d0   412 0002:e2dd   414 0002:e2e3
+     0 0002:e2e6   422 0002:e2e8   424 0002:e2f5   426 0002:e2fa
+   428 0002:e302   430 0002:e351   431 0002:e368   432 0002:e38b
+   434 0002:e38e   435 0002:e39d   436 0002:e3a3     0 0002:e3a6
+   447 0002:e3a8   449 0002:e3b5   450 0002:e3c2   451 0002:e3c8
+   452 0002:e3cd   453 0002:e3d2   454 0002:e3d7   456 0002:e3dc
+   462 0002:e40d   464 0002:e41a   465 0002:e422   471 0002:e437
+   473 0002:e440   474 0002:e45c   475 0002:e462   477 0002:e476
+   479 0002:e499   480 0002:e4ad   483 0002:e4b3   485 0002:e4bd
+   490 0002:e4e1   492 0002:e4f5   494 0002:e515   495 0002:e51d
+   496 0002:e52f   497 0002:e532   498 0002:e535   500 0002:e545
+   501 0002:e548   504 0002:e54d   505 0002:e55a   508 0002:e560
+   509 0002:e569   511 0002:e56e   512 0002:e574     0 0002:e577
+   519 0002:e578   524 0002:e585   526 0002:e5b8   528 0002:e5cb
+   531 0002:e5d1   532 0002:e5d6   535 0002:e5d9   538 0002:e5de
+   539 0002:e5f1   541 0002:e5fa   542 0002:e5ff   545 0002:e602
+   546 0002:e60c   547 0002:e61a   549 0002:e61d   550 0002:e622
+   553 0002:e625   554 0002:e62e   557 0002:e631   558 0002:e654
+   559 0002:e659   562 0002:e65c   563 0002:e67f   564 0002:e684
+   567 0002:e687   568 0002:e69a   569 0002:e6a3   570 0002:e6a8
+   571 0002:e6ab   572 0002:e6b1   575 0002:e6b4   578 0002:e6b9
+   579 0002:e6cc   581 0002:e6d5   582 0002:e6da   585 0002:e6dd
+   586 0002:e6e7   587 0002:e6f5   589 0002:e6f8   590 0002:e6fd
+   593 0002:e700   594 0002:e709   598 0002:e70c   599 0002:e70f
+   601 0002:e748   602 0002:e74e     0 0002:e751   611 0002:e752
+   612 0002:e75f   613 0002:e768   614 0002:e77a     0 0002:e77d
+   624 0002:e77e   626 0002:e78b   629 0002:e790   631 0002:e79a
+   632 0002:e7ac   636 0002:e7b1   638 0002:e7c4   639 0002:e7cc
+   642 0002:e7d1   644 0002:e7da   646 0002:e7e7   647 0002:e7ec
+   651 0002:e7f1   653 0002:e7fa   654 0002:e82d   655 0002:e846
+   656 0002:e84e   657 0002:e86e   658 0002:e876   659 0002:e892
+   660 0002:e89a   661 0002:e8b6   662 0002:e8be   663 0002:e8c1
+   667 0002:e8c9   668 0002:e8cf     0 0002:e8d2   681 0002:e8d4
+   682 0002:e8e1   683 0002:e912   684 0002:e92a   685 0002:e92f
+   686 0002:e93b   687 0002:e93e     0 0002:e941   695 0002:e942
+   699 0002:e94f   701 0002:e980   702 0002:e990   703 0002:e9ac
+   704 0002:e9bc   706 0002:e9c6   707 0002:e9c9     0 0002:e9cc
+   718 0002:e9ce   719 0002:e9db   722 0002:e9e0   724 0002:e9ea
+   726 0002:e9f7   729 0002:ea28   731 0002:ea51   732 0002:ea55
+   734 0002:ea58   740 0002:ea5e   742 0002:ea66   744 0002:ea72
+   746 0002:eaca   747 0002:eae7   748 0002:eb1a   750 0002:eb3e
+   751 0002:eb4d   752 0002:eb5c   753 0002:eb5f     0 0002:eb62
+   766 0002:eb64   767 0002:eb71   770 0002:eb76   772 0002:eb80
+   774 0002:ebb1   776 0002:ebbe   778 0002:ebe7   779 0002:ebeb
+   780 0002:ebee   785 0002:ebf4   787 0002:ebfc   789 0002:ec08
+   791 0002:ec60   792 0002:ec7d   793 0002:ecb0   795 0002:ecd4
+   796 0002:ece3   797 0002:ecf2   798 0002:ecf5     0 0002:ecf8
+   811 0002:ecfa   812 0002:ed07   813 0002:ed11   814 0002:ed1e
+   815 0002:ed2b   816 0002:ed34     0 0002:ed37   827 0002:ed38
+   828 0002:ed45   829 0002:ed57     0 0002:ed5a   838 0002:ed5c
+   839 0002:ed69   840 0002:ed73     0 0002:ed76   849 0002:ed78
+   850 0002:ed85   851 0002:ed8d     0 0002:ed90   860 0002:ed92
+   861 0002:ed9f   862 0002:eda7     0 0002:edaa   871 0002:edac
+   872 0002:edb9   873 0002:edbf     0 0002:edc2
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\lex.c) segment COMDAT_SEG2
+
+   882 0003:0000   884 0003:000d   885 0003:0017   887 0003:001c
+   889 0003:0022   890 0003:0030   891 0003:003e   892 0003:004c
+   893 0003:005a   894 0003:0068   895 0003:0076   896 0003:0084
+   897 0003:0092   898 0003:00a0   899 0003:00ae   900 0003:00bc
+   901 0003:00ca   902 0003:00d8   903 0003:00e6   904 0003:00f4
+   907 0003:0102   908 0003:0107   910 0003:0136   912 0003:0152
+   913 0003:016f   914 0003:0174   916 0003:0177   917 0003:017a
+   919 0003:0183   921 0003:01b2   923 0003:01ce   924 0003:01eb
+   925 0003:01f0   927 0003:01f3   929 0003:01f6   930 0003:01ff
+   931 0003:020a   932 0003:023e   933 0003:0247     0 0003:024a
+   940 0003:024c   942 0003:0259   944 0003:025e   946 0003:028f
+   948 0003:0297   950 0003:02c4   951 0003:02c9   953 0003:02cc
+   954 0003:02db   955 0003:02e1     0 0003:02e4   963 0003:02e6
+   964 0003:02f3   965 0003:0324   967 0003:0355   968 0003:0364
+   969 0003:0375     0 0003:0378   976 0003:037a   977 0003:0387
+   978 0003:038c   979 0003:0398   980 0003:039e   981 0003:03a1
+     0 0003:03a4   989 0003:03a6   991 0003:03b3   992 0003:03c2
+   994 0003:03d1   995 0003:03d4     0 0003:03d7
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\musthave.c) segment COMDAT_SEG2
+
+    22 0003:03d8    23 0003:03e5    25 0003:03ed    28 0003:03f8
+    30 0003:041c    31 0003:0433     0 0003:0436
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\malloc.c) segment COMDAT_SEG2
+
+    47 0003:0438    49 0003:0445    51 0003:044a    53 0003:0452
+    55 0003:046d    56 0003:0472    58 0003:0475    59 0003:0482
+    60 0003:048b    61 0003:0491    62 0003:0494    63 0003:049a
+     0 0003:049d    70 0003:049e    71 0003:04ab    72 0003:04b0
+    74 0003:04ba    76 0003:04ca    77 0003:04d4    80 0003:04da
+    81 0003:04eb    83 0003:04fd    84 0003:0507    87 0003:050d
+    88 0003:0522    89 0003:0531    90 0003:0539    92 0003:054f
+    93 0003:0555     0 0003:0558   103 0003:055a   104 0003:0567
+   105 0003:0571   107 0003:057b   108 0003:058e   110 0003:0597
+   112 0003:05c4   113 0003:05ce   116 0003:05d7   118 0003:05ed
+   119 0003:05fe   121 0003:0610   122 0003:061a   125 0003:0623
+   126 0003:063d   127 0003:0652   128 0003:0668   130 0003:0670
+   131 0003:0685   132 0003:0696   133 0003:06a0   135 0003:06a9
+   136 0003:06b2     0 0003:06b5   142 0003:06b6   144 0003:06c3
+   146 0003:06f0   147 0003:06fa   149 0003:06fd   150 0003:0712
+   152 0003:0715   153 0003:0721   154 0003:0732   155 0003:0740
+   156 0003:0752   157 0003:0765   158 0003:0768     0 0003:076b
+   172 0003:076c   173 0003:0779   175 0003:0783   177 0003:07b0
+   178 0003:07ba   181 0003:07c3   182 0003:07d8   183 0003:07e6
+     0 0003:07e9   191 0003:07ea   192 0003:07f7   193 0003:0801
+   194 0003:0806   196 0003:080b   198 0003:083c   200 0003:0869
+   201 0003:0873   205 0003:0876   209 0003:08b1   211 0003:0901
+   212 0003:0912   213 0003:092f   214 0003:0934   216 0003:0937
+   217 0003:093a   218 0003:093e   220 0003:0941   222 0003:094a
+   224 0003:0959   225 0003:096e   226 0003:0988   227 0003:0996
+   229 0003:0999   231 0003:099c   233 0003:09a6   234 0003:09a9
+     0 0003:09ac
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\parser.c) segment COMDAT_SEG2
+
+    34 0003:09ae    36 0003:09bb    38 0003:09c0    40 0003:09c5
+    42 0003:09f5    47 0003:0a04    49 0003:0a09    50 0003:0a11
+    53 0003:0a17    54 0003:0a22    55 0003:0a2a    58 0003:0a2d
+    59 0003:0a38    60 0003:0a40    63 0003:0a43    64 0003:0a4e
+    65 0003:0a56    68 0003:0a59    69 0003:0a61    72 0003:0a64
+    73 0003:0a6c    79 0003:0a6f    80 0003:0a77    81 0003:0a7c
+    82 0003:0a85    83 0003:0a8a    86 0003:0a8d    87 0003:0a95
+    90 0003:0a98    91 0003:0aaf    92 0003:0ab4    94 0003:0ab7
+    98 0003:0af5   100 0003:0b07   101 0003:0b0f   102 0003:0b18
+   105 0003:0b23   107 0003:0b2c   108 0003:0b31   111 0003:0b40
+   112 0003:0b46     0 0003:0b49   122 0003:0b4a   123 0003:0b57
+   124 0003:0b5c   125 0003:0b61   126 0003:0b66   127 0003:0b6b
+   129 0003:0b76   130 0003:0b7c     0 0003:0b7f   138 0003:0b80
+   139 0003:0b8d   140 0003:0b92   141 0003:0b97   142 0003:0b9c
+   143 0003:0b9f     0 0003:0ba2
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\plant.c) segment COMDAT_SEG2
+
+    99 0003:0ba4   100 0003:0bb1   101 0003:0bd9   103 0003:0bf7
+   105 0003:0c06   106 0003:0c1c   107 0003:0c38   109 0003:0c3d
+   111 0003:0c40   112 0003:0c4a   115 0003:0c50   116 0003:0c53
+     0 0003:0c56   124 0003:0c58   125 0003:0c65   126 0003:0c8d
+   128 0003:0cab   130 0003:0cba   132 0003:0ce8   133 0003:0cfe
+   134 0003:0d17   136 0003:0d1c   138 0003:0d4f   139 0003:0d65
+   140 0003:0d7e   142 0003:0d83   144 0003:0d86   145 0003:0d9c
+   146 0003:0db8   149 0003:0dbd   151 0003:0dc0   152 0003:0dca
+   155 0003:0dd0   156 0003:0dd3     0 0003:0dd6   163 0003:0dd8
+   164 0003:0de5   165 0003:0e0e   167 0003:0e2c   169 0003:0e4f
+   170 0003:0e65   171 0003:0e7c   173 0003:0e81   175 0003:0e84
+   176 0003:0e8e   179 0003:0e94   180 0003:0e97     0 0003:0e9a
+   187 0003:0e9c   188 0003:0ea9   190 0003:0ec7   197 0003:0ed3
+   199 0003:0eed   202 0003:0ef3   205 0003:0ef6   206 0003:0f06
+   209 0003:0f09   210 0003:0f19   213 0003:0f1c   214 0003:0f2c
+   215 0003:0f2f   216 0003:0f55   218 0003:0f5b   220 0003:0f5e
+   221 0003:0f68   224 0003:0f6e   225 0003:0f71     0 0003:0f74
+   233 0003:0f76   234 0003:0f83   236 0003:0f8d   238 0003:0fab
+   239 0003:0fb5   240 0003:0fbf   241 0003:0fd2   242 0003:0fe1
+   243 0003:0ff7   244 0003:100b   246 0003:1010   247 0003:1019
+     0 0003:101c   255 0003:101e   256 0003:102b   258 0003:1030
+   259 0003:1061   261 0003:1092   263 0003:10b0   264 0003:10e1
+   265 0003:1112   266 0003:1128   268 0003:1132   269 0003:1135
+     0 0003:1138   276 0003:113a   277 0003:1147   278 0003:1159
+     0 0003:115c   286 0003:115e   287 0003:116b   289 0003:1189
+   290 0003:1193   291 0003:119d   292 0003:11aa   294 0003:11b0
+     0 0003:11b3   302 0003:11b4   303 0003:11c1   305 0003:11df
+   306 0003:11e9   307 0003:11f3   308 0003:1200   310 0003:1206
+   311 0003:1209     0 0003:120c   318 0003:120e   319 0003:121b
+   321 0003:1239   322 0003:1243   323 0003:124d   324 0003:1256
+   326 0003:125c   327 0003:125f     0 0003:1262   334 0003:1264
+   335 0003:1271   336 0003:12a2   338 0003:12c0   339 0003:12ca
+   341 0003:12dc   342 0003:12e8   343 0003:1300   344 0003:1303
+   346 0003:1309   348 0003:130c   349 0003:1320   350 0003:1334
+   352 0003:1343   353 0003:1360   355 0003:1367   356 0003:136a
+   359 0003:1370   361 0003:137a   366 0003:1384     0 0003:1387
+   373 0003:1388   374 0003:1395   375 0003:139b   376 0003:13a1
+   377 0003:13a7   382 0003:13ad     0 0003:13b0   391 0003:13b2
+   392 0003:13bf   393 0003:13c9   394 0003:13d3   396 0003:13dd
+   397 0003:13ef   398 0003:1401   400 0003:141b   401 0003:1424
+     0 0003:1427   413 0003:1428   414 0003:1435   415 0003:1453
+   416 0003:1459     0 0003:145c   428 0003:145e   429 0003:146b
+   430 0003:1475   432 0003:1489   433 0003:1493   435 0003:14a0
+   437 0003:14a9     0 0003:14ac   444 0003:14ae   445 0003:14bb
+   446 0003:14c0   448 0003:14d4   449 0003:14e6   450 0003:14ec
+   451 0003:14f2   454 0003:14f8   455 0003:150c   456 0003:1511
+   457 0003:1517     0 0003:151a   468 0003:151c   469 0003:1529
+   471 0003:153d   472 0003:154d   475 0003:1559   476 0003:1582
+   478 0003:1585   479 0003:15a2   480 0003:15b6   481 0003:15c0
+     0 0003:15c3   493 0003:15c4   494 0003:15d1   496 0003:15d6
+   497 0003:15dc   499 0003:15e2   501 0003:15ec   502 0003:15f1
+   503 0003:15fc   505 0003:1602   507 0003:1605   508 0003:1621
+   509 0003:1633   511 0003:1647   512 0003:164c   513 0003:1657
+   517 0003:165d   518 0003:1663     0 0003:1666   528 0003:1668
+   529 0003:1675   530 0003:167a   532 0003:1684   534 0003:1689
+   536 0003:168c   537 0003:16a0   538 0003:16b0   539 0003:16cc
+   541 0003:16e0   542 0003:16e6     0 0003:16e9
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\plantexp.c) segment COMDAT_SEG2
+
+    34 0003:16ea    35 0003:16f7    36 0003:16fc    38 0003:172c
+    39 0003:1744    40 0003:1749    41 0003:174f     0 0003:1752
+    48 0003:1754    49 0003:1761    51 0003:1766    53 0003:1778
+    54 0003:1783    56 0003:1788    58 0003:17a2    59 0003:17ad
+    61 0003:17b2    63 0003:17b5    67 0003:17c2    68 0003:17d5
+    71 0003:17d8    72 0003:17eb    75 0003:17ee    76 0003:1801
+    79 0003:1804    80 0003:180f    81 0003:1814    82 0003:1817
+    84 0003:183d    85 0003:1843     0 0003:1846    96 0003:1848
+    97 0003:1855    99 0003:185a   101 0003:186c   102 0003:1877
+   104 0003:187c   106 0003:187f   109 0003:1889   110 0003:189a
+   114 0003:189d   116 0003:18af   117 0003:18ba   119 0003:18bf
+   121 0003:18c2   123 0003:18cf   124 0003:18e1   126 0003:18eb
+   127 0003:18ee   129 0003:1901   132 0003:1904   135 0003:190e
+   136 0003:1920   137 0003:192a   138 0003:1960   139 0003:1984
+   140 0003:198e   144 0003:1991   145 0003:19c7   147 0003:19eb
+   148 0003:19fd   150 0003:1a07   152 0003:1a0a   153 0003:1a1c
+   155 0003:1a26   158 0003:1a29   159 0003:1a5f   161 0003:1a7a
+   162 0003:1a8f   163 0003:1a98   165 0003:1aa2   166 0003:1aa5
+   167 0003:1ab8   170 0003:1abb   171 0003:1acd   172 0003:1ad2
+   173 0003:1ad5   174 0003:1afb   177 0003:1afe   178 0003:1b09
+   179 0003:1b0e   180 0003:1b11   182 0003:1b37   183 0003:1b3d
+     0 0003:1b40   190 0003:1b42   191 0003:1b4f   192 0003:1b54
+   193 0003:1b5e   195 0003:1b68   197 0003:1b72   199 0003:1b84
+   200 0003:1b8f   202 0003:1b94   204 0003:1b97   208 0003:1ba0
+   209 0003:1bd6   210 0003:1c0c   211 0003:1c21   213 0003:1c36
+   214 0003:1c4f   215 0003:1c80   217 0003:1cab   218 0003:1cbc
+   219 0003:1ced   222 0003:1d22   223 0003:1d41   224 0003:1d4f
+   225 0003:1d5d   228 0003:1d67   230 0003:1d79   231 0003:1d87
+   233 0003:1d91   234 0003:1dc7   235 0003:1ddd   236 0003:1de7
+   238 0003:1df1   241 0003:1df4   242 0003:1e2a   243 0003:1e60
+   244 0003:1e75   245 0003:1ea4   246 0003:1eb9   247 0003:1ee5
+   248 0003:1ef8   249 0003:1f02   251 0003:1f05   253 0003:1f1b
+   254 0003:1f21     0 0003:1f24   262 0003:1f26   263 0003:1f33
+   264 0003:1f38   265 0003:1f69   267 0003:1f76   268 0003:1f88
+   270 0003:1f92   272 0003:1fa2   274 0003:1fb9   275 0003:1fce
+   277 0003:1fd8   278 0003:1fdb   280 0003:1fee   282 0003:1ff1
+   283 0003:1ffc   285 0003:2001   286 0003:2007     0 0003:200a
+   293 0003:200c   294 0003:2019   295 0003:201e   296 0003:2028
+   297 0003:2032   298 0003:203c   299 0003:2046   301 0003:2050
+   302 0003:2055   304 0003:205a   306 0003:206c   307 0003:2077
+   309 0003:207c   311 0003:207f   312 0003:2090   313 0003:20a1
+   315 0003:20b2   316 0003:20e3   318 0003:2101   320 0003:2125
+   321 0003:2129   324 0003:2133   331 0003:213d   332 0003:214d
+   335 0003:215e   336 0003:218f   339 0003:21a5   341 0003:21bb
+   342 0003:21d7   344 0003:21fd   345 0003:220b   346 0003:2219
+   350 0003:2223   352 0003:2232   353 0003:2246   354 0003:2252
+   357 0003:225c   359 0003:226b   362 0003:2275   364 0003:227f
+   370 0003:2282   371 0003:2294   372 0003:229e   373 0003:22a8
+   374 0003:22b2   384 0003:22bc   386 0003:22ce   387 0003:22e2
+   388 0003:22f0   391 0003:22fa   397 0003:22fd   398 0003:230d
+   399 0003:2317   402 0003:231a   403 0003:2325   404 0003:232a
+   405 0003:232d   406 0003:2343   417 0003:2346   418 0003:237c
+   420 0003:2392   422 0003:23cb   423 0003:23e4   425 0003:23e9
+   427 0003:23ec   428 0003:2402   430 0003:240c   433 0003:240f
+   434 0003:2421   435 0003:2426   436 0003:2429   438 0003:2447
+   439 0003:2458   440 0003:2461   441 0003:2472   446 0003:2475
+   448 0003:247e   449 0003:248c   452 0003:2496   453 0003:249c
+     0 0003:249f   463 0003:24a0   464 0003:24ad   465 0003:24b2
+   466 0003:24bc   469 0003:24c6   470 0003:24d8   472 0003:24de
+   475 0003:24e7   476 0003:24fa   479 0003:24fd   480 0003:2510
+   483 0003:2513   484 0003:2526   490 0003:2529   493 0003:253a
+   494 0003:2543   497 0003:2559   499 0003:2562   500 0003:2578
+   501 0003:2582   502 0003:2585   504 0003:258f   507 0003:2592
+   508 0003:25ab   512 0003:25ae   515 0003:25b1   516 0003:25e7
+   518 0003:261d   519 0003:2636   521 0003:264f   526 0003:2664
+   529 0003:267a   531 0003:2690   532 0003:26ac   534 0003:26d2
+   535 0003:26e0   536 0003:26ee   539 0003:26f8   541 0003:2707
+   543 0003:2711   545 0003:272c   553 0003:2736   555 0003:2746
+   557 0003:2752   558 0003:275c   560 0003:2766   562 0003:2769
+   565 0003:2773   567 0003:2776   568 0003:278b   570 0003:2797
+   571 0003:27a1   572 0003:27ab   574 0003:27b5   577 0003:27bf
+   579 0003:27c2   580 0003:27d7   581 0003:27e9   583 0003:27f3
+   586 0003:27f6   587 0003:282c   588 0003:2838   589 0003:284d
+   590 0003:2866   591 0003:2872   592 0003:287c   593 0003:287f
+   594 0003:2889   597 0003:288c   598 0003:28c2   599 0003:28d7
+   600 0003:28f0   601 0003:28fc   602 0003:2906   603 0003:2909
+   604 0003:2913   611 0003:2916   612 0003:294c   614 0003:2982
+   615 0003:2997   616 0003:29ac   618 0003:29b5   619 0003:29c2
+   620 0003:29cf   621 0003:29dc   622 0003:29e9   623 0003:2a0f
+   626 0003:2a12   627 0003:2a48   629 0003:2a7e   630 0003:2a97
+   632 0003:2ab0   633 0003:2ac5   634 0003:2ad1   636 0003:2adb
+   637 0003:2af0   638 0003:2afc   640 0003:2b06   641 0003:2b10
+   654 0003:2b13   655 0003:2b49   657 0003:2b7f   658 0003:2b98
+   660 0003:2bb1   662 0003:2bc6   663 0003:2bde   665 0003:2be8
+   667 0003:2bfd   668 0003:2c15   671 0003:2c1f   673 0003:2c37
+   675 0003:2c40   676 0003:2c4d   677 0003:2c5a   678 0003:2c67
+   679 0003:2c74   680 0003:2c81   681 0003:2c8e   682 0003:2c9b
+   683 0003:2ca8   684 0003:2cb5   685 0003:2cd1   687 0003:2cfc
+   688 0003:2cff   696 0003:2d17   697 0003:2d21   698 0003:2d2b
+   699 0003:2d35   700 0003:2d43   701 0003:2d4d   703 0003:2d59
+   705 0003:2d62   706 0003:2d6f   707 0003:2d7c   708 0003:2d89
+   709 0003:2d96   710 0003:2da3   711 0003:2db0   712 0003:2dcc
+   714 0003:2def   716 0003:2df2   718 0003:2dfb   719 0003:2e08
+   720 0003:2e15   721 0003:2e22   722 0003:2e2f   723 0003:2e3c
+   724 0003:2e49   725 0003:2e56   726 0003:2e63   727 0003:2e70
+   728 0003:2e8c   730 0003:2eb7   734 0003:2eba   735 0003:2ef0
+   737 0003:2f26   741 0003:2f37   743 0003:2f40   744 0003:2f7f
+   746 0003:2f89   749 0003:2f8c   750 0003:2f9d   751 0003:2fa2
+   753 0003:3039   754 0003:303f     0 0003:3042
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\printf.c) segment COMDAT_SEG2
+
+    15 0003:3044    17 0003:3051    18 0003:305b    20 0003:3060
+    22 0003:3090    24 0003:30a0    26 0003:30bf    28 0003:30cf
+    30 0003:30d9    31 0003:30df     0 0003:30e2
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\procdec.c) segment COMDAT_SEG2
+
+    36 0003:30e4    37 0003:30f1    38 0003:30f6    39 0003:3100
+    42 0003:310a    44 0003:3117    46 0003:3120    47 0003:312b
+    49 0003:313d    50 0003:3148    54 0003:314d    56 0003:3156
+    57 0003:3167    58 0003:3170    62 0003:3181    64 0003:318a
+    65 0003:31a1    67 0003:31b3    68 0003:31c4    73 0003:31c9
+    75 0003:31d2    76 0003:31db    77 0003:31f4    79 0003:3203
+    80 0003:3214    82 0003:321d    83 0003:322d    85 0003:3250
+    86 0003:3253    89 0003:3262    90 0003:326b    92 0003:3275
+    93 0003:327e     0 0003:3281   105 0003:3282   106 0003:328f
+   107 0003:3294   109 0003:329e   111 0003:32a3   112 0003:32b3
+   114 0003:32d1   115 0003:32da   117 0003:32e8   118 0003:32f1
+   120 0003:32fe   121 0003:3307   123 0003:3318   125 0003:331d
+   126 0003:3323     0 0003:3326
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\pstring.c) segment COMDAT_SEG2
+
+    25 0003:3328    26 0003:3335    27 0003:333f    30 0003:3344
+    32 0003:3374    33 0003:3385    35 0003:338e    36 0003:3397
+    38 0003:339c    40 0003:33b1    42 0003:33c3    43 0003:33cb
+    44 0003:33d5    45 0003:33df    46 0003:33f5    49 0003:340e
+    50 0003:3417     0 0003:341a    57 0003:341c    58 0003:3429
+    61 0003:3433    63 0003:343c    64 0003:3445    66 0003:344a
+    68 0003:345f    70 0003:3471    71 0003:3479    72 0003:3483
+    73 0003:348d    74 0003:34a3    77 0003:34ae    78 0003:34b7
+     0 0003:34ba    85 0003:34bc    86 0003:34c9    87 0003:34db
+    88 0003:34e2     0 0003:34e5   133 0003:34e6   134 0003:34f3
+   135 0003:34fd   136 0003:350f   138 0003:3520   139 0003:3529
+     0 0003:352c   146 0003:352e   147 0003:353b   149 0003:3540
+   150 0003:3571   151 0003:35a2   153 0003:35cd   154 0003:35de
+   156 0003:35ed   157 0003:3606   159 0003:3610   161 0003:3613
+   162 0003:3621   164 0003:3635   165 0003:363e     0 0003:3641
+   174 0003:3642   175 0003:364f   177 0003:365f   178 0003:369b
+   179 0003:36ae   180 0003:36c0   181 0003:36c6     0 0003:36c9
+   190 0003:36ca   191 0003:36d7   192 0003:36e9   193 0003:36fe
+   194 0003:370d   195 0003:371b   197 0003:371e   198 0003:373c
+   200 0003:374a   201 0003:3753     0 0003:3756   207 0003:3758
+   208 0003:3765   209 0003:3773     0 0003:3776
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\record.c) segment COMDAT_SEG2
+
+    29 0003:3778    30 0003:3785    31 0003:378a    33 0003:3794
+    34 0003:37c4    36 0003:37ee    38 0003:3825    39 0003:3834
+    40 0003:3842    41 0003:3845    42 0003:384b     0 0003:384e
+    52 0003:3850    53 0003:385d    54 0003:3867    56 0003:3871
+    57 0003:38a1    58 0003:38d1    60 0003:3906    63 0003:3917
+    64 0003:3923    66 0003:3937    67 0003:3943    69 0003:394c
+    71 0003:395d    73 0003:3960    74 0003:3994    75 0003:39b4
+    76 0003:39bd    77 0003:39ce    79 0003:39e0    80 0003:39e9
+     0 0003:39ec    94 0003:39ee    95 0003:39fb    96 0003:3a05
+    97 0003:3a0f    99 0003:3a19   100 0003:3a23   102 0003:3a28
+   105 0003:3a58   106 0003:3a66   110 0003:3a72   111 0003:3a7f
+   112 0003:3a88   114 0003:3a8b   115 0003:3a96   117 0003:3aa8
+   118 0003:3ab2   119 0003:3ab7   123 0003:3aba   125 0003:3af0
+   126 0003:3b24   128 0003:3b44   129 0003:3b54   130 0003:3b59
+   132 0003:3b5c   135 0003:3b5f   137 0003:3b68   138 0003:3b7e
+   140 0003:3b90   141 0003:3ba0   146 0003:3ba5   148 0003:3bae
+   149 0003:3bb7   150 0003:3bc0   151 0003:3bd0   152 0003:3be1
+   155 0003:3bf0   156 0003:3bf8   158 0003:3c0a   159 0003:3c13
+   161 0003:3c1e   162 0003:3c24     0 0003:3c27   175 0003:3c28
+   176 0003:3c35   177 0003:3c3a   178 0003:3c44   180 0003:3c4e
+   182 0003:3c7f   184 0003:3c90   185 0003:3c99   187 0003:3ca6
+   189 0003:3caf   190 0003:3cba   192 0003:3ccc   197 0003:3cd1
+   199 0003:3cda   201 0003:3d10   202 0003:3d21   205 0003:3d24
+   206 0003:3d2a     0 0003:3d2d   221 0003:3d2e   222 0003:3d3b
+   224 0003:3d40   225 0003:3d4a   226 0003:3d54   227 0003:3d5e
+   229 0003:3d68   238 0003:3d73   239 0003:3d7b   240 0003:3d86
+   243 0003:3d8f   251 0003:3d92   252 0003:3d9c   253 0003:3dae
+   254 0003:3db7   256 0003:3dba   258 0003:3deb   262 0003:3dfb
+   263 0003:3e32   268 0003:3e35   273 0003:3e46   274 0003:3e4e
+   275 0003:3e57   277 0003:3e62   279 0003:3e6b   280 0003:3e74
+   282 0003:3e7e   283 0003:3e87     0 0003:3e8a   296 0003:3e8c
+   297 0003:3e99   298 0003:3ea4   299 0003:3eb6   300 0003:3ec0
+   302 0003:3ec3   303 0003:3ecb   304 0003:3edb   306 0003:3ef0
+   307 0003:3f02   309 0003:3f0c   310 0003:3f15     0 0003:3f18
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\simpstat.c) segment COMDAT_SEG2
+
+    35 0003:3f1a    36 0003:3f27    37 0003:3f2c    38 0003:3f36
+    39 0003:3f40    41 0003:3f4a    43 0003:3f7a    45 0003:3f87
+    46 0003:3f92    48 0003:3fa4    49 0003:3fac    51 0003:3fbd
+    52 0003:3fc0    54 0003:3fca    55 0003:3fcd    57 0003:3fe1
+    59 0003:3fff    60 0003:4008    62 0003:4015    64 0003:401e
+    65 0003:4029    67 0003:403b    68 0003:4040    69 0003:404e
+    73 0003:4058    75 0003:4061    76 0003:406d    77 0003:4078
+    79 0003:408a    80 0003:408f    81 0003:4099    82 0003:40a7
+    83 0003:40b5    85 0003:40cb    87 0003:40ce    88 0003:40d6
+    89 0003:40e7    94 0003:40f8    95 0003:4101    97 0003:412b
+   103 0003:4134   105 0003:4144   107 0003:4152   108 0003:4158
+     0 0003:415b   120 0003:415c   121 0003:4169   122 0003:416e
+   123 0003:4178   124 0003:4182   126 0003:418c   127 0003:4197
+   128 0003:41ab   130 0003:41bd   131 0003:41cd   134 0003:41d2
+   136 0003:41db   139 0003:41e5   140 0003:421a   141 0003:422e
+   142 0003:4233   145 0003:4236   146 0003:426b   147 0003:427f
+   148 0003:4284   151 0003:4287   152 0003:4298   155 0003:429b
+   157 0003:42a8   159 0003:42b9   161 0003:42bc   162 0003:42d0
+   164 0003:42d5   167 0003:42d8   168 0003:42e3   170 0003:42f5
+   171 0003:42ff   174 0003:4304   176 0003:4316   178 0003:431e
+   179 0003:4335   181 0003:4353   183 0003:435c   189 0003:436d
+   192 0003:4380   194 0003:438e   195 0003:4391   197 0003:4396
+   200 0003:4399   201 0003:43ce   202 0003:43e2   203 0003:43e7
+   205 0003:43ea   208 0003:440a   210 0003:4410     0 0003:4413
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\statemnt.c) segment COMDAT_SEG2
+
+    41 0003:4414    42 0003:4421    44 0003:4426    45 0003:4430
+    46 0003:443a    48 0003:4444    49 0003:444f    50 0003:4461
+    51 0003:4466    53 0003:4469    54 0003:447d    56 0003:4492
+    57 0003:44a4    58 0003:44ae    63 0003:44b3    64 0003:44bc
+    65 0003:44cf    67 0003:44dd    68 0003:44e6    70 0003:44f3
+    71 0003:44fc    74 0003:450c    75 0003:4515    77 0003:451d
+    79 0003:4526    86 0003:452e    88 0003:4537    89 0003:453f
+    91 0003:4548    92 0003:4553    97 0003:4558    99 0003:4561
+   101 0003:4571   103 0003:4586   105 0003:458e   107 0003:45a3
+   109 0003:45a6   110 0003:45bb   113 0003:45c6   114 0003:45cc
+     0 0003:45cf   127 0003:45d0   128 0003:45dd   131 0003:45e2
+   133 0003:45e7   140 0003:4618   142 0003:462a   144 0003:4633
+   146 0003:4649   147 0003:4653   149 0003:4658   150 0003:465b
+   153 0003:4663   155 0003:466c   157 0003:4675   158 0003:467f
+   159 0003:468d   160 0003:4697   162 0003:469c   164 0003:469f
+   165 0003:46a9   166 0003:46b7   167 0003:46c1   171 0003:46cb
+   173 0003:46dd   174 0003:46e6   176 0003:46f1   177 0003:46f7
+     0 0003:46fa   188 0003:46fc   189 0003:4709   190 0003:470e
+   191 0003:4718   193 0003:4722   194 0003:4753   195 0003:4784
+   197 0003:47b5   199 0003:47c6   200 0003:47cf   202 0003:47dc
+   204 0003:47e5   205 0003:47f5   206 0003:47ff   207 0003:4807
+   208 0003:4817   214 0003:482c   216 0003:4838   217 0003:4844
+   219 0003:4849   221 0003:484c   225 0003:4871   226 0003:4877
+     0 0003:487a   238 0003:487c   239 0003:4889   241 0003:488e
+   243 0003:4898   245 0003:489d   247 0003:48a9   248 0003:48b4
+   249 0003:48c6   250 0003:48cb   252 0003:48ce   253 0003:48e2
+   255 0003:48f8   256 0003:490a   257 0003:4914   261 0003:4919
+   262 0003:4922   263 0003:4932   265 0003:4940   266 0003:4949
+   270 0003:4956   275 0003:4976   277 0003:497f   278 0003:4988
+   280 0003:4992   281 0003:499b   282 0003:49a5   284 0003:49b1
+   286 0003:49be   287 0003:49d6   291 0003:49db   293 0003:49ee
+   295 0003:49f7   296 0003:4a01   297 0003:4a0d   300 0003:4a17
+   301 0003:4a24   302 0003:4a57   304 0003:4a60   305 0003:4a9e
+   306 0003:4ac1   309 0003:4ad2   310 0003:4ad8     0 0003:4adb
+   320 0003:4adc   321 0003:4ae9   322 0003:4aee   324 0003:4af6
+   327 0003:4afc   328 0003:4b04   331 0003:4b07   332 0003:4b0f
+   335 0003:4b12   336 0003:4b1c   337 0003:4b21   338 0003:4b24
+   340 0003:4b3a   341 0003:4b40     0 0003:4b43   353 0003:4b44
+   354 0003:4b51   355 0003:4b56   356 0003:4b60   357 0003:4b6a
+   359 0003:4b74   360 0003:4b7f   361 0003:4b91   362 0003:4b96
+   364 0003:4b99   365 0003:4bad   367 0003:4bc2   368 0003:4bd4
+   369 0003:4bde   373 0003:4be3   375 0003:4bec   376 0003:4bf7
+   378 0003:4c0a   380 0003:4c18   381 0003:4c21   383 0003:4c2e
+   385 0003:4c37   386 0003:4c47   387 0003:4c78   388 0003:4c80
+   389 0003:4c9a   391 0003:4caf   392 0003:4cb5     0 0003:4cb8
+   404 0003:4cba   405 0003:4cc7   406 0003:4ccc   407 0003:4cd6
+   408 0003:4ce0   410 0003:4cea   411 0003:4cf5   413 0003:4d26
+   415 0003:4d2e   416 0003:4d37   418 0003:4d44   420 0003:4d4d
+   421 0003:4d58   422 0003:4d6a   423 0003:4d6f   425 0003:4d72
+   426 0003:4d86   428 0003:4d9b   429 0003:4dad   430 0003:4db7
+   435 0003:4dbc   436 0003:4dc5   438 0003:4dd8   440 0003:4de6
+   442 0003:4def   445 0003:4e09   446 0003:4e0f     0 0003:4e12
+   460 0003:4e14   461 0003:4e21   462 0003:4e26   463 0003:4e30
+   464 0003:4e3a   465 0003:4e44   467 0003:4e4e   468 0003:4e53
+   469 0003:4e5d   470 0003:4e67   471 0003:4e71   473 0003:4e7b
+   480 0003:4e88   482 0003:4e91   483 0003:4ea6   485 0003:4eb8
+   486 0003:4ec2   488 0003:4ec7   490 0003:4eca   493 0003:4ed4
+   494 0003:4ee8   497 0003:4eeb   498 0003:4ef5   500 0003:4efa
+   502 0003:4f08   504 0003:4f11   505 0003:4f47   507 0003:4f62
+   508 0003:4f6c   514 0003:4f71   515 0003:4f7a   517 0003:4f87
+   519 0003:4f90   521 0003:4f9b   523 0003:4fce   524 0003:4fd8
+   528 0003:4fdd   530 0003:4fe6   531 0003:4fee   534 0003:4ff4
+   535 0003:4ff9   538 0003:4ffc   539 0003:5001   542 0003:5004
+   543 0003:500e   544 0003:5013   547 0003:5029   549 0003:5032
+   551 0003:503d   553 0003:5070   554 0003:507a   558 0003:507f
+   559 0003:5088   565 0003:5095   566 0003:509e   570 0003:50bf
+   571 0003:50c8   572 0003:50db   573 0003:50e4   579 0003:50ee
+   581 0003:50f7   582 0003:510a   588 0003:5114   590 0003:511d
+   593 0003:5128   594 0003:5132   595 0003:513c   598 0003:5146
+   599 0003:5150   600 0003:516e   603 0003:517e   605 0003:51a4
+   606 0003:51b2   607 0003:51c0   611 0003:51ca   614 0003:51d3
+   615 0003:51dd   616 0003:51f0   619 0003:51fa   621 0003:5203
+   622 0003:520d   623 0003:5215   627 0003:521f   629 0003:5228
+   630 0003:5234   633 0003:5252   636 0003:525b   639 0003:5275
+   640 0003:528a   641 0003:5294   642 0003:529e   645 0003:52a8
+   646 0003:52b6   647 0003:52c4   649 0003:52d2   650 0003:52d8
+     0 0003:52db   660 0003:52dc   661 0003:52e9   662 0003:52ee
+   664 0003:52f6   667 0003:52fc   668 0003:5304   671 0003:5307
+   672 0003:530f   675 0003:5312   676 0003:531a   679 0003:531d
+   680 0003:5327   681 0003:532c   682 0003:532f   683 0003:534d
+   684 0003:5353     0 0003:5356   694 0003:5358   695 0003:5365
+   696 0003:536a   698 0003:5372   701 0003:5378   702 0003:5383
+   703 0003:538b   707 0003:538e   708 0003:5399   709 0003:53a1
+   714 0003:53a4   715 0003:53af   716 0003:53b7   720 0003:53ba
+   721 0003:53d1   722 0003:53d6   723 0003:53d9   724 0003:540a
+   725 0003:5410     0 0003:5413   738 0003:5414   739 0003:5421
+   741 0003:5426   742 0003:542e   745 0003:5434   746 0003:543c
+   749 0003:543f   750 0003:544a   751 0003:5452   752 0003:5455
+   754 0003:5463   756 0003:5469     0 0003:546c   766 0003:546e
+   767 0003:547b   778 0003:5480   779 0003:5488   783 0003:549a
+   785 0003:549d   786 0003:54a0   788 0003:54ab   789 0003:54b3
+   791 0003:54bb   793 0003:54cd   794 0003:54d6   796 0003:54e1
+   797 0003:54e7     0 0003:54ea   807 0003:54ec   808 0003:54f9
+   810 0003:54fe   812 0003:550b   813 0003:5514   815 0003:551c
+   816 0003:5525   818 0003:5532   819 0003:5538     0 0003:553b
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\type.c) segment COMDAT_SEG2
+
+    30 0003:553c    31 0003:5549    33 0003:554e    34 0003:557e
+    38 0003:5587    39 0003:558c    40 0003:558f    41 0003:55a5
+    42 0003:55ab     0 0003:55ae    49 0003:55b0    50 0003:55bd
+    52 0003:55c2    53 0003:55f2    54 0003:5622    56 0003:5652
+    59 0003:565b    60 0003:5670    61 0003:5685    64 0003:5688
+    65 0003:569d    66 0003:56b2    69 0003:56b5    70 0003:56c9
+    71 0003:56ce    72 0003:56d1    73 0003:56e7    74 0003:56ed
+     0 0003:56f0    87 0003:56f2    88 0003:56ff    89 0003:5709
+    92 0003:570e    94 0003:5719    96 0003:572b    97 0003:5735
+    99 0003:573a   100 0003:573d   102 0003:5745   103 0003:574e
+   105 0003:575b   107 0003:5764   108 0003:5774   109 0003:578b
+   110 0003:5790   112 0003:57ae   113 0003:57b8   117 0003:57bd
+   118 0003:57c6   120 0003:57d3   121 0003:57dc   123 0003:57e9
+   125 0003:57f2   126 0003:5802   127 0003:5819   128 0003:581e
+   130 0003:5821   131 0003:5845   134 0003:5869   135 0003:5872
+   137 0003:587c   138 0003:5885     0 0003:5888   150 0003:588a
+   152 0003:5897   154 0003:58a1   156 0003:58a9   159 0003:58af
+   160 0003:58ba   163 0003:58bd   164 0003:58c8   167 0003:58cb
+   168 0003:58e2   169 0003:58ec   171 0003:5902   172 0003:590b
+     0 0003:590e   183 0003:5910   184 0003:591d   187 0003:5927
+   189 0003:592c   190 0003:593f   192 0003:5952   194 0003:5964
+   195 0003:596d   197 0003:597a   198 0003:5983   200 0003:5995
+   202 0003:599e   203 0003:59cf   205 0003:5a00   207 0003:5a16
+   208 0003:5a20   210 0003:5a25   212 0003:5a3e   213 0003:5a48
+   215 0003:5a4d   217 0003:5a66   218 0003:5a70   220 0003:5a75
+   222 0003:5a93   223 0003:5a9d   227 0003:5aa2   229 0003:5aab
+   230 0003:5ab6   232 0003:5ac8   233 0003:5ad2   237 0003:5ad7
+   239 0003:5ae0   242 0003:5ae9   243 0003:5b01   244 0003:5b12
+   245 0003:5b23   248 0003:5b26   249 0003:5b3e   250 0003:5b4f
+   251 0003:5b60   254 0003:5b63   255 0003:5b6d   256 0003:5b77
+   257 0003:5b7a   259 0003:5b90   260 0003:5b99     0 0003:5b9c
+   269 0003:5b9e   270 0003:5bab   273 0003:5bb5   274 0003:5bbd
+   276 0003:5bc8   279 0003:5bce   280 0003:5bd9   283 0003:5bdc
+   284 0003:5be7   285 0003:5bea   286 0003:5bf8   287 0003:5c01
+     0 0003:5c04   299 0003:5c06   301 0003:5c13   302 0003:5c1d
+   303 0003:5c27   304 0003:5c31   306 0003:5c36   308 0003:5c3e
+   312 0003:5c44   313 0003:5c4f   314 0003:5c5a   318 0003:5c5d
+   319 0003:5c78   321 0003:5c8a   322 0003:5c9a   325 0003:5c9f
+   327 0003:5ca8   330 0003:5cb2   331 0003:5cc3   334 0003:5cc6
+   335 0003:5cd1   336 0003:5cdc   339 0003:5cdf   340 0003:5cef
+   341 0003:5cf4   342 0003:5cfe   344 0003:5d01   347 0003:5d17
+   351 0003:5d1a   352 0003:5d25   353 0003:5d30   356 0003:5d33
+   357 0003:5d3d   358 0003:5d47   360 0003:5d4a   362 0003:5d78
+   363 0003:5d81     0 0003:5d84   375 0003:5d86   377 0003:5d93
+   378 0003:5d9d   380 0003:5da7   381 0003:5db4   383 0003:5dbd
+   384 0003:5dc8   386 0003:5de6   387 0003:5df6   391 0003:5dfb
+   392 0003:5e04   394 0003:5e11   396 0003:5e1a   397 0003:5e30
+   400 0003:5e4e   402 0003:5e57   403 0003:5e60   404 0003:5e7d
+   405 0003:5e8d   406 0003:5ea4   409 0003:5ea9   411 0003:5eaf
+     0 0003:5eb2   421 0003:5eb4   423 0003:5ec1   425 0003:5ec6
+   427 0003:5ed3   429 0003:5edc   430 0003:5ee4   431 0003:5efa
+   433 0003:5f0b   435 0003:5f1d   436 0003:5f25   437 0003:5f3b
+   438 0003:5f4c   439 0003:5f4f   440 0003:5f58   443 0003:5f63
+   444 0003:5f69     0 0003:5f6c
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\vars.c) segment COMDAT_SEG2
+
+    42 0003:5f6e    43 0003:5f7b    45 0003:5f80    46 0003:5f8a
+    48 0003:5f94    50 0003:5fc4    54 0003:5fd2    56 0003:5fdf
+    58 0003:5fe8    59 0003:5ff3    62 0003:6011    64 0003:601a
+    65 0003:602b    66 0003:6034    69 0003:6044    71 0003:604d
+    72 0003:6063    74 0003:6075    75 0003:607f    79 0003:6084
+    81 0003:608d    82 0003:60a2    85 0003:60b2    86 0003:60bb
+    88 0003:60c3    90 0003:60d5    91 0003:60de    93 0003:60e9
+    94 0003:60ef     0 0003:60f2   108 0003:60f4   109 0003:6101
+   110 0003:6106   111 0003:6110   112 0003:611a   113 0003:6124
+   115 0003:612e   117 0003:6140   118 0003:6149   120 0003:6156
+   122 0003:615f   123 0003:616a   126 0003:6188   128 0003:6191
+   130 0003:61be   131 0003:61c7   132 0003:61e4   134 0003:61f5
+   135 0003:6206   138 0003:6215   140 0003:6222   141 0003:622c
+   143 0003:6237   149 0003:623a   153 0003:6243   154 0003:6252
+   157 0003:6255   158 0003:6262   161 0003:6265   162 0003:627f
+   166 0003:6282   167 0003:629d   168 0003:62b4   169 0003:62d1
+   172 0003:62d4   173 0003:62ed   174 0003:62f0   176 0003:6326
+   179 0003:6329   180 0003:632f     0 0003:6332   191 0003:6334
+   193 0003:6341   196 0003:6346   197 0003:6353   199 0003:6359
+   201 0003:6366   203 0003:636f   204 0003:6377   205 0003:638d
+   207 0003:639e   209 0003:63b0   210 0003:63b8   211 0003:63ce
+   212 0003:63df   214 0003:63e2   215 0003:63eb   218 0003:63f6
+   219 0003:63fc     0 0003:63ff
+
+Line numbers for ..\SOURCE\PFAMWS16.LIB(d:\projects\parser\source\version.c) segment COMDAT_SEG2
+
+     5 0003:6400     6 0003:640d     7 0003:643d     8 0003:646d
+     9 0003:6475    10 0003:647d     0 0003:6480
+
+Program entry point at 0001:001a

@@ -1,0 +1,131 @@
+
+///////////////////////////////////////////////////////////////////////
+// Version 1.1 -> 1.2
+
+Revised String Handling:
+
+*****
+String parameters:
+var: push PTSRING on to return stack 
+
+value: get PSTRING & clone it.  Push clone onto return stack.
+
+In PlantAPList (PLANTEXPR.C) for simple, val parameters added:
+
+  else if(type->BasicType == StringType)
+    {
+    PRSI_Plant(SCLONE);
+    }
+
+*****
+In PRSI_PlantExpression, for case TPAssignment we have added the string
+copy semantics:
+
+  else if(LeftType->BasicType == StringType)
+    {
+    PRSI_Plant(SCLONE);
+    }
+
+and the deleting of any old string which a. may already be set up to
+be returned from a function or b. is referenced by the variable we are
+assigning to:
+
+  if(expr->left->operator == TSReturn)
+    {
+    if(LeftType->BasicType == StringType)
+      {
+      PRSI_Plant(SWAP);
+      PRSI_Plant(SDEL);
+      }
+    else
+      {
+      PRSI_Plant(REPL);
+      }
+    }
+  else
+    {
+    PRSI_PlantExpression(expr->left,FALSE); /* get addr of lhs */
+    if(LeftType->BasicType == StringType)
+      {
+      PRSI_Plant(DUP);  /* get string address */
+      PRSI_Plant(LD);   /* fetch the string */
+      PRSI_Plant(SDEL); /* and delete old one */
+      }
+    PRSI_Plant(ST);
+    }
+
+*****
+Literal strings should be embedded in the code. Once embedded
+the original string can be destroyed.
+in PRSI_PlantExpression the TokString case is now:
+
+  case TokString:   /* Constant string value */
+    PRSI_PlantString(expr->value.str);
+    break;
+
+in PRSI_FreeExpression (EXPR.C) added:
+
+  /* Strings have extra memory allocated to them so we need
+  // to free this.
+  */  
+  if(expr->operator == TokString)
+    free(expr->value.str);
+
+*****
+If we forget identifiers then we need to delete any strings referenced
+by them:
+In PRS_Forget (IDENT.C) changed PRS_DereferenceString to PRS_DeleteString.
+
+if(here->type->BasicType == StringType)
+  {
+  PRS_DeleteString(here->value.string);
+  }
+
+*****
+VIRTPROC.TXT  now modified to read...
+60  SCLONE p     - p                ( clones string p. will fault if NULL p )
+61  SDEL   p     -                  ( deletes string p )
+
+62  SLT     - addr                  ( string literal, push addr & skip string )
+63  ESC     -                       ( prefix to 2 byte opcodes)
+
+reflected in IPROC.H
+
+
+
+*****
+
+Note:
+
+PRS_CreateString creates a string with a reference count of 0.
+
+PRS_CloneString(PSTRING pstr)
+ if pstr == 0 create an empty string.
+ if pstr->ref == 0 then  increment pstr->ref and return pstr
+ if pstr->ref > 0 then copy pstr & return new pstr 
+
+PRSIF.H: added
+
+extern PSTRING PRS_CloneString(PSTRING pstr);
+extern void PRS_DeleteString(PSTRING pstr);
+
+and removed
+
+extern PSTRING PRS_ModifyString(PSTRING pstr);
+extern PSTRING PRS_ReferenceString(PSTRING pstr);
+extern void PRS_DereferenceString(PSTRING pstr);
+
+PSTRING.H: added
+extern void PRSI_ReferenceString(PSTRING pstr);
+
+PSTRING.C PRS_ReferenceString is now:
+void PRSI_ReferenceString(PSTRING pstr)
+{
+  if(pstr != NULL)
+    ++(pstr->ref);
+}
+
+PLANT.H added
+extern void PRSI_PlantString(PSTRING pstr);
+
+and implemented in PLANT.C

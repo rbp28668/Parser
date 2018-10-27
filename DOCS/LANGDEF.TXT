@@ -1,0 +1,283 @@
+; BASIC TYPES
+
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9".
+
+letter = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | 
+	"j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | 
+	"s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" | 
+	"A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | 
+	"J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | 
+	"S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z". 
+
+
+sign = "+" | "-".
+
+unsigned-integer = digit { digit }.
+
+integer = [sign] unsigned-integer.
+
+scale-factor = integer.
+
+digit-sequence = digit { digit }.
+
+unsigned-real = unsigned-integer "." digit-sequence [ "e" scale-factor ] |
+	unsigned-integer "e" scale-factor.
+
+real-number = [sign] unsigned-real.
+
+string = "'" { string-character } "'".
+
+string-character = normal-character | escaped-character.
+
+escaped-character = "\" normal-character.
+
+
+; IDENTIFIERS
+
+identifer = letter { letter | digit }.
+
+identifier-list = identifier { "," identifier }.
+
+
+; CONSTANTS
+
+
+constant-definition-part = constant-definition ";" { constant-defintion ";" }.
+
+constant-definition = "const" identifier "=" constant.
+
+constant = integer-number | real-number | string | [sign] constant-identifier.
+
+constant-identifier = identifier.  ; N.B. this is an identifier defined by 
+                                   ; constant-definition or a member of
+                                   ; an enumerated type.
+
+
+; TYPES
+
+type-definition-part = type-definition ";" { type-definition ";" }.
+
+type-definition = "type" identifier "=" type.
+
+type = simple-type | structured-type | type-identifier.
+
+simple-type = enumerated-type | subrange-type
+
+subrange-type = constant ".." constant  ;N.B. constants must be of an
+                                        ;ordinal type.
+enumerated-type = "(" identifier-list ")".
+
+structured-type = array-type | record-type. ; N.B. no packed arrays or
+                                            ; records, sets or files
+                        
+
+array-type = "array" "[" index-type "]" "of" type.    ; N.B. only 1D arrays
+
+index-type = type.    ;N.B. must be an ordinal type.
+
+
+record-type = "record" field-list "end".
+
+field-list = record-section { ";" record-section }.
+
+record-section = identifier-list ":" type.
+
+type-identifier = identifier.
+
+
+
+; VARIABLE DECLARATION
+
+variable-declaration-part = variable-declaration ";" 
+                            { variable-declaration ";" }
+
+variable-declaration = "var" identifier-list ":" type.
+
+
+
+; VARIABLE USE
+
+
+variable = entire-variable | component-variable ;No referenced variable (no ptrs).
+
+entire-variable = variable-identifier.
+
+component-variable = indexed-variable | field-designator. ; no file-buffer.
+
+field-designator = record-variable "." field-identiifer.
+
+field-identifier = identifier.
+
+record-variable = variable.
+
+indexed-variable = array-variable "[" expression "]". ; 1-D arrays only
+
+array-variable = variable.
+
+
+; EXPRESSIONS
+
+; Operators evaluate left to right for equal precedence
+; Precedence 	4 not
+;		3 * / div mod and
+;		2 + - or
+;		1 = <> > < >= <=
+
+expression = simple-expression [ relational-operator simple-expression ].
+
+simple-expression = [sign] term { adding-operator term }.
+
+term = factor { multiplying-operator factor }.
+
+factor = variable | unsigned-constant | function-designator | 
+	"(" expression ")" | "not" factor.
+
+unsigned-constant = unsigned-integer | unsigned-real | 
+	string | constant-identifier.
+
+relational-operator = "=" | "<>" | "<" | ">" | "<=" | ">=".
+
+adding-operator = "+" | "-" | "or".
+
+multiplying-operator = "*" | "/" | "div" | "mod" | "and".
+
+
+
+; STATEMENTS
+
+statement = simple-statement | structured-statement.
+
+simple-statement = assignment-statement | procedure-statement.
+
+structured-statement = compound-statement | repetative-statement |
+                        conditional-statement.
+
+
+compound-statement = "begin" statement-sequence "end".
+
+statement-sequence = statement { ";" statement }.
+
+
+; ASSIGNMENT STATEMENT
+
+assignment-statement = (variable | function-identifier) ":=" expression.
+
+
+; REPETATIVE STATEMENTS
+
+repetative-statement = while-statement | repeat-statement | for-statement.
+
+while-statement = "while" expression "do" statement.
+
+repeat-statement = "repeat" statement-sequence "until" expression.
+
+for-statement = "for" variable-identifier ":=" 
+	initial-expression ( "to" | "downto" )
+	final-expression "do" statement.
+
+initial-expression = expression.
+
+final-expression = expression.
+
+
+; CONDITIONAL STATEMENTS	      
+
+conditional-statement = if-statement | case-statement.
+
+if-statement = "if" expression "then" statement [ "else" statement ].
+
+case-statement = "case" expression "of" caselimb { ";" caselimb } [";"] "end".
+
+caselimb = case-label-list ":" statement.
+
+case-label-list = constant { "," constant }.
+
+
+; DEFINING PROCEDURES & FUNCTIONS
+
+block = declaration-part statement-part.
+
+declaration-part = [constant-definition-part]
+                   [type-definition-part]
+                   [variable-declaration-part]
+
+statement-part = compound-statement.
+
+procedure-declaration = procedure-heading ";" procedure-body.
+
+procedure-heading = "procedure" identifier [ formal-parameter-list ].
+
+procedure-body = block.
+
+
+function-declaration = function-heading ";" function-body.
+
+function-heading = "function" identifier [ formal-parameter-list ] 
+	":" result-type.
+
+result-type = type-identifier.
+
+function-body = block.
+
+
+formal-parameter-list = "(" formal-parameter-section 
+	{ ";" formal-parameter-section } ")".
+
+formal-parameter-section = value-parameter-section |
+	variable-parameter-section |
+	procedure-parameter-section |
+	function-parameter-section.
+
+value-parameter-section = identifier-list ":" parameter-type.
+
+variable-parameter-section = "var" identifier-list ":" parameter-type.
+
+procedure-parameter-section = procedure-heading
+
+function-parameter-section = function-heading.
+
+parameter-type = type-identifier.
+
+
+; CALLING PROCEDURES & FUNCTIONS
+
+procedure-statement = procedure-identifier [ actual-parameter-list ].
+
+procedure-identifier = identifier.
+
+function-designator = function-identifier [ actual-parameter-list ].
+
+function-identifier = identifier.
+
+
+actual-parameter-list = "(" actual-parameter { "," actual-parameter } ")".
+
+actual-parameter = actual-value | actual-variable | 
+	actual-procedure | actual-function.
+
+actual-value = expression.
+
+actual-variable = variable.
+
+actual-procedure = procedure-identifier.
+
+actual-function = function-identifier.
+
+
+
+; COMPILABLE UNITS
+compilable-unit = constant-definition | type-definition | 
+	variable-declaration | simple-statement | 
+	procedure-declaration |	function-declaration.
+
+
+
+==================================================================
+General Notes
+
+
+A enumerated type is a sub-range type. By default is range is 0
+to count-1 where the base type has count items.
+
+Integer types are also sub-range types.  The default "integer" type
+has a sub-range of -maxint to +maxint.

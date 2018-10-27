@@ -1,0 +1,9 @@
+16-Bit
+File open dialog has invalid lines in file type drop down
+Won't pick up parser.err
+
+32-Bit
+
+Invalid ptr to block free from after error FIXED
+Save As has open as read only box displayed.
+Save As appends .txt

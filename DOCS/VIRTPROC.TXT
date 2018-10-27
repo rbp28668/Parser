@@ -1,0 +1,171 @@
+Virtual processor for executing interpreter I-code.
+
+The virtual processor is a zero address machine. It has 2 stacks, a return
+stack and an evaluation stack.
+
+There are 4 registers:
+
+RSP     return stack pointer
+ESP     evaluation stack pointer
+FP      frame pointer
+IP      instruction pointer.
+
+
+All opcodes are byte values but may take an immediate constant which is
+pushed on the stack before the opcode is executed.  This constant
+may be byte, word or dword.  The top 2 bits of each opcode determine
+the size of the immediate value:
+
+0:      no immediate value
+1:      byte immediate value (8-bits)
+2:      word immediate value (16-bits)
+3:      long immediate value (32-bits)
+
+Opcodes that have immediate values will take a suffix of .b, .w or .l
+(byte, word or long).  Byte and word immediate values will be sign
+extended to 32 bits.
+
+The bottom 6 bits of the opcode determine the operation to be
+performed.
+
+The instruction pointer is incremented to point past the opcode and
+any immediate constant before the operation determined by that opcode
+is performed.
+
+Both the evaluation and return stacks are 32 bit stacks.  The evalution
+stack replaces the normal large register set of modern processeors.  
+Function parameters and local variables are passed and stored on
+the return stack.  Both stack pointer point to the first free entry
+on the stack and hence use post-increment, pre-decrement addressing
+i.e. PUSH is *(STACK++) and POP is *(--STACK).
+
+
+Function and procedure calls:
+
+2 opcodes ENTER and LEAVE are provided for setting up a stack
+frame.
+
+ENTER sets up a stack frame, reserving N bytes of space for local
+variables.  N is read from the top of the evaluation stack. ENTER is:
+        PUSH(RSP) FP
+        RSP->FP
+        RSP+=N 
+
+LEAVE unwinds the stack frame leaving RSP and FP as they were before
+the previous call to ENTER. LEAVE is:
+        FP->RSP
+        POP(RSP) FP
+
+RET is the normal subroutine return: POP(RSP) IP  
+
+NRET is provided to remove actual parameters from the stack. It updates
+IP as above and then removes N bytes from the stack. N is popped from
+the evaluation stack. NRET is:
+        POP(RSP) IP
+        RSP -= N.
+
+
+If parameters are pushed left to right (Pascal fashion) we have a stack frame of
+
+                        <-- RSP
+Local N-1               
+Local N-2
+..
+Local 0                 <-- FP
+Old FP                  <-- (FP-4)
+Return address          <-- (FP-8)
+Param P-1               <-- (FP-8-sizeof(P-1))
+Param P-2               
+..                      ..
+Param 0                 
+
+
+Opcodes:
+
+0 NOP                             ( no operation)
+
+1   ADD     ia,ib  -  ia + ib       ( integer addition)
+2   SUB     ia,ib  -  ia - ib       ( integer subtraction)
+3   MULT    ia,ib  -  ia * ib       ( integer multiplication)
+4   DIV     ia,ib  -  ia / ib       ( integer division)
+5   MOD     ia,ib  -  ia MOD ib     ( integer modulus)
+6   AND     ia,ib  -  ia AND ib     ( bitwise and)
+7   OR      ia,ib  -  ia OR ib      ( bitwise or)
+8   NOT     ia     -  NOT ia        ( 1s complement)
+
+9   FADD    fa,fb  -  fa + fb       ( floating pt addition)
+10  FSUB    fa,fb  -  fa - fb       ( floating pt subtraction)
+11  FMULT   fa,fb  -  fa * fb       ( floating pt multiplication)
+12  FDIV    fa,fb  -  fa / fb       ( floating pt division)
+
+13  ITOF    ia     -  fa            ( integer to float)
+14  FTOI    fa     -  ia            ( float to integer)
+
+15  EQU     a,b    -  a = b         ( bitwise comparison )
+16  NEQU    a,b    -  a <> b        ( bitwise comparsion )
+
+17  LT      a,b    -  a < b         ( integer comparison )
+18  GT      a,b    -  a > b         ( integer comparsion )
+19  LE      a,b    -  a <= b        ( integer comparison )
+20  GE      a,b    -  a >= b        ( integer comparsion )
+
+21  FLT     fa,fb  -  fa < fb       ( floating pt comparison )
+22  FGT     fa,fb  -  fa > fb       ( floating pt comparison )
+23  FLE     fa,fb  -  fa <= fb      ( floating pt comparison )
+24  FGE     fa,fb  -  fa >= fb      ( floating pt comparison )
+
+25  ZEQU    bl     -  not-bl        ( boolean not (true if tos=0,else false)
+
+26  BRA     offset  -               ( relative branch (IP = IP+offset))
+27  ZBRA    flg,off -               ( rel branch if tos = 0)
+28  CALL    addr    -               ( PUSH(RSP) IP, IP = addr)
+29  ENTER   n       -               ( set up stack frame for n bytes of locals)
+30  LEAVE           -               ( unwind stack frame )
+
+31  RET             -               ( POP(RSP) -> IP )
+32  NRET    n       -               ( POP(RSP)->IP, RSP-=N )
+
+33  CCALL   addr    -               ( call C fn at addr)
+
+34  DUP     n     -  n,n            ( duplicate TOS )
+35  OVER    a,b   -  a,b,a          ( pick 2nd TOS )
+36  DROP    a     -                 ( drop TOS )
+37  PICK    (..)n -  (..) n-th item ( pick n-TOS )
+38  SWAP    a,b   -  b,a            ( swap TOS and 2-TOS )
+39  REPL    a,b   -  b              ( replace 2-TOS with TOS )
+
+40  ST      v,a   -                 ( [a] = v)
+41  LD      a     -  v              ( v = [a] )
+
+42  CST     c,a   -                 ( character store)
+43  CLD     a     -  c              ( character fetch)
+
+44  WST     w,a   -                 ( word store)
+45  WLD     a     -                 ( word fetch)
+
+46  TOR     n    -                  ( tos to return stack )
+47  FROMR        - n                ( return stack to tos )
+
+48  FPADD   n    - FP+n             ( push FP+n )
+
+49  FPLD    n    - val              ( return stack[FP+n] ->tos )
+50  FPST    v,n  -                  ( 2tos -> return stack[FP+n] )
+
+51  FPWLD   n    - w                ( return stack[FP+n] -> tos (word load ))
+52  FPWST   w,n  -                  ( 2tos -> (word) return stack[FP+n] )
+
+53  FPCLD   n    - c                ( return stack[FP+n] -> tos (char load ))
+54  FPCST   c,n  -                  ( 2tos -> (char) return stack[FP+n] )
+
+55  HALT            -               ( halt execution )
+56  FAULT   n       -               ( raise fault n & halt execution )
+57  BND     v,l,u - v               ( check l<=v<=u (integer), fault if not )
+
+58  ALLOC   n     - a               ( allocates n bytes on RS, returns its addr )
+59  MOV     s,d,n -                 ( move n bytes from source to dest )
+
+60  SCLONE p     - p                ( clones string p. will fault if NULL p )
+61  SDEL   p     -                  ( deletes string p )
+
+62  SLT     - addr                  ( string literal, push addr & skip string )
+63  ESC     -                       ( prefix to 2 byte opcodes)

@@ -1,0 +1,158 @@
+#include <windows.h>
+#include "resource.h"
+
+IDR_FRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Input",                      ID_FILE_INPUT
+        MENUITEM "O&utput",                     ID_FILE_OUTPUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Load...",                    ID_FILE_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+IDR_INPUT MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "O&utput",                     ID_FILE_OUTPUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Open...",                    ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "Save &As...",                 ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Load...",                    ID_FILE_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "De&lete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Select All",                 ID_EDIT_SELECTALL
+    END
+    POPUP "&Search"
+    BEGIN
+        MENUITEM "&Find...",                    ID_SEARCH_FIND
+        MENUITEM "Find &Next\tF3",              ID_SEARCH_FINDNEXT
+        MENUITEM "&Replace...",                 ID_SEARCH_REPLACE
+    END
+    POPUP "&Run"
+    BEGIN
+        MENUITEM "&Run",                        ID_RUN_RUN
+        MENUITEM "&Pause",                      ID_RUN_PAUSE
+        MENUITEM "&Break",                      ID_RUN_BREAK
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade\tShift+F5",          ID_WINDOW_CASCADE
+        MENUITEM "&Tile\tShift+F4",             ID_WINDOW_TILE
+        MENUITEM "Arrange &Icons",              ID_WINDOW_ARRANGEICONS
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+IDR_OUTPUT MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Input",                      ID_FILE_INPUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade\tShift+F5",          ID_WINDOW_CASCADE
+        MENUITEM "&Tile\tShift+F4",             ID_WINDOW_TILE
+        MENUITEM "Arrange &Icons",              ID_WINDOW_ARRANGEICONS
+        MENUITEM "Close &All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+// 
+// Icons
+//
+
+ICO_MAIN    ICON pfa.ico
+ICO_INPUT   ICON input.ico
+ICO_OUTPUT  ICON output.ico
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_INPUT_EDIT_SPACE "No more space for editing input"
+    IDS_ERR_INPUT_FILE_READ "Unable to read file"
+    IDS_ERR_INPUT_SAVE_FAIL "Unable to save file"
+    IDS_ERR_INPUT_TEXT_NOT_FOUND "Can't find text"
+    IDS_ERR_INPUT_REGISTER "Can't register input window class"
+    IDS_ERR_INPUT_MENU "Can't load input window menu"
+    IDS_ERR_INPUT_CREATE "Can't create input window"
+    IDS_ERR_INPUT_CREATE_EDIT "Can't create edit window"
+    IDS_ERR_INPUT_FILE_LOAD "Unable to load file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_OUTPUT_REGISTER,"Unable to register output window class"
+    IDS_ERR_OUTPUT_MENU, "Unable to load output window menu"
+END
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_FRAME_REGISTER "Unable to register frame window class"
+    IDS_ERR_FRAME_NULL_MENU "Unable to load frame window menu"
+    IDS_ERR_FRAME_CREATE "Unable to create frame window"
+    IDS_ERR_FRAME_CREATE_CLIENT "Unable to create client window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_MAIN_ACCEL "Unable to load keyboard accelerators"
+    IDS_ERR_MAIN_OUTPUT_BUFFER "Unable to initialise output buffer"
+    IDS_ERR_MAIN_INIT_INTERP "Unable to intitialise interpreter"
+END
+
+PFAAccel ACCELERATORS
+  {
+  VK_F5,     ID_WINDOW_CASCADE,  VIRTKEY, SHIFT
+  VK_F4,     ID_WINDOW_TILE,     VIRTKEY, SHIFT
+  "^Z",      ID_EDIT_UNDO
+  VK_BACK,   ID_EDIT_UNDO,       VIRTKEY, ALT
+  "^X",      ID_EDIT_CUT
+  VK_DELETE, ID_EDIT_CUT,        VIRTKEY, SHIFT
+  "^C",      ID_EDIT_COPY
+  VK_INSERT, ID_EDIT_COPY,       VIRTKEY, CONTROL
+  "^V",      ID_EDIT_PASTE
+  VK_INSERT, ID_EDIT_PASTE,      VIRTKEY, SHIFT
+  VK_DELETE, ID_EDIT_DELETE,     VIRTKEY
+  VK_RETURN, ID_RUN_RUN,         VIRTKEY, CONTROL
+  }

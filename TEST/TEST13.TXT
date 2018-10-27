@@ -1,0 +1,410 @@
+File TEST13.PAS
+
+New Code Segment
+ ( rtest1 ) := ( ( 3.100000 ) * ( 5 ) )
+
+FLOAT 3.100000
+NOP
+BYTE 5
+ITOF
+FMULT
+ADDR 2D93:0024
+ST
+HALT
+>NOP 1078355558 -  1078355558
+>ITOF 1078355558 5 -  1078355558 1084227584
+>FMULT 1078355558 1084227584 -  1098383360
+>ST 1098383360 764608548 - 
+>HALT - 
+New Code Segment
+ ( rtest2 ) := ( ( 3.300000 ) / ( 2 ) )
+
+FLOAT 3.300000
+NOP
+BYTE 2
+ITOF
+FDIV
+ADDR 2D93:0045
+ST
+HALT
+>NOP 1079194419 -  1079194419
+>ITOF 1079194419 2 -  1079194419 1073741824
+>FDIV 1079194419 1073741824 -  1070805811
+>ST 1070805811 764608581 - 
+>HALT - 
+New Code Segment
+ ( rtest3 ) := ( ( 8.900000 ) + ( 3 ) )
+
+FLOAT 8.900000
+NOP
+BYTE 3
+ITOF
+FADD
+ADDR 2D93:0066
+ST
+HALT
+>NOP 1091462758 -  1091462758
+>ITOF 1091462758 3 -  1091462758 1077936128
+>FADD 1091462758 1077936128 -  1094608486
+>ST 1094608486 764608614 - 
+>HALT - 
+New Code Segment
+ ( rtest4 ) := ( ( 3.690000 ) - ( 1 ) )
+
+FLOAT 3.690000
+NOP
+BYTE 1
+ITOF
+FSUB
+ADDR 2D93:0087
+ST
+HALT
+>NOP 1080830198 -  1080830198
+>ITOF 1080830198 1 -  1080830198 1065353216
+>FSUB 1080830198 1065353216 -  1076635894
+>ST 1076635894 764608647 - 
+>HALT - 
+New Code Segment
+ ( rtest5 ) := ( ( 3 ) * ( 5.200000 ) )
+
+BYTE 3
+ITOF
+FLOAT 5.200000
+FMULT
+ADDR 2D93:00A8
+ST
+HALT
+>ITOF 3 -  1077936128
+>FMULT 1077936128 1084647014 -  1098488217
+>ST 1098488217 764608680 - 
+>HALT - 
+New Code Segment
+ ( rtest6 ) := ( ( 3 ) / ( 2.600000 ) )
+
+BYTE 3
+ITOF
+FLOAT 2.600000
+FDIV
+ADDR 2D93:00C9
+ST
+HALT
+>ITOF 3 -  1077936128
+>FDIV 1077936128 1076258406 -  1066643771
+>ST 1066643771 764608713 - 
+>HALT - 
+New Code Segment
+ ( rtest7 ) := ( ( 8 ) + ( 3.600000 ) )
+
+BYTE 8
+ITOF
+FLOAT 3.600000
+FADD
+ADDR 2D93:00EA
+ST
+HALT
+>ITOF 8 -  1090519040
+>FADD 1090519040 1080452710 -  1094293914
+>ST 1094293914 764608746 - 
+>HALT - 
+New Code Segment
+ ( rtest8 ) := ( ( 3 ) - ( 1.450000 ) )
+
+BYTE 3
+ITOF
+FLOAT 1.450000
+FSUB
+ADDR 2D93:010B
+ST
+HALT
+>ITOF 3 -  1077936128
+>FSUB 1077936128 1069128090 -  1069966950
+>ST 1069966950 764608779 - 
+>HALT - 
+New Code Segment
+ ( btest1 ) := ( ( 1 ) < ( 2.200000 ) )
+
+BYTE 1
+ITOF
+FLOAT 2.200000
+FLT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:014D
+ST
+HALT
+>ITOF 1 -  1065353216
+>FLT 1065353216 1074580685 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608845 - 
+>HALT - 
+New Code Segment
+ ( btest2 ) := ( ( 1 ) <= ( 2.200000 ) )
+
+BYTE 1
+ITOF
+FLOAT 2.200000
+FLE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:016E
+ST
+HALT
+>ITOF 1 -  1065353216
+>FLE 1065353216 1074580685 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608878 - 
+>HALT - 
+New Code Segment
+ ( btest3 ) := ( ( 1 ) = ( 2.200000 ) )
+
+BYTE 1
+ITOF
+FLOAT 2.200000
+EQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:018F
+ST
+HALT
+>ITOF 1 -  1065353216
+>EQU 1065353216 1074580685 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608911 - 
+>HALT - 
+New Code Segment
+ ( btest4 ) := ( ( 1 ) <> ( 2.200000 ) )
+
+BYTE 1
+ITOF
+FLOAT 2.200000
+NEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:01B0
+ST
+HALT
+>ITOF 1 -  1065353216
+>NEQU 1065353216 1074580685 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608944 - 
+>HALT - 
+New Code Segment
+ ( btest5 ) := ( ( 1 ) > ( 2.200000 ) )
+
+BYTE 1
+ITOF
+FLOAT 2.200000
+FGT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:01D1
+ST
+HALT
+>ITOF 1 -  1065353216
+>FGT 1065353216 1074580685 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608977 - 
+>HALT - 
+New Code Segment
+ ( btest6 ) := ( ( 1 ) >= ( 2.200000 ) )
+
+BYTE 1
+ITOF
+FLOAT 2.200000
+FGE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:01F2
+ST
+HALT
+>ITOF 1 -  1065353216
+>FGE 1065353216 1074580685 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609010 - 
+>HALT - 
+New Code Segment
+ ( btest7 ) := ( ( 1.100000 ) < ( 2 ) )
+
+FLOAT 1.100000
+NOP
+BYTE 2
+ITOF
+FLT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0213
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>ITOF 1066192077 2 -  1066192077 1073741824
+>FLT 1066192077 1073741824 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609043 - 
+>HALT - 
+New Code Segment
+ ( btest8 ) := ( ( 1.100000 ) <= ( 2 ) )
+
+FLOAT 1.100000
+NOP
+BYTE 2
+ITOF
+FLE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0234
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>ITOF 1066192077 2 -  1066192077 1073741824
+>FLE 1066192077 1073741824 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609076 - 
+>HALT - 
+New Code Segment
+ ( btest9 ) := ( ( 1.100000 ) = ( 2 ) )
+
+FLOAT 1.100000
+NOP
+BYTE 2
+ITOF
+EQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0255
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>ITOF 1066192077 2 -  1066192077 1073741824
+>EQU 1066192077 1073741824 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609109 - 
+>HALT - 
+New Code Segment
+ ( btest10 ) := ( ( 1.100000 ) <> ( 2 ) )
+
+FLOAT 1.100000
+NOP
+BYTE 2
+ITOF
+NEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0276
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>ITOF 1066192077 2 -  1066192077 1073741824
+>NEQU 1066192077 1073741824 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609142 - 
+>HALT - 
+New Code Segment
+ ( btest11 ) := ( ( 1.100000 ) > ( 2 ) )
+
+FLOAT 1.100000
+NOP
+BYTE 2
+ITOF
+FGT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0298
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>ITOF 1066192077 2 -  1066192077 1073741824
+>FGT 1066192077 1073741824 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609176 - 
+>HALT - 
+New Code Segment
+ ( btest12 ) := ( ( 1.100000 ) >= ( 2 ) )
+
+FLOAT 1.100000
+NOP
+BYTE 2
+ITOF
+FGE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:02BA
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>ITOF 1066192077 2 -  1066192077 1073741824
+>FGE 1066192077 1073741824 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609210 - 
+>HALT - 
+New Code Segment
+ ( rtest9 ) := ( 1 )
+
+BYTE 1
+ITOF
+ADDR 2D93:012C
+ST
+HALT
+>ITOF 1 -  1065353216
+>ST 1065353216 764608812 - 
+>HALT - 
+End of File
+
+
+Global Identifiers:
+Global Variable: rtest1  Real (15.500000)
+Global Variable: rtest2  Real (1.650000)
+Global Variable: rtest3  Real (11.900000)
+Global Variable: rtest4  Real (2.690000)
+Global Variable: rtest5  Real (15.599999)
+Global Variable: rtest6  Real (1.153846)
+Global Variable: rtest7  Real (11.600000)
+Global Variable: rtest8  Real (1.550000)
+Global Variable: rtest9  Real (1.000000)
+Global Variable: btest1  Enumerated Type boolean(true)
+Global Variable: btest2  Enumerated Type boolean(true)
+Global Variable: btest3  Enumerated Type boolean(false)
+Global Variable: btest4  Enumerated Type boolean(true)
+Global Variable: btest5  Enumerated Type boolean(false)
+Global Variable: btest6  Enumerated Type boolean(false)
+Global Variable: btest7  Enumerated Type boolean(true)
+Global Variable: btest8  Enumerated Type boolean(true)
+Global Variable: btest9  Enumerated Type boolean(false)
+Global Variable: btest10  Enumerated Type boolean(true)
+Global Variable: btest11  Enumerated Type boolean(false)
+Global Variable: btest12  Enumerated Type boolean(false)

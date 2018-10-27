@@ -1,0 +1,12 @@
+[MSVC Status File]
+Version=1.00
+ProjectType=10
+External=0
+BrkptCount=0
+WatchCount=6
+WatchExpr1=nVscrollPos
+WatchExpr2=nVscrollMax
+WatchExpr3=rect
+WatchExpr4=ps
+WatchExpr5=cyClient
+WatchExpr6=cyChar

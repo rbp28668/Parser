@@ -1,0 +1,565 @@
+File TEST12.PAS
+
+New Code Segment
+ ( btest ) := ( true )
+
+BYTE 1
+NOP
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0024
+ST
+HALT
+>NOP 1 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608548 - 
+>HALT - 
+New Code Segment
+ ( btest1 ) := ( not ( true ) )
+
+BYTE 1
+ZEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0044
+ST
+HALT
+>ZEQU 1 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608580 - 
+>HALT - 
+New Code Segment
+ ( btest2 ) := ( ( true ) and ( false ) )
+
+BYTE 1
+NOP
+BYTE 0
+AND
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0065
+ST
+HALT
+>NOP 1 -  1
+>AND 1 0 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608613 - 
+>HALT - 
+New Code Segment
+ ( btest3 ) := ( ( true ) or ( false ) )
+
+BYTE 1
+NOP
+BYTE 0
+OR
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0086
+ST
+HALT
+>NOP 1 -  1
+>OR 1 0 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608646 - 
+>HALT - 
+New Code Segment
+ ( btest4 ) := ( ( 1 ) < ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+LT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:00A7
+ST
+HALT
+>NOP 1 -  1
+>LT 1 2 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608679 - 
+>HALT - 
+New Code Segment
+ ( btest5 ) := ( ( 1 ) <= ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+LE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:00C8
+ST
+HALT
+>NOP 1 -  1
+>LE 1 2 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608712 - 
+>HALT - 
+New Code Segment
+ ( btest6 ) := ( ( 1 ) = ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+EQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:00E9
+ST
+HALT
+>NOP 1 -  1
+>EQU 1 2 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608745 - 
+>HALT - 
+New Code Segment
+ ( btest7 ) := ( ( 1 ) <> ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+NEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:010A
+ST
+HALT
+>NOP 1 -  1
+>NEQU 1 2 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608778 - 
+>HALT - 
+New Code Segment
+ ( btest8 ) := ( ( 1 ) > ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+GT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:012B
+ST
+HALT
+>NOP 1 -  1
+>GT 1 2 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608811 - 
+>HALT - 
+New Code Segment
+ ( btest9 ) := ( ( 1 ) >= ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+GE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:014C
+ST
+HALT
+>NOP 1 -  1
+>GE 1 2 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608844 - 
+>HALT - 
+New Code Segment
+ ( btest10 ) := ( ( 1 ) < ( 2 ) )
+
+BYTE 1
+NOP
+BYTE 2
+LT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:016D
+ST
+HALT
+>NOP 1 -  1
+>LT 1 2 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608877 - 
+>HALT - 
+New Code Segment
+ ( btest11 ) := ( ( ( 1 ) < ( 2 ) ) and ( ( 3 ) < ( 4 ) ) )
+
+BYTE 1
+NOP
+BYTE 2
+LT
+BYTE 3
+NOP
+BYTE 4
+LT
+AND
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:018F
+ST
+HALT
+>NOP 1 -  1
+>LT 1 2 -  1
+>NOP 1 3 -  1 3
+>LT 1 3 4 -  1 1
+>AND 1 1 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608911 - 
+>HALT - 
+New Code Segment
+ ( btest12 ) := ( ( ( 1 ) < ( 2 ) ) or ( ( 3 ) < ( 4 ) ) )
+
+BYTE 1
+NOP
+BYTE 2
+LT
+BYTE 3
+NOP
+BYTE 4
+LT
+OR
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:01B1
+ST
+HALT
+>NOP 1 -  1
+>LT 1 2 -  1
+>NOP 1 3 -  1 3
+>LT 1 3 4 -  1 1
+>OR 1 1 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764608945 - 
+>HALT - 
+New Code Segment
+ ( btest13 ) := ( not ( true ) )
+
+BYTE 1
+ZEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:01D3
+ST
+HALT
+>ZEQU 1 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764608979 - 
+>HALT - 
+New Code Segment
+ ( btest14 ) := ( ( 1.100000 ) < ( 2.200000 ) )
+
+FLOAT 1.100000
+NOP
+FLOAT 2.200000
+FLT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:01F5
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>FLT 1066192077 1074580685 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609013 - 
+>HALT - 
+New Code Segment
+ ( btest15 ) := ( ( 1.100000 ) <= ( 2.200000 ) )
+
+FLOAT 1.100000
+NOP
+FLOAT 2.200000
+FLE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0217
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>FLE 1066192077 1074580685 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609047 - 
+>HALT - 
+New Code Segment
+ ( btest16 ) := ( ( 1.100000 ) = ( 2.200000 ) )
+
+FLOAT 1.100000
+NOP
+FLOAT 2.200000
+EQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0239
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>EQU 1066192077 1074580685 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609081 - 
+>HALT - 
+New Code Segment
+ ( btest17 ) := ( ( 1.100000 ) <> ( 2.200000 ) )
+
+FLOAT 1.100000
+NOP
+FLOAT 2.200000
+NEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:025B
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>NEQU 1066192077 1074580685 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609115 - 
+>HALT - 
+New Code Segment
+ ( btest18 ) := ( ( 1.100000 ) > ( 2.200000 ) )
+
+FLOAT 1.100000
+NOP
+FLOAT 2.200000
+FGT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:027D
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>FGT 1066192077 1074580685 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609149 - 
+>HALT - 
+New Code Segment
+ ( btest19 ) := ( ( 1.100000 ) >= ( 2.200000 ) )
+
+FLOAT 1.100000
+NOP
+FLOAT 2.200000
+FGE
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:029F
+ST
+HALT
+>NOP 1066192077 -  1066192077
+>FGE 1066192077 1074580685 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609183 - 
+>HALT - 
+New Code Segment
+ ( btest20 ) := ( ( red ) = ( red ) )
+
+BYTE 0
+NOP
+BYTE 0
+EQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:02C1
+ST
+HALT
+>NOP 0 -  0
+>EQU 0 0 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609217 - 
+>HALT - 
+New Code Segment
+ ( btest21 ) := ( ( red ) <> ( red ) )
+
+BYTE 0
+NOP
+BYTE 0
+NEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:02E3
+ST
+HALT
+>NOP 0 -  0
+>NEQU 0 0 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609251 - 
+>HALT - 
+New Code Segment
+ ( btest22 ) := ( ( red ) = ( green ) )
+
+BYTE 0
+NOP
+BYTE 1
+EQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0305
+ST
+HALT
+>NOP 0 -  0
+>EQU 0 1 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609285 - 
+>HALT - 
+New Code Segment
+ ( btest23 ) := ( ( red ) <> ( green ) )
+
+BYTE 0
+NOP
+BYTE 1
+NEQU
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0327
+ST
+HALT
+>NOP 0 -  0
+>NEQU 0 1 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609319 - 
+>HALT - 
+New Code Segment
+ ( btest24 ) := ( ( red ) < ( blue ) )
+
+BYTE 0
+NOP
+BYTE 2
+LT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:0349
+ST
+HALT
+>NOP 0 -  0
+>LT 0 2 -  1
+>NOP 1 0 -  1 0
+>BND 1 0 1 -  1
+>ST 1 764609353 - 
+>HALT - 
+New Code Segment
+ ( btest25 ) := ( ( red ) > ( blue ) )
+
+BYTE 0
+NOP
+BYTE 2
+GT
+BYTE 0
+NOP
+BYTE 1
+BND
+ADDR 2D93:036B
+ST
+HALT
+>NOP 0 -  0
+>GT 0 2 -  0
+>NOP 0 0 -  0 0
+>BND 0 0 1 -  0
+>ST 0 764609387 - 
+>HALT - 
+End of File
+
+
+Global Identifiers:
+Global Variable: btest  Enumerated Type boolean(true)
+Global Variable: btest1  Enumerated Type boolean(false)
+Global Variable: btest2  Enumerated Type boolean(false)
+Global Variable: btest3  Enumerated Type boolean(true)
+Global Variable: btest4  Enumerated Type boolean(true)
+Global Variable: btest5  Enumerated Type boolean(true)
+Global Variable: btest6  Enumerated Type boolean(false)
+Global Variable: btest7  Enumerated Type boolean(true)
+Global Variable: btest8  Enumerated Type boolean(false)
+Global Variable: btest9  Enumerated Type boolean(false)
+Global Variable: btest10  Enumerated Type boolean(true)
+Global Variable: btest11  Enumerated Type boolean(true)
+Global Variable: btest12  Enumerated Type boolean(true)
+Global Variable: btest13  Enumerated Type boolean(false)
+Global Variable: btest14  Enumerated Type boolean(true)
+Global Variable: btest15  Enumerated Type boolean(true)
+Global Variable: btest16  Enumerated Type boolean(false)
+Global Variable: btest17  Enumerated Type boolean(true)
+Global Variable: btest18  Enumerated Type boolean(false)
+Global Variable: btest19  Enumerated Type boolean(false)
+Global Variable: btest20  Enumerated Type boolean(true)
+Global Variable: btest21  Enumerated Type boolean(false)
+Global Variable: btest22  Enumerated Type boolean(false)
+Global Variable: btest23  Enumerated Type boolean(true)
+Global Variable: btest24  Enumerated Type boolean(true)
+Global Variable: btest25  Enumerated Type boolean(false)
+colour Type Enumerated Type     blue,
+    green,
+    red);
+red Const Enumerated Type colour(red)
+green Const Enumerated Type colour(green)
+blue Const Enumerated Type colour(blue)

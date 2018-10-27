@@ -1,0 +1,551 @@
+PREFIX IDS_ERR_
+
+
+MALLOC_NO_MORE_HANDLES:
+'No more handles for memory blocks '
+
+MALLOC_ALLOCATE_BLOCK:
+'Unable to allocate memory block'
+
+MALLOC_INVALID_HANDLE:
+'Invalid block handle'
+
+MALLOC_INSUFFICIENT_MEMORY:
+'Insufficient memory for block'
+
+MALLOC_ILLEGAL_FREE_HANDLE:
+'Illegal handle to BlockFree'
+
+MALLOC_INVALID_HANDLE_FREE_FROM:
+'Invalid handle in BLockFreeFrom'
+
+MALLOC_PTR_NOT_IN_BLOCK:
+'BlockFreeFrom pointer not in block'
+
+
+
+STATEMNT_NEED_BOOL_IN_IF:
+'Must have boolean expression in if statement'
+
+STATEMNT_CASE_LABEL_SEL_TYPE:
+'Case label must have same type as selector'
+
+STATEMNT_TOO_MANY_CASE:
+'Too many case statements (max %d)'
+
+STATEMNT_CASE_NOT_ORDINAL:
+'Must have ordinal type in case selector'
+
+STATEMNT_MISSING_END_OR_SEMICOLON:
+'Expected ; or END in CASE, found %s'
+
+STATEMNT_EXPECTED_IF_OR_CASE:
+'Syntax: Expected If or Case'
+
+STATEMNT_WHILE_EXPR_NOT_BOOL:
+'Must have boolean expression in while statement'
+
+STATEMNT_REPEAT_EXPR_NOT_BOOL:
+'Must have boolean expression in repeat statement'
+
+STATEMNT_UNKNOWN_FOR_VAR:
+'Unknown control variable in for'
+
+STATEMNT_INVALID_FOR_LOOP_ID:
+'Invalid identifier for loop variable in for statement'
+
+STATEMNT_FOR_VAR_NOT_ORDINAL:
+'Control variable must have ordinal type in for statement'
+
+STATEMNT_FOR_INITIAL_EXPR_TYPE:
+'FOR: Initial expression has different type to control variable'
+
+STATEMNT_MISSING_TO_OR_DOWNTO:
+'Expected To or DownTo in for statement'
+
+STATEMNT_FOR_FINAL_EXPR_TYPE:
+'Final expression in for has different type to control variable'
+
+STATEMNT_EXPECTED_WHILE_REPEAT_FOR:
+'Syntax: Expected While, Repeat or For'
+
+STATEMNT_SYNTAX_UNEXPECTED:
+'Syntax error in statement. Unexpected %s'
+
+
+IDENT_FORGET_ENUMERATION:
+'Cannot Forget an enumeration (%s)'
+
+
+EXPRTYPE_UNKNOWN_ASSIGN_TYPE:
+'Unknown type in assignment'
+
+EXPRTYPE_COMPARE_INTEGER_NON_NUMERIC:
+'Comparing integer with non-numeric type'
+
+EXPRTYPE_COMPARE_REAL_NON_NUMERIC:
+'Comparing real with non-numeric type'
+
+EXPRTYPE_COMPARE_DIFF_ENUMS:
+'Comparing different enumerated types'
+
+EXPRTYPE_COMPARE_ENUM_DIFFERENT_TYPE:
+'Comparing enumerated type with different type'
+
+EXPRTYPE_COMPARE_STRING_NON_STRING:
+'Comparing a string with a non-string'
+
+EXPRTYPE_TYPE_MISMATCH:
+'Type mismatch'
+
+EXPRTYPE_TYPE_PLUS_MINUS_TIMES:
+'Illegal type for +,- or *'
+
+EXPRTYPE_TYPE_DIV_MOD:
+'Illegal type for div or mod'
+
+EXPRTYPE_TYPE_DIVIDE:
+'Illegal type for /'
+
+EXPRTYPE_TYPE_MISMATCH_AND_OR:
+'Type mismatch for and or or'
+
+EXPRTYPE_TYPE_AND_OR:
+'Illegal type for and or or'
+
+EXPRTYPE_TYPE_NOT:
+'Illegal type for not'
+
+EXPRTYPE_MINUS_NAN:
+'Type mismatch: unary minus on non-number'
+
+EXPRTYPE_LHS_PERIOD_NOT_RECORD:
+'Left of . must be a record'
+
+EXPRTYPE_ARRAY_IDX_NOT_ORDINAL:
+'Array index must be of ordinal type'
+
+EXPRTYPE_LHS_BRACKET_NOT_ARRAY:
+'Left of [ is not an array'
+
+EXPRTYPE_INDEX_WRONG_TYPE:
+'Array index is of wrong type'
+
+EXPRTYPE_INDEX_WRONG_ENUM:
+'Array index is of wrong (enumerated) type'
+
+EXPRTYPE_ASSIGNMENT_TYPE:
+'Type mismatch in assignment'
+
+EXPRTYPE_UNKNOWN_OP:
+'Unknown operator in Expression Type (%d)'
+
+
+
+RECORD_NULL_IDENT:
+'Null Identifer name in Identifier List'
+
+RECORD_DUP_FIELD:
+'Duplicate field name %s'
+
+RECORD_IDENTIFIER_MEM:
+'No memory for field identifier %s'
+
+RECORD_FIELD_LIST_ERROR:
+'Error in Field List'
+
+RECORD_TYPE_MEM:
+'No memory to allocate record type'
+
+
+
+MUSTHAVE:
+'Expected %s, found %s'
+
+
+
+SIMPSTAT_FN_RETURN_MEM:
+'No memory for function return expression'
+
+SIMPSTAT_ASSIGNMENT_MEM:
+'No memory for assignment expression'
+
+SIMPSTAT_MISSING_IDENT:
+'Simple statement: do not know about %s '
+
+SIMPSTAT_LVALUE_IS_CONSTANT:
+'%s is a constant: cannot use as an LValue'
+
+SIMPSTAT_LVALUE_IS_TYPE:
+'%s is a type: cannot use as an LValue'
+
+SIMPSTAT_LVALUE_IS_FUNCTION:
+'%s is a function: cannot use as an LValue'
+
+SIMPSTAT_PROC_MEM:
+'No memory for procedure expression'
+
+SIMPSTAT_LVALUE_IS_RECORD_FIELD:
+'%s is a record field: cannot use as an LValue'
+
+
+
+FPLIST_INVALID_PARAM_CLASS:
+'Invalid parameter class'
+
+FPLIST_NULL_IDENT:
+'Null Identifer name in Identifier List'
+
+FPLIST_DUP_FORMAL_PARAM:
+'Duplicate formal parameter name %s'
+
+FPLIST_FP_IDENT_MEM:
+'No memory for formal parameter identifier %s'
+
+FPLIST_DUP_PROC_FP:
+'Duplicate (procedure) formal parameter name %s'
+
+FPLIST_DUP_FN_FP:
+'Duplicate (function) formal parameter name %s'
+
+FPLIST_SYNTAX:
+'Syntax error in formal parameter list'
+
+
+
+APLIST_FN_TYPE_MISMATCH:
+'Type mismatch in parameter %d (%s) to function %s'
+
+APLIST_PROC_TYPE_MISMATCH:
+'Type mismatch in parameter %d (%s) to procedure %s'
+
+APLIST_NEED_LVALUE:
+'Need an LValue for parameter %d (%s) to %s'
+
+APLIST_PARAM_MISMATCH:
+'Parameters of argument %d (%s) to %s do not match'
+
+APLIST_MISSING_ARGUMENT_LIST:
+'No arguments supplied to %s'
+
+APLIST_TOO_MANY_PARAMS:
+'Too many parameters in call to %s'
+
+APLIST_EXPECTED_PROC_PARAM:
+'Expected procedure for parameter %d (%s) to %s'
+
+APLIST_UNABLE_TO_FIND:
+'Unable to find %s '
+                         
+APLIST_NOT_PROC_PARAM:
+'Parameter %d (%s) to %s should be a procedure, %s is not'
+
+APLIST_EXPR_MEM:
+'No memory for expression'
+
+APLIST_EXPECTED_FN_PARAM:
+'Expected function for parameter %d (%s) to %s'
+
+APLIST_NOT_FN_PARAM:
+'Parameter %d (%s) to %s should be a function, %s is not'
+
+APLIST_FN_PARAM_RETURN_TYPE:
+'Return type of function parameter %s to %s does not match %s'
+
+APLIST_TOO_FEW_PARAMS:
+'Too few parameters to %s'
+
+
+
+TYPE_BOUNDS:
+'Unknown type for bounds (%d)'
+
+TYPE_ARRAY_MEM:
+'No memory to allocate array type'
+
+TYPE_INDEX_NOT_ORDINAL:
+'Array index type must be ordinal type'
+
+TYPE_NOT_RECORD_OR_ARRAY:
+'Expected Record or Array, Found %s'
+
+TYPE_LB_NOT_ORDINAL:
+'Lower bound of subrange type is not of ordinal type'
+
+TYPE_UB_NOT_ORDINAL:
+'Upper bound of subrange type is not of ordinal type'
+
+TYPE_LB_UP_TYPE_MISMATCH:
+'Upper and Lower bounds of subrange are different types'
+
+TYPE_LB_GT_UB:
+'Lower bound greater than upper bound in sub-range'
+
+TYPE_SUBRANGE_MEM:
+'No memory for subrange type'
+
+TYPE_SUBRANGE:
+'Subrange type error'
+
+TYPE_MISSING_IDENT:
+'Can^'t find type identifier %s'
+
+TYPE_NOT_TYPE_OR_CONSTANT:
+'Expected type or constant identifier,Found %s'
+
+TYPE_UNKNOWN:
+'Unknown type in type definition'
+
+TYPE_DUP_NAME:
+'Duplicate name for type definition (%s)'
+
+
+
+VARS_DUP_IDENT:
+'Duplicate (variable) identifier: %s'
+
+VARS_MEM:
+'No memory for variable Identifier'
+
+
+
+EXPR_MEM:
+'Insufficient memory for expression'
+
+EXPR_NOT_RECORD_MEMBER:
+'%s is not a member of record %s'
+
+EXPR_UNKNOWN_IDENT:
+'Unknown identifier %s in expression '
+
+EXPR_NOT_CONST_VAR_FN:
+'Expression: %s is not const, var or function'
+
+EXPR_SYNTAX:
+'Syntax in expression, unexpected %s'
+
+
+
+GETVAR_INCOMPLETE_VAR:
+'Incomplete variable specification'
+
+GETVAR_ARRAY_ADDR:
+'Cannot get address of array member'
+
+GETVAR_INVALID_ADDR_OP:
+'Invalid operator for address calculation'
+
+GETVAR_UNKNOWN_VAR:
+'Unknown variable in PRS_VariableAddress (%s)'
+
+GETVAR_ID_NOT_VARIABLE:
+'Identifier %s is not a variable in PRS_VariableAddress'
+
+GETVAR_ID_NOT_GLOBAL:
+'Identifier %s is not global in PRS_VariableAddress'
+
+
+
+BLOCK_NO_CODE:
+'Unable to get code for procedure or function %s'
+
+
+
+CCALL_INSUFFICIENT_DATA:
+'Insufficient data for SetCExtension'
+
+CCALL_NOT_PROC_OR_FN:
+'SetCExtension did not have procedure or function'
+
+
+
+ENUMS_DUP_NAME:
+'Duplicate name for type definition'
+
+ENUMS_MEM_ELEMENT:
+'No memory to allocate enumeration element'
+
+ENUMS_MEM_TYPE:
+'No memory to allocate enumerated type'
+
+
+PLANT_TOO_COMPLEX:
+'Code too complex'
+
+PLANT_TOO_MANY_SAVE:
+'Too many nested code buffers'
+
+PLANT_INVALID_RESTORE:
+'Unable to restore code buffer'
+
+CONSTANT_MISSING_ID:
+'Missing constant identifier'
+
+CONSTANT_CANT_FIND_ID:
+'Couldn^'t find constant identifier'
+
+CONSTANT_NON_CONST_ID:
+'Non-constant identifier in constant'
+
+CONSTANT_SIGN_STRING:
+'Cannot have sign with (constant) string'
+
+CONSTANT_SIGN_ENUM:
+'Cannot have sign with enumeration constant'
+
+CONSTANT_INVALID_TYPE:
+'Invalid constant type '
+
+CONSTANT_NOT_VALID:
+'Unable to find valid constant'
+
+CONSTANT_DUP_NAME:
+'Duplicate name for constant'
+
+
+
+FNDEC_NULL_ID:
+'Null Identifer for function name'
+
+FNDEC_DUP_NAME:
+'Function name %s duplicates existing name'
+
+FNDEC_MEMORY:
+'No memory for function identifier %s'
+
+
+
+PARSER_SYNTAX:
+'Syntax: unexpected %s'
+
+
+
+PROCDEC_NULL_ID:
+'Null Identifer for procedure name'
+
+PROCDEC_DUP_NAME:
+'Procedure name %s duplicates existing name'
+
+PROCDEC_NO_MEMORY:
+'No memory for procedure identifier %s'
+
+
+
+PLANTEXP_NULL_CONST_ID:
+'NULL id in PlantConstantIdentifier'
+
+PLANTEXP_NULL_CONST_TYPE:
+'NULL type in PlantConstantIdentifier'
+
+PLANTEXP_INVALID_CONST_TYPE:
+'Invalid constant type in PlantConstantIdentifier'
+
+PLANTEXP_NULL_ID:
+'NULL id in PlantIdentifier'
+
+PLANTEXP_C_NOT_AP:
+'Cannot pass 'C' functions as actual parameters'
+
+PLANTEXP_SCOPE:
+'Unknown scope (%d) in PRSI_PlantIdentifier'
+
+PLANTEXP_INVALID_CLASS:
+'Invalid Ident class in PRSI_PlantIdentifier'
+
+PLANTEXP_NULL_COMPOUND_EXPR:
+'NULL expr in PRSI_PlantCompoundVariable'
+
+PLANTEXP_INVALID_PROC_FN_SCOPE:
+'Invalid scope for procedure or function call'
+
+PLANTEXP_NULL_APLIST_EXPR:
+'NULL expr in PRSI_PlantAPList'
+
+PLANTEXP_ILLEGAL_FP_SCOPE:
+'Illegal scope in formal parameter'
+
+PLANTEXP_PASS_C_AS_AP:
+'Cannot use 'C' fn or proc (%s) as actual parameter'
+
+PLANTEXP_APLIST_CLASS:
+'PlantAPList: Invalid class (%d)'
+
+PLANTEXP_UNKNOWN_OP:
+'Unknown operator %d while planting expression'
+
+
+
+IPROC_MEMORY:
+'Unable to allocate memory for I-Code Interpeter'
+
+IPROC_BOUNDS:
+'Bounds Fault'
+
+IPROC_DIV_ZERO:
+'Division by zero' 
+
+IPROC_EVAL_STACK_OVER:
+'Evaluation stack overflow'
+
+IPROC_EVAL_STACK_UNDER:
+'Evaluation stack underflow'
+
+IPROC_RETURN_STACK_OVER:
+'Return stack overflow'
+
+IPROC_RETURN_STACK_UNDER:
+'Return stack underflow'
+
+IPROC_NULL_CALL:
+'Call to undefined (NULL) function or procedure'
+
+IPROC_MISMATCH_CASE:
+'Case selector value not matched in any case-label'
+
+IPROC_UNIMP:
+'Unimplemented Instruction'
+
+IPROC_UNKNOWN_ERR:
+'Unknown processor error code %d'
+
+IPROC_INVALID_SIZE:
+'Invalid size for parameters'
+
+
+PLANT_ALLOCATE_CODE_BUFFER:
+'Unable to allocate memory for code buffer'
+
+PLANT_SAVE_CODE_SEG:
+'Unable to get memory for saving code segment'
+
+
+
+BUILTIN_ILLEGAL_TYPE_FOR_ABS:
+'Data type for ABS must be integer or real.'
+
+BUILTIN_LOG_ZERO:
+'Cannot take natural log of zero.'
+
+BUILTIN_ORD_OF_EMPTY_STRING:
+'Cannot take ORD of empty string'
+
+BUILTIN_ORD_NOT_ORDINAL_OR_STRING:
+'Type for ORD must be be an ordinal type or a string'
+
+BUILTIN_ILLEGAL_TYPE_FOR_SQR:
+'Type for SQR must be integer or real'
+
+BUILTIN_SQRT_NEGATIVE:
+'Cannot take SQRT of negative number'
+
+BUILTIN_INVALID_WRITE_TYPE:
+'Invalid type in WRITE'
+
+BUILTIN_WRITE_BUFFER_OVERFLOW:
+'WRITE output too long'
+
+
+
+
+
+

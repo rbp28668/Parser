@@ -1,0 +1,11 @@
+
+1. Better error reporting. (in fn or proc)
+2. Stack trace for runtime faults.
+3. write/writeln: need any type
+4. File record/ playback
+5. Show Type facility
+6. Inspect variable.
+7. Example C exension library: ports.
+8. Precompiled modules.
+
+

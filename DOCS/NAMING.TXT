@@ -1,0 +1,16 @@
+Naming convention for PFA libraries:
+
+
+PFA + [M | B] + [W | D] + [S | D] + [16 | 32]  + .LIB
+
+
+[M | B]         Microsoft or Borland
+[W | D]         Windows or DOS
+[S | D]         Static or Dynamic
+[16 | 32]       16 or 32 bit
+.LIB
+
+e.g. PFAMWS16.LIB is the Microsoft Windows Static 16 bit library 
+and  PFABDS16.LIB is the Borland Dos Static 16 bit library
+and  PFAMWD32.LIB is the Microsoft Windows Dynamic 32 bit library
+etc.
